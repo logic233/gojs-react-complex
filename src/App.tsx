@@ -24,6 +24,13 @@ interface AppState {
   skipsDiagramUpdate: boolean;
 }
 
+
+var demo = [{"type": "Real", "name": "k", "anno": "Desired amplification"},
+ {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp"}, 
+ {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k"}, 
+ {"type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant"},
+ {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T"}]
+
 class App extends React.Component<{}, AppState> {
   // Maps to store key -> arr index for quick lookups
   private mapNodeKeyIdx: Map<go.Key, number>;
@@ -33,7 +40,7 @@ class App extends React.Component<{}, AppState> {
     super(props);
     this.state = {
       nodeDataArray: [
-        { key: 0, text: 'Alpha', color: 'lightblue', loc: '0 0' ,data:"name0 value0;name1 value1;name2 value2;"},
+        { key: 0, text: 'Alpha', color: 'lightblue', loc: '0 0' ,para:demo},
         { key: 1, text: 'Beta', color: 'orange', loc: '150 0' },
         { key: 2, text: 'Gamma', color: 'lightgreen', loc: '0 150' },
         { key: 3, text: 'Delta', color: 'pink', loc: '150 150' }

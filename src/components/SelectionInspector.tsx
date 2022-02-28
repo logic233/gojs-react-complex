@@ -54,27 +54,44 @@ export class SelectionInspector extends React.PureComponent<SelectionInspectorPr
 }
 
 
-
-export class DataInspector extends React.PureComponent<SelectionInspectorProps, {}> {
+//显示模型参数并且提供更改
+export class DataInspector extends React.PureComponent<SelectionInspectorProps,{value?:Array<number>}> {
   /**
    * Render the object data, passing down property keys and values.
    */
+
+
+
+   constructor(props: SelectionInspectorProps) {
+    super(props);
+    this.state = {value: new Array(100) };
+    this.handleChange = this.handleChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleChange(event: any) {    
+    console.log(this.state.value);
+    var i = event.target.name;
+    var newValue = this.state.value;
+    newValue![i]=event.target.value;
+    this.setState({value: newValue});  
+  }
+
+
   private renderObjectDetails() {
     const selObj = this.props.selectedData;
-    const data = selObj["data"]
+    const para = selObj["para"]
+    console.log(this.state.value);
     const dets = [];
-    if (data == undefined){
+    if (para == undefined){
       return
     }
     else{
       dets.push(<h1>para</h1>)
-      let  item_list = data.split(";")
-      for(let i=0;i<item_list.length-1;i++){
-        let item_ = item_list[i].split(" ")
-        let _name = item_[0]
-        let _value = item_[1]
-        const row = <input type="text" name={_name} value={_value}/>
+      for(let i=0;i<para.length;i++){
+        
+        const row = <input name={i+""} type="text"  value={this.state.value![i]}  onChange={this.handleChange}/>
         dets.push(row)
+        dets.push(<br></br>)
 
       }
 
