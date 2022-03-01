@@ -9,6 +9,7 @@ import * as React from 'react';
 import { DiagramWrapper } from './components/DiagramWrapper';
 import { SelectionInspector,DataInspector } from './components/SelectionInspector';
 
+import {treeView} from './components/treeView'
 import './App.css';
 
 /**
@@ -277,7 +278,8 @@ class App extends React.Component<{}, AppState> {
                 />;
       
     }
-
+    let xx;
+    // xx =<treeView treeViewProps={}/>;
     return (
       
       <div>
@@ -308,6 +310,8 @@ class App extends React.Component<{}, AppState> {
         </label>
         {inspector}
         {inspector2}
+
+        {/* {xx} */}
       </div>
     );
   }
