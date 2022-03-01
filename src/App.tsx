@@ -279,6 +279,7 @@ class App extends React.Component<{}, AppState> {
     }
 
     return (
+      
       <div>
         <p>
           Try moving around nodes, editing text, relinking, undoing (Ctrl-Z), etc. within the diagram

@@ -22,7 +22,7 @@ export class SelectionInspector extends React.PureComponent<SelectionInspectorPr
     console.log('selObj: ', selObj);
     const dets = [];
     for (const k in selObj) {
-      if(k==='data'){
+      if(k==='para'){
         continue;
       }
       const val = selObj[k];
@@ -83,18 +83,28 @@ export class DataInspector extends React.PureComponent<SelectionInspectorProps,{
     console.log(this.state.value);
     const dets = [];
     if (para == undefined){
-      return
+      return <p>this model has no paras</p>
     }
     else{
-      dets.push(<h1>para</h1>)
+      const row = 
+        <tr>
+          <th>name</th>
+          <th>value</th>
+          <th>type</th>
+          <th>description</th>
+        </tr>       
+        dets.push(row)
       for(let i=0;i<para.length;i++){
         
-        const row = <input name={i+""} type="text"  value={this.state.value![i]}  onChange={this.handleChange}/>
+        const row =
+          <tr>
+            <td> {para[i]["name"]}</td>
+            <td><input name={i+""} type="text"  value={this.state.value![i]}  onChange={this.handleChange}/></td>
+            <td> {para[i]["type"]}</td>
+            <td> {para[i]["anno"]}</td>
+          </tr> 
         dets.push(row)
-        dets.push(<br></br>)
-
       }
-
     }
     return dets;
   }
@@ -102,10 +112,9 @@ export class DataInspector extends React.PureComponent<SelectionInspectorProps,{
   public render() {
     return (
       <div id='myDataInspectorDiv' className='datainspector'>
-        <table>
-          <tbody>
+        <h1>parameters</h1>
+        <table  id='mytable'  >
             {this.renderObjectDetails()}
-          </tbody>
         </table>
       </div>
     );
