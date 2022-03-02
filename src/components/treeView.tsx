@@ -1,46 +1,134 @@
 
 
-
 import * as React from 'react';
-import { TreeItem, TreeView } from '@mui/lab'
+import TreeView from '@mui/lab/TreeView';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import TreeItem, {
+    TreeItemProps,
+    useTreeItem,
+    TreeItemContentProps,
+} from '@mui/lab/TreeItem';
+import clsx from 'clsx';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 
-interface treeViewProps {
-    treeDataJson: Array<object>;
+interface node {
+    id: string;
+    name: string;
+    children?: node[];
+
+}
+interface MyTreeViewprops {
+    nodes: node;
 }
 
 
-[{ id: "0", name: "n0", children: [{ id: "00", name: "n00" }, { id: "01", name: "n01" }] },
-{ id: "1", name: "n1" },
-{ id: "2", name: "n2" }
-]
 
-export class treeView extends React.PureComponent<treeViewProps, {}>{
-    private renderObjectDetails(treeDataJson: Array<object>) {
-        if (treeDataJson === null) {
-            return;
-        }
+const CustomContent = React.forwardRef(function CustomContent(
+    props: TreeItemContentProps,
+    ref,
+) {
+    const {
+        classes,
+        className,
+        label,
+        nodeId,
+        icon: iconProp,
+        expansionIcon,
+        displayIcon,
+    } = props;
 
-        const dets = [];
-        for (let i = 0; i < treeDataJson.length; i++) {
-            var row = <TreeItem nodeId="1" label="Applications">{this.renderObjectDetails(treeDataJson[i]["children"])}</TreeItem>
-            dets.push(row);
-        }
+    const {
+        disabled,
+        expanded,
+        selected,
+        focused,
+        handleExpansion,
+        handleSelection,
+        preventSelection,
+    } = useTreeItem(nodeId);
 
-        return dets;
-    }
+    const icon = iconProp || expansionIcon || displayIcon;
+
+    const handleMouseDown = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        preventSelection(event);
+    };
+
+    const handleExpansionClick = (
+        event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+    ) => {
+        handleExpansion(event);
+    };
+
+    const handleSelectionClick = (
+        event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+    ) => {
+        handleSelection(event);
+    };
+
+    return (
+        // eslint-disable-next-line jsx-a11y/no-static-element-interactions
+        <div
+            className={clsx(className, classes.root, {
+                [classes.expanded]: expanded,
+                [classes.selected]: selected,
+                [classes.focused]: focused,
+                [classes.disabled]: disabled,
+            })}
+            onMouseDown={handleMouseDown}
+            ref={ref as React.Ref<HTMLDivElement>}
+        >
+            {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+            <div onClick={handleExpansionClick} className={classes.iconContainer}>
+                {icon}
+            </div>
+            <Typography
+                onClick={handleSelectionClick}
+                component="div"
+                className={classes.label}
+            >
+                {label}
+            </Typography>
+        </div>
+    );
+});
+const CustomTreeItem = (props: TreeItemProps) => (
+    <TreeItem ContentComponent={CustomContent}  {...props} />
+);
 
 
+
+
+export class MyTreeView extends React.PureComponent<MyTreeViewprops, {}>{
+
+
+
+    //渲染数据
+    renderTree = (nodes: node) => (
+        <div>
+            <CustomTreeItem key={nodes.id} nodeId={nodes.id} label={nodes.name}>
+                {Array.isArray(nodes.children) ? nodes.children.map((node) => this.renderTree(node)) : null}
+            </CustomTreeItem>
+
+        </div>
+    );
 
     public render() {
         return (
             <TreeView
-                aria-label="file system navigator"
+                aria-label="icon expansion"
+                defaultCollapseIcon={<ExpandMoreIcon />}
+                defaultExpandIcon={<ChevronRightIcon />}
                 sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
-            >
-                {this.renderObjectDetails(this.props.treeDataJson)}
+                onNodeFocus={(event: object, value: string) => { console.log(event, value); }}
 
+            >
+                {this.renderTree(this.props.nodes)}
             </TreeView>
+
         );
     }
 

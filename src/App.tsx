@@ -7,9 +7,9 @@ import { produce } from 'immer';
 import * as React from 'react';
 
 import { DiagramWrapper } from './components/DiagramWrapper';
-import { SelectionInspector,DataInspector } from './components/SelectionInspector';
+import { SelectionInspector, DataInspector } from './components/SelectionInspector';
 
-import {treeView} from './components/treeView'
+import { MyTreeView } from './components/treeView'
 import './App.css';
 
 /**
@@ -26,11 +26,19 @@ interface AppState {
 }
 
 
-var demo = [{"type": "Real", "name": "k", "anno": "Desired amplification"},
- {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp"}, 
- {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k"}, 
- {"type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant"},
- {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T"}]
+var demo = [{ "type": "Real", "name": "k", "anno": "Desired amplification" },
+{ "type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp" },
+{ "type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k" },
+{ "type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant" },
+{ "type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T" }]
+var nodes =
+  {
+    id: "0",
+    name: "n0",
+    children: [{ id: "00", name: "n00" }, { id: "01", name: "n01" }]
+  }
+
+  
 
 class App extends React.Component<{}, AppState> {
   // Maps to store key -> arr index for quick lookups
@@ -41,7 +49,7 @@ class App extends React.Component<{}, AppState> {
     super(props);
     this.state = {
       nodeDataArray: [
-        { key: 0, text: 'Alpha', color: 'lightblue', loc: '0 0' ,para:demo},
+        { key: 0, text: 'Alpha', color: 'lightblue', loc: '0 0', para: demo },
         { key: 1, text: 'Beta', color: 'orange', loc: '150 0' },
         { key: 2, text: 'Gamma', color: 'lightgreen', loc: '0 150' },
         { key: 3, text: 'Delta', color: 'pink', loc: '150 150' }
@@ -266,22 +274,22 @@ class App extends React.Component<{}, AppState> {
 
   public render() {
     const selectedData = this.state.selectedData;
-    let inspector,inspector2;
+    let inspector, inspector2;
     if (selectedData !== null) {
       inspector = <SelectionInspector
-                    selectedData={this.state.selectedData}
-                    onInputChange={this.handleInputChange}
-                  />;
-                  inspector2 =<DataInspector
-                  selectedData={this.state.selectedData}
-                  onInputChange={this.handleInputChange}
-                />;
-      
+        selectedData={this.state.selectedData}
+        onInputChange={this.handleInputChange}
+      />;
+      inspector2 = <DataInspector
+        selectedData={this.state.selectedData}
+        onInputChange={this.handleInputChange}
+      />;
+
     }
     let xx;
-    // xx =<treeView treeViewProps={}/>;
+    xx = <MyTreeView nodes={nodes} />;
     return (
-      
+
       <div>
         <p>
           Try moving around nodes, editing text, relinking, undoing (Ctrl-Z), etc. within the diagram
@@ -311,7 +319,7 @@ class App extends React.Component<{}, AppState> {
         {inspector}
         {inspector2}
 
-        {/* {xx} */}
+        {xx}
       </div>
     );
   }
