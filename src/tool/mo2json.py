@@ -1,7 +1,12 @@
 from OMPython import OMCSessionZMQ
 import json
+import os 
 omc = OMCSessionZMQ()
 omc.sendExpression("loadModel(Modelica)")
+
+
+id = 0
+
 def GetParametersList(modelName):
 	#->[ [typeA,nameA,annoA]...]
 	try:
@@ -70,31 +75,38 @@ def GetConnectorsList(modelName):
 				connectorsList.append(ans_)		
 	return connectorsList
 
-def GetAllModel(packageNmae):
+def GetAllModel(packageNmae,thisname):
+	global id
 	li = omc.sendExpression("getClassNames(%s)"%packageNmae)
 	childList = []
 	for child in li:
 		childName = packageNmae+"."+child
-		print("@"*len(packageNmae.split(".")),childName)
+		# print("@"*len(packageNmae.split(".")),childName)
 		childType = omc.sendExpression("getClassRestriction(%s)"%childName)
 		if childType == "package":
-			childList.append(GetAllModel(childName))
+			childList.append(GetAllModel(childName,child))
 		if childType == "model":
 			# print(GetParametersList(childName))
 			# print(GetConnectorsList(childName))
 			# print(childName)
-			modelInfo = {"type":"model","name":childName,"parameters":GetParametersList(childName),"connectors":GetConnectorsList(childName)}
-			print(modelInfo)
-			childList.append(modelInfo)
-	return {"name":packageNmae,"child":childList}
+			# modelInfo = {"type":"model","name":childName,"parameters":GetPar	ametersList(childName),"connectors":GetConnectorsList(childName)}
+			# print("modelInfo")
+			childList.append(GetAllModel(childName,child))
+			# childList.append(modelInfo)
+
+	id+=1
+	return {"id":str(id),"name":thisname,"completeName":packageNmae,"children":childList}
 
 		
 
 #problem mo's coneenct can't get correct position
 mo = "Modelica.Electrical.Analog.Basic.M_Transformer"
 # print(omc.sendExpression("getComponentAnnotations(%s)"%mo))
-data = GetAllModel("Modelica.Electrical.Analog")
+data = GetAllModel("Modelica.Electrical","Modelica.Electrical")
 dataJson = json.dumps(data)
-print(dataJson)
+print(id)
+f = open(os.path.split(os.path.abspath(__file__))[0]+'/packageInfo.json','w')
+f.write(dataJson)
+f.close()
 # m2 = "Modelica.Electrical.Analog.Lines.OLine"
 # GetParametersList(m2)

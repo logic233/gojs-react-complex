@@ -31,15 +31,14 @@ var demo = [{ "type": "Real", "name": "k", "anno": "Desired amplification" },
 { "type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k" },
 { "type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant" },
 { "type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T" }]
-var nodes =
-  {
-    id: "0",
-    name: "n0",
-    children: [{ id: "00", name: "n00" }, { id: "01", name: "n01" }]
-  }
 
-  
 
+const packageInfo = require('./tool/packageInfo.json')
+
+
+
+
+var nodes = packageInfo
 class App extends React.Component<{}, AppState> {
   // Maps to store key -> arr index for quick lookups
   private mapNodeKeyIdx: Map<go.Key, number>;

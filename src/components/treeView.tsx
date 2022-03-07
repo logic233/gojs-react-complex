@@ -11,18 +11,18 @@ import TreeItem, {
 } from '@mui/lab/TreeItem';
 import clsx from 'clsx';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 
 
-interface node {
+
+interface Node {
     id: string;
     name: string;
-    children?: node[];
+    completeName : string;
+    children: Node[];
 
 }
 interface MyTreeViewprops {
-    nodes: node;
+    nodes: Node;
 }
 
 
@@ -107,14 +107,29 @@ export class MyTreeView extends React.PureComponent<MyTreeViewprops, {}>{
 
 
     //渲染数据
-    renderTree = (nodes: node) => (
+    renderTree = (node: Node) => (
         <div>
-            <CustomTreeItem key={nodes.id} nodeId={nodes.id} label={nodes.name}>
-                {Array.isArray(nodes.children) ? nodes.children.map((node) => this.renderTree(node)) : null}
+            <CustomTreeItem key={node.id} nodeId={node.id} label={node.name}>
+                {Array.isArray(node.children) ? node.children.map((x) => this.renderTree(x)) : null}
             </CustomTreeItem>
 
         </div>
     );
+
+    public findNodeById(id:string,node:Node){
+        if (node.id == id){
+            return node;
+        } 
+        else{
+            for(let i=0;i<node.children.length;i++){
+                let x:any;
+                x = this.findNodeById(id,node.children[i]);
+                if (x!==null)return x;
+            }
+        }
+        return null;
+    }
+
 
     public render() {
         return (
@@ -123,7 +138,7 @@ export class MyTreeView extends React.PureComponent<MyTreeViewprops, {}>{
                 defaultCollapseIcon={<ExpandMoreIcon />}
                 defaultExpandIcon={<ChevronRightIcon />}
                 sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
-                onNodeFocus={(event: object, value: string) => { console.log(event, value); }}
+                onNodeSelect={(event: object, value: string) => { console.log(this.findNodeById(value,this.props.nodes).name); }}
 
             >
                 {this.renderTree(this.props.nodes)}
