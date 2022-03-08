@@ -76,6 +76,10 @@ export class DataInspector extends React.PureComponent<SelectionInspectorProps,{
     this.setState({value: newValue});  
   }
 
+  public getValue = ()=>{
+    // console.log(this.state.value);
+    return this.state.value;
+  }
 
   private renderObjectDetails() {
     const selObj = this.props.selectedData;

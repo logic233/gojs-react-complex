@@ -26,40 +26,33 @@ interface AppState {
 }
 
 
-var demo = [{ "type": "Real", "name": "k", "anno": "Desired amplification" },
-{ "type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp" },
-{ "type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k" },
-{ "type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant" },
-{ "type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T" }]
+// var demo = [{ "type": "Real", "name": "k", "anno": "Desired amplification" },
+// { "type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp" },
+// { "type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k" },
+// { "type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant" },
+// { "type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T" }]
 
 
 const packageInfo = require('./tool/packageInfo.json')
 
-
+interface appProps {
+  model: JSON;
+}
 
 
 var nodes = packageInfo
-class App extends React.Component<{}, AppState> {
+
+class App extends React.Component<appProps, AppState> {
   // Maps to store key -> arr index for quick lookups
   private mapNodeKeyIdx: Map<go.Key, number>;
   private mapLinkKeyIdx: Map<go.Key, number>;
+  private child = React.createRef<DataInspector>();
 
-  constructor(props: object) {
+  constructor(props: appProps) {
     super(props);
     this.state = {
-      nodeDataArray: [
-        { key: 0, text: 'Alpha', color: 'lightblue', loc: '0 0', para: demo },
-        { key: 1, text: 'Beta', color: 'orange', loc: '150 0' },
-        { key: 2, text: 'Gamma', color: 'lightgreen', loc: '0 150' },
-        { key: 3, text: 'Delta', color: 'pink', loc: '150 150' }
-      ],
-      linkDataArray: [
-        { key: -1, from: 0, to: 1 },
-        { key: -2, from: 0, to: 2 },
-        { key: -3, from: 1, to: 1 },
-        { key: -4, from: 2, to: 3 },
-        { key: -5, from: 3, to: 0 }
-      ],
+      nodeDataArray: props.model["node"],
+      linkDataArray: props.model["link"],
       modelData: {
         canRelink: true
       },
@@ -76,6 +69,8 @@ class App extends React.Component<{}, AppState> {
     this.handleModelChange = this.handleModelChange.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleRelinkChange = this.handleRelinkChange.bind(this);
+
+ 
   }
 
   /**
@@ -271,6 +266,16 @@ class App extends React.Component<{}, AppState> {
     this.setState({ modelData: { canRelink: value }, skipsDiagramUpdate: false });
   }
 
+  private toJson = () => {
+    let json = {};
+    json["node"] = this.state.nodeDataArray;
+    json["link"] = this.state.linkDataArray;
+    console.log('json: ', json);
+    // console.log('xx.state: ', xx.!state);
+
+  }
+
+
   public render() {
     const selectedData = this.state.selectedData;
     let inspector, inspector2;
@@ -285,8 +290,7 @@ class App extends React.Component<{}, AppState> {
       />;
 
     }
-    let xx;
-    xx = <MyTreeView nodes={nodes} />;
+    let xx = <MyTreeView nodes={nodes} />;
     return (
 
       <div>
@@ -319,6 +323,13 @@ class App extends React.Component<{}, AppState> {
         {inspector2}
 
         {xx}
+        <button onClick={()=>{
+          let node = this.child.current;
+          console.log(node!.getValue());
+          
+        }} >
+
+        </button>
       </div>
     );
   }
