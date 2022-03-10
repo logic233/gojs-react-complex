@@ -36,7 +36,7 @@ interface AppState {
 const packageInfo = require('./tool/packageInfo.json')
 
 interface appProps {
-  model: JSON;
+  model: any;
 }
 
 
