@@ -324,8 +324,8 @@ class App extends React.Component<appProps, AppState> {
 
         {xx}
         <button onClick={()=>{
-          let node = this.child.current;
-          console.log(node!.getValue());
+          // this.state.nodeDataArray
+          console.log('this.state.nodeDataArray: ', this.state.nodeDataArray);
           
         }} >
 
