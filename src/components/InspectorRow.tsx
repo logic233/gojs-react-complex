@@ -38,25 +38,6 @@ export class InspectorRow extends React.PureComponent<InspectorRowProps, {}> {
     if (this.props.id === 'loc') {
       val = this.formatLocation(this.props.value);
     }
-    // if (this.props.id === 'data'){
-    //   var x= val.split(';')
-    //   console.log('val: ', val);
-    //   var res = [];
-    //   for(var i=0;i<x.length;i++){
-    //     res.push (
-    //       <tr>
-    //         <td>
-    //           <input name ={i+""}
-    //             value={x[i]}
-    //             onChange={this.handleInputChange}
-    //             onBlur={this.handleInputChange}>
-    //           </input>
-    //         </td>
-    //       </tr>        
-    //       );
-    //   }
-    //   return res;
-    // }
     return (
       <tr>
         <td>{this.props.id}</td>

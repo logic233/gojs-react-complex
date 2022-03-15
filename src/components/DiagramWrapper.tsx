@@ -54,6 +54,9 @@ export class DiagramWrapper extends React.Component<DiagramProps, {}> {
     }
   }
 
+  // public insertNode
+
+
   /**
    * Diagram initialization method, which is passed to the ReactDiagram component.
    * This method is responsible for making the diagram and initializing the model, any templates,
