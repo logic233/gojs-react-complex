@@ -75,37 +75,49 @@ def GetConnectorsList(modelName):
 				connectorsList.append(ans_)		
 	return connectorsList
 
-def GetAllModel(packageNmae,thisname):
-	global id
-	li = omc.sendExpression("getClassNames(%s)"%packageNmae)
-	childList = []
-	for child in li:
-		childName = packageNmae+"."+child
-		# print("@"*len(packageNmae.split(".")),childName)
-		childType = omc.sendExpression("getClassRestriction(%s)"%childName)
-		if childType == "package":
-			childList.append(GetAllModel(childName,child))
-		if childType == "model":
-			# print(GetParametersList(childName))
-			# print(GetConnectorsList(childName))
-			# print(childName)
-			# modelInfo = {"type":"model","name":childName,"parameters":GetPar	ametersList(childName),"connectors":GetConnectorsList(childName)}
-			# print("modelInfo")
-			childList.append(GetAllModel(childName,child))
-			# childList.append(modelInfo)
+modelItem = []
 
+def GetAllModel(completeName,thisname):
+	global id,modelItem
 	id+=1
-	return {"id":str(id),"name":thisname,"completeName":packageNmae,"children":childList}
+	type = omc.sendExpression("getClassRestriction(%s)"%completeName)
+	childList = []
+	#如果当前类型是包，那么就递归所有的子结点
+	if type == "package":
+		li = omc.sendExpression("getClassNames(%s)"%completeName)
+		for childName in li:
+			childCompleteName = completeName+"."+childName
+			childType = omc.sendExpression("getClassRestriction(%s)"%childCompleteName)
+			if childType =="model":
+				childList.append(GetAllModel(childCompleteName,childName))
+			if childType =="package":
+				childInfo = GetAllModel(childCompleteName,childName)
+				if len(childInfo["children"])!=0:
+					childList.append(childInfo)
+				else:
+					id-=1
+	else:
+		modelItem.append({"id":str(id),"name":thisname,"completeName":completeName,"para":GetParametersList(completeName)})
+	return {"id":str(id),"type":type,"name":thisname,"children":childList}
+	
+	# if type == "model":
+	# 	return {"id":str(id),"type":type,"name":thisname,"completeName":completeName,"children":childList,"parameters":GetParametersList(completeName)}
+	
 
 		
 
 #problem mo's coneenct can't get correct position
 mo = "Modelica.Electrical.Analog.Basic.M_Transformer"
 # print(omc.sendExpression("getComponentAnnotations(%s)"%mo))
-data = GetAllModel("Modelica.Electrical","Modelica.Electrical")
+data = GetAllModel("Modelica.Electrical.Analog","Modelica.Electrical.Analog")
 dataJson = json.dumps(data)
 print(id)
 f = open(os.path.split(os.path.abspath(__file__))[0]+'/packageInfo.json','w')
+f.write(dataJson)
+f.close()
+
+dataJson = json.dumps(modelItem)
+f = open(os.path.split(os.path.abspath(__file__))[0]+'/modelItem.json','w')
 f.write(dataJson)
 f.close()
 # m2 = "Modelica.Electrical.Analog.Lines.OLine"

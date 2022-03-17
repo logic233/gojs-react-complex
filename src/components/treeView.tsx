@@ -110,25 +110,25 @@ export class MyTreeView extends React.PureComponent<MyTreeViewprops, {}>{
     renderTree = (node: Node) => (
         <div>
             <CustomTreeItem key={node.id} nodeId={node.id} label={node.name}>
-                {Array.isArray(node.children) ? node.children.map((x) => this.renderTree(x)) : null}
+                {Array.isArray(node.children)&&node.children.length>0 ? node.children.map((x) => this.renderTree(x)) : null}
             </CustomTreeItem>
 
         </div>
     );
 
-    public findNodeById(id:string,node:Node){
-        if (node.id == id){
-            return node;
-        } 
-        else{
-            for(let i=0;i<node.children.length;i++){
-                let x:any;
-                x = this.findNodeById(id,node.children[i]);
-                if (x!==null)return x;
-            }
-        }
-        return null;
-    }
+    // public findNodeById(id:string,node:Node){
+    //     if (node.id == id){
+    //         return node;
+    //     } 
+    //     else{
+    //         for(let i=0;i<node.children.length;i++){
+    //             let x:any;
+    //             x = this.findNodeById(id,node.children[i]);
+    //             if (x!==null)return x;
+    //         }
+    //     }
+    //     return null;
+    // }
 
 
     public render() {
@@ -138,8 +138,7 @@ export class MyTreeView extends React.PureComponent<MyTreeViewprops, {}>{
                 defaultCollapseIcon={<ExpandMoreIcon />}
                 defaultExpandIcon={<ChevronRightIcon />}
                 sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
-                onNodeSelect={(event: object, value: string) => { console.log(this.findNodeById(value,this.props.nodes).name); }}
-
+                // onNodeSelect={(event: object, value: string) => { console.log(this.findNodeById(value,this.props.nodes).name); }}
             >
                 {this.renderTree(this.props.nodes)}
             </TreeView>

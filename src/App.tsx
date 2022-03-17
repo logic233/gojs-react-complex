@@ -262,6 +262,23 @@ class App extends React.Component<AppProps, AppState> {
         });
     }
 
+    public getParaDetail(CompleteName:string){
+        function recursion(x:any,CompleteName:string)
+        {
+            let str = x["completeName"];
+            if(CompleteName.startsWith(str)){
+                if(str.length === CompleteName.length){
+                    return x["parameters"];
+                }
+            }
+            else{
+                for(let child in x["children"]){
+                    recursion(child,CompleteName);
+                }
+            }
+        }
+        return [];
+    }
 
     public render() {
         const selectedData = this.state.selectedData;

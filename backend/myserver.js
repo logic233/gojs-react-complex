@@ -4,8 +4,8 @@ var querystring = require('querystring');
 const urlLib = require('url');
 var util = require('util');
 
-const modelFilePath = 'C:\\project\\gojs-react-complex\\backend\\model.json'
-
+const modelFilePath = 'E:\\project\\webModelica\\gojs-react-complex\\backend'
+const toolPath = "E:\\project\\webModelica\\gojs-react-complex\\src\\tool"
 
 http.createServer(function (req, res) {
     if (req.method === "GET") {
@@ -16,11 +16,14 @@ http.createServer(function (req, res) {
         let filePath = "";
         switch (obj.query.type) {
             case "model":
-                filePath = modelFilePath;
+                filePath = modelFilePath+"\\model.json";
                 break;
             case "tree":
-                filePath = 'C:\\project\\gojs-react-complex\\backend\\packageInfo.json';
+                filePath = toolPath+"\\packageInfo.json";
                 break;
+            case "Item":
+                filePath = toolPath+"\\modelItem.json";
+                break;                
         }
 
         if (filePath.length !== 0) {
