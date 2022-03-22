@@ -14,6 +14,7 @@ import {
 
 import {MyTreeView} from './components/treeView'
 import './App.css';
+import {paraVaule2Str} from "./tool/common";
 
 /**
  * Use a linkDataArray since we'll be using a GraphLinksModel,
@@ -30,8 +31,10 @@ interface AppState {
 
 
 interface AppProps {
-    model: any;
+    GoJSmodel: any;
     treeInfo: any;
+    ModelicaModelItem: Array<any>;
+
 }
 
 
@@ -44,8 +47,8 @@ class App extends React.Component<AppProps, AppState> {
     constructor(props: AppProps) {
         super(props);
         this.state = {
-            nodeDataArray: props.model["node"],
-            linkDataArray: props.model["link"],
+            nodeDataArray: props.GoJSmodel["node"],
+            linkDataArray: props.GoJSmodel["link"],
             modelData: {
                 canRelink: true
             },
@@ -262,26 +265,31 @@ class App extends React.Component<AppProps, AppState> {
         });
     }
 
-    public getParaDetail(CompleteName:string){
-        function recursion(x:any,CompleteName:string)
-        {
-            let str = x["completeName"];
-            if(CompleteName.startsWith(str)){
-                if(str.length === CompleteName.length){
-                    return x["parameters"];
-                }
-            }
-            else{
-                for(let child in x["children"]){
-                    recursion(child,CompleteName);
-                }
+//根据completeName 在ModelicaModelItem找para的信息
+    private getParaInfo(modelicaName: string) {
+        let ParaInfo;
+        this.props.ModelicaModelItem.forEach(x => {
+            if (x["completeName"] === modelicaName) ParaInfo = x["para"];
+        })
+        // console.log(ParaInfo)
+        return ParaInfo;
+    }
+
+    public handleParaValue(nodeKey: any, paraValues: Map<string, number>) {
+        //ATTENTION! 从state中拿出来的元素及其子元素是只读的！
+        let newNodeData = JSON.parse(JSON.stringify(this.state.nodeDataArray));
+        for (const i in newNodeData) {
+            if(newNodeData[i]["key"]===nodeKey){
+                newNodeData[i]["parameterValues"]=paraVaule2Str(paraValues);
             }
         }
-        return [];
+        this.setState({nodeDataArray: newNodeData});
+        console.log("check", newNodeData);
     }
 
     public render() {
         const selectedData = this.state.selectedData;
+        console.log("selectedData", selectedData);
         let inspector, inspector_data;
         if (selectedData !== null) {
             inspector = <SelectionInspector
@@ -291,6 +299,8 @@ class App extends React.Component<AppProps, AppState> {
             inspector_data = <DataInspector
                 selectedData={this.state.selectedData}
                 onInputChange={this.handleInputChange}
+                paraInfo={this.getParaInfo(this.state.selectedData!["modelicaName"])}
+                handleParaValue={(nodeKey: string, paraValues: Map<string, number>)=>this.handleParaValue(nodeKey,paraValues)}
             />;
 
         }

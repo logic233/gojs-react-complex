@@ -20,8 +20,10 @@ function getDataJson(kind: string) {
 }
 
 
-ReactDOM.render(<App model={getDataJson("model")}
-                     treeInfo={getDataJson("tree")}/>,
+ReactDOM.render(<App GoJSmodel={getDataJson("model")}
+                     treeInfo={getDataJson("tree")}
+                     ModelicaModelItem = {getDataJson("Item")}
+    />,
     document.getElementById('root')
 )
 ;

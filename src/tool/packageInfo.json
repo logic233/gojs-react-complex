@@ -1,1177 +1,1177 @@
 {
-	"id": "194",
-	"type": "package",
-	"name": "Modelica.Electrical.Analog",
-	"children": [
-		{
-			"id": "73",
-			"type": "package",
-			"name": "Examples",
-			"children": [
-				{
-					"id": "3",
-					"type": "model",
-					"name": "CauerLowPassAnalog",
-					"children": []
-				},
-				{
-					"id": "4",
-					"type": "model",
-					"name": "CauerLowPassOPV",
-					"children": []
-				},
-				{
-					"id": "5",
-					"type": "model",
-					"name": "CauerLowPassSC",
-					"children": []
-				},
-				{
-					"id": "6",
-					"type": "model",
-					"name": "CharacteristicIdealDiodes",
-					"children": []
-				},
-				{
-					"id": "7",
-					"type": "model",
-					"name": "CharacteristicThyristors",
-					"children": []
-				},
-				{
-					"id": "8",
-					"type": "model",
-					"name": "ChuaCircuit",
-					"children": []
-				},
-				{
-					"id": "9",
-					"type": "model",
-					"name": "DifferenceAmplifier",
-					"children": []
-				},
-				{
-					"id": "10",
-					"type": "model",
-					"name": "HeatingMOSInverter",
-					"children": []
-				},
-				{
-					"id": "11",
-					"type": "model",
-					"name": "HeatingNPN_NORGate",
-					"children": []
-				},
-				{
-					"id": "12",
-					"type": "model",
-					"name": "HeatingPNP_NORGate",
-					"children": []
-				},
-				{
-					"id": "13",
-					"type": "model",
-					"name": "Resistor",
-					"children": []
-				},
-				{
-					"id": "14",
-					"type": "model",
-					"name": "HeatingRectifier",
-					"children": []
-				},
-				{
-					"id": "15",
-					"type": "model",
-					"name": "NandGate",
-					"children": []
-				},
-				{
-					"id": "16",
-					"type": "model",
-					"name": "OvervoltageProtection",
-					"children": []
-				},
-				{
-					"id": "17",
-					"type": "model",
-					"name": "Rectifier",
-					"children": []
-				},
-				{
-					"id": "18",
-					"type": "model",
-					"name": "ShowSaturatingInductor",
-					"children": []
-				},
-				{
-					"id": "19",
-					"type": "model",
-					"name": "ShowVariableResistor",
-					"children": []
-				},
-				{
-					"id": "20",
-					"type": "model",
-					"name": "SwitchWithArc",
-					"children": []
-				},
-				{
-					"id": "21",
-					"type": "model",
-					"name": "ThyristorBehaviourTest",
-					"children": []
-				},
-				{
-					"id": "22",
-					"type": "model",
-					"name": "AmplifierWithOpAmpDetailed",
-					"children": []
-				},
-				{
-					"id": "23",
-					"type": "model",
-					"name": "CompareTransformers",
-					"children": []
-				},
-				{
-					"id": "24",
-					"type": "model",
-					"name": "ControlledSwitchWithArc",
-					"children": []
-				},
-				{
-					"id": "25",
-					"type": "model",
-					"name": "SimpleTriacCircuit",
-					"children": []
-				},
-				{
-					"id": "26",
-					"type": "model",
-					"name": "IdealTriacCircuit",
-					"children": []
-				},
-				{
-					"id": "27",
-					"type": "model",
-					"name": "AD_DA_conversion",
-					"children": []
-				},
-				{
-					"id": "28",
-					"type": "model",
-					"name": "GenerationOfFMUs",
-					"children": []
-				},
-				{
-					"id": "29",
-					"type": "model",
-					"name": "ResonanceCircuits",
-					"children": []
-				},
-				{
-					"id": "30",
-					"type": "model",
-					"name": "InvertingAmp",
-					"children": []
-				},
-				{
-					"id": "31",
-					"type": "model",
-					"name": "SeriesResonance",
-					"children": []
-				},
-				{
-					"id": "32",
-					"type": "model",
-					"name": "ParallelResonance",
-					"children": []
-				},
-				{
-					"id": "61",
-					"type": "package",
-					"name": "OpAmps",
-					"children": [
-						{
-							"id": "34",
-							"type": "model",
-							"name": "NonInvertingAmplifier",
-							"children": []
-						},
-						{
-							"id": "35",
-							"type": "model",
-							"name": "InvertingAmplifier",
-							"children": []
-						},
-						{
-							"id": "36",
-							"type": "model",
-							"name": "DifferentialAmplifier",
-							"children": []
-						},
-						{
-							"id": "37",
-							"type": "model",
-							"name": "Adder",
-							"children": []
-						},
-						{
-							"id": "38",
-							"type": "model",
-							"name": "Subtracter",
-							"children": []
-						},
-						{
-							"id": "39",
-							"type": "model",
-							"name": "Differentiator",
-							"children": []
-						},
-						{
-							"id": "40",
-							"type": "model",
-							"name": "Integrator",
-							"children": []
-						},
-						{
-							"id": "41",
-							"type": "model",
-							"name": "LowPass",
-							"children": []
-						},
-						{
-							"id": "42",
-							"type": "model",
-							"name": "HighPass",
-							"children": []
-						},
-						{
-							"id": "43",
-							"type": "model",
-							"name": "ControlCircuit",
-							"children": []
-						},
-						{
-							"id": "44",
-							"type": "model",
-							"name": "VoltageFollower",
-							"children": []
-						},
-						{
-							"id": "45",
-							"type": "model",
-							"name": "Comparator",
-							"children": []
-						},
-						{
-							"id": "46",
-							"type": "model",
-							"name": "InvertingSchmittTrigger",
-							"children": []
-						},
-						{
-							"id": "47",
-							"type": "model",
-							"name": "SchmittTrigger",
-							"children": []
-						},
-						{
-							"id": "48",
-							"type": "model",
-							"name": "Multivibrator",
-							"children": []
-						},
-						{
-							"id": "49",
-							"type": "model",
-							"name": "SignalGenerator",
-							"children": []
-						},
-						{
-							"id": "50",
-							"type": "model",
-							"name": "LCOscillator",
-							"children": []
-						},
-						{
-							"id": "61",
-							"type": "package",
-							"name": "OpAmpCircuits",
-							"children": [
-								{
-									"id": "52",
-									"type": "model",
-									"name": "PartialOpAmp",
-									"children": []
-								},
-								{
-									"id": "53",
-									"type": "model",
-									"name": "Buffer",
-									"children": []
-								},
-								{
-									"id": "54",
-									"type": "model",
-									"name": "Gain",
-									"children": []
-								},
-								{
-									"id": "55",
-									"type": "model",
-									"name": "Add",
-									"children": []
-								},
-								{
-									"id": "56",
-									"type": "model",
-									"name": "Feedback",
-									"children": []
-								},
-								{
-									"id": "57",
-									"type": "model",
-									"name": "Der",
-									"children": []
-								},
-								{
-									"id": "58",
-									"type": "model",
-									"name": "Integrator",
-									"children": []
-								},
-								{
-									"id": "59",
-									"type": "model",
-									"name": "FirstOrder",
-									"children": []
-								},
-								{
-									"id": "60",
-									"type": "model",
-									"name": "Derivative",
-									"children": []
-								},
-								{
-									"id": "61",
-									"type": "model",
-									"name": "PI",
-									"children": []
-								}
-							]
-						}
-					]
-				},
-				{
-					"id": "73",
-					"type": "package",
-					"name": "Utilities",
-					"children": [
-						{
-							"id": "63",
-							"type": "model",
-							"name": "Nand",
-							"children": []
-						},
-						{
-							"id": "64",
-							"type": "model",
-							"name": "NonlinearResistor",
-							"children": []
-						},
-						{
-							"id": "65",
-							"type": "model",
-							"name": "RealSwitch",
-							"children": []
-						},
-						{
-							"id": "66",
-							"type": "model",
-							"name": "Transistor",
-							"children": []
-						},
-						{
-							"id": "67",
-							"type": "model",
-							"name": "DirectCapacitor",
-							"children": []
-						},
-						{
-							"id": "68",
-							"type": "model",
-							"name": "InverseCapacitor",
-							"children": []
-						},
-						{
-							"id": "69",
-							"type": "model",
-							"name": "SwitchedCapacitor",
-							"children": []
-						},
-						{
-							"id": "70",
-							"type": "model",
-							"name": "Resistor",
-							"children": []
-						},
-						{
-							"id": "71",
-							"type": "model",
-							"name": "DirectInductor",
-							"children": []
-						},
-						{
-							"id": "72",
-							"type": "model",
-							"name": "InverseInductor",
-							"children": []
-						},
-						{
-							"id": "73",
-							"type": "model",
-							"name": "Conductor",
-							"children": []
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "98",
-			"type": "package",
-			"name": "Basic",
-			"children": [
-				{
-					"id": "75",
-					"type": "model",
-					"name": "Ground",
-					"children": []
-				},
-				{
-					"id": "76",
-					"type": "model",
-					"name": "Resistor",
-					"children": []
-				},
-				{
-					"id": "77",
-					"type": "model",
-					"name": "Conductor",
-					"children": []
-				},
-				{
-					"id": "78",
-					"type": "model",
-					"name": "Capacitor",
-					"children": []
-				},
-				{
-					"id": "79",
-					"type": "model",
-					"name": "Inductor",
-					"children": []
-				},
-				{
-					"id": "80",
-					"type": "model",
-					"name": "SaturatingInductor",
-					"children": []
-				},
-				{
-					"id": "81",
-					"type": "model",
-					"name": "Transformer",
-					"children": []
-				},
-				{
-					"id": "82",
-					"type": "model",
-					"name": "M_Transformer",
-					"children": []
-				},
-				{
-					"id": "83",
-					"type": "model",
-					"name": "Gyrator",
-					"children": []
-				},
-				{
-					"id": "84",
-					"type": "model",
-					"name": "RotationalEMF",
-					"children": []
-				},
-				{
-					"id": "85",
-					"type": "model",
-					"name": "TranslationalEMF",
-					"children": []
-				},
-				{
-					"id": "86",
-					"type": "model",
-					"name": "VCV",
-					"children": []
-				},
-				{
-					"id": "87",
-					"type": "model",
-					"name": "VCC",
-					"children": []
-				},
-				{
-					"id": "88",
-					"type": "model",
-					"name": "CCV",
-					"children": []
-				},
-				{
-					"id": "89",
-					"type": "model",
-					"name": "CCC",
-					"children": []
-				},
-				{
-					"id": "90",
-					"type": "model",
-					"name": "OpAmp",
-					"children": []
-				},
-				{
-					"id": "91",
-					"type": "model",
-					"name": "OpAmpDetailed",
-					"children": []
-				},
-				{
-					"id": "92",
-					"type": "model",
-					"name": "VariableResistor",
-					"children": []
-				},
-				{
-					"id": "93",
-					"type": "model",
-					"name": "VariableConductor",
-					"children": []
-				},
-				{
-					"id": "94",
-					"type": "model",
-					"name": "VariableCapacitor",
-					"children": []
-				},
-				{
-					"id": "95",
-					"type": "model",
-					"name": "VariableInductor",
-					"children": []
-				},
-				{
-					"id": "96",
-					"type": "model",
-					"name": "Potentiometer",
-					"children": []
-				},
-				{
-					"id": "97",
-					"type": "model",
-					"name": "GeneralCurrentToVoltageAdaptor",
-					"children": []
-				},
-				{
-					"id": "98",
-					"type": "model",
-					"name": "GeneralVoltageToCurrentAdaptor",
-					"children": []
-				}
-			]
-		},
-		{
-			"id": "124",
-			"type": "package",
-			"name": "Ideal",
-			"children": [
-				{
-					"id": "100",
-					"type": "model",
-					"name": "IdealDiode",
-					"children": []
-				},
-				{
-					"id": "101",
-					"type": "model",
-					"name": "IdealThyristor",
-					"children": []
-				},
-				{
-					"id": "102",
-					"type": "model",
-					"name": "IdealGTOThyristor",
-					"children": []
-				},
-				{
-					"id": "103",
-					"type": "model",
-					"name": "IdealTwoWaySwitch",
-					"children": []
-				},
-				{
-					"id": "104",
-					"type": "model",
-					"name": "IdealIntermediateSwitch",
-					"children": []
-				},
-				{
-					"id": "105",
-					"type": "model",
-					"name": "ControlledIdealTwoWaySwitch",
-					"children": []
-				},
-				{
-					"id": "106",
-					"type": "model",
-					"name": "ControlledIdealIntermediateSwitch",
-					"children": []
-				},
-				{
-					"id": "107",
-					"type": "model",
-					"name": "IdealOpAmp",
-					"children": []
-				},
-				{
-					"id": "108",
-					"type": "model",
-					"name": "IdealOpAmp3Pin",
-					"children": []
-				},
-				{
-					"id": "109",
-					"type": "model",
-					"name": "IdealOpAmpLimited",
-					"children": []
-				},
-				{
-					"id": "110",
-					"type": "model",
-					"name": "IdealizedOpAmpLimited",
-					"children": []
-				},
-				{
-					"id": "111",
-					"type": "model",
-					"name": "IdealTransformer",
-					"children": []
-				},
-				{
-					"id": "112",
-					"type": "model",
-					"name": "Idle",
-					"children": []
-				},
-				{
-					"id": "113",
-					"type": "model",
-					"name": "Short",
-					"children": []
-				},
-				{
-					"id": "114",
-					"type": "model",
-					"name": "IdealOpeningSwitch",
-					"children": []
-				},
-				{
-					"id": "115",
-					"type": "model",
-					"name": "IdealClosingSwitch",
-					"children": []
-				},
-				{
-					"id": "116",
-					"type": "model",
-					"name": "ControlledIdealOpeningSwitch",
-					"children": []
-				},
-				{
-					"id": "117",
-					"type": "model",
-					"name": "ControlledIdealClosingSwitch",
-					"children": []
-				},
-				{
-					"id": "118",
-					"type": "model",
-					"name": "OpenerWithArc",
-					"children": []
-				},
-				{
-					"id": "119",
-					"type": "model",
-					"name": "CloserWithArc",
-					"children": []
-				},
-				{
-					"id": "120",
-					"type": "model",
-					"name": "ControlledOpenerWithArc",
-					"children": []
-				},
-				{
-					"id": "121",
-					"type": "model",
-					"name": "ControlledCloserWithArc",
-					"children": []
-				},
-				{
-					"id": "122",
-					"type": "model",
-					"name": "IdealTriac",
-					"children": []
-				},
-				{
-					"id": "123",
-					"type": "model",
-					"name": "AD_Converter",
-					"children": []
-				},
-				{
-					"id": "124",
-					"type": "model",
-					"name": "DA_Converter",
-					"children": []
-				}
-			]
-		},
-		{
-			"id": "138",
-			"type": "package",
-			"name": "Interfaces",
-			"children": [
-				{
-					"id": "126",
-					"type": "model",
-					"name": "TwoPin",
-					"children": []
-				},
-				{
-					"id": "127",
-					"type": "model",
-					"name": "OnePort",
-					"children": []
-				},
-				{
-					"id": "128",
-					"type": "model",
-					"name": "FourPin",
-					"children": []
-				},
-				{
-					"id": "129",
-					"type": "model",
-					"name": "TwoPort",
-					"children": []
-				},
-				{
-					"id": "130",
-					"type": "model",
-					"name": "ConditionalHeatPort",
-					"children": []
-				},
-				{
-					"id": "131",
-					"type": "model",
-					"name": "PartialConditionalHeatPort",
-					"children": []
-				},
-				{
-					"id": "132",
-					"type": "model",
-					"name": "AbsoluteSensor",
-					"children": []
-				},
-				{
-					"id": "133",
-					"type": "model",
-					"name": "RelativeSensor",
-					"children": []
-				},
-				{
-					"id": "134",
-					"type": "model",
-					"name": "VoltageSource",
-					"children": []
-				},
-				{
-					"id": "135",
-					"type": "model",
-					"name": "CurrentSource",
-					"children": []
-				},
-				{
-					"id": "136",
-					"type": "model",
-					"name": "IdealSemiconductor",
-					"children": []
-				},
-				{
-					"id": "137",
-					"type": "model",
-					"name": "IdealSwitch",
-					"children": []
-				},
-				{
-					"id": "138",
-					"type": "model",
-					"name": "IdealSwitchWithArc",
-					"children": []
-				}
-			]
-		},
-		{
-			"id": "145",
-			"type": "package",
-			"name": "Lines",
-			"children": [
-				{
-					"id": "140",
-					"type": "model",
-					"name": "OLine",
-					"children": []
-				},
-				{
-					"id": "141",
-					"type": "model",
-					"name": "M_OLine",
-					"children": []
-				},
-				{
-					"id": "142",
-					"type": "model",
-					"name": "ULine",
-					"children": []
-				},
-				{
-					"id": "143",
-					"type": "model",
-					"name": "TLine1",
-					"children": []
-				},
-				{
-					"id": "144",
-					"type": "model",
-					"name": "TLine2",
-					"children": []
-				},
-				{
-					"id": "145",
-					"type": "model",
-					"name": "TLine3",
-					"children": []
-				}
-			]
-		},
-		{
-			"id": "155",
-			"type": "package",
-			"name": "Semiconductors",
-			"children": [
-				{
-					"id": "147",
-					"type": "model",
-					"name": "Diode",
-					"children": []
-				},
-				{
-					"id": "148",
-					"type": "model",
-					"name": "Diode2",
-					"children": []
-				},
-				{
-					"id": "149",
-					"type": "model",
-					"name": "ZDiode",
-					"children": []
-				},
-				{
-					"id": "150",
-					"type": "model",
-					"name": "NMOS",
-					"children": []
-				},
-				{
-					"id": "151",
-					"type": "model",
-					"name": "PMOS",
-					"children": []
-				},
-				{
-					"id": "152",
-					"type": "model",
-					"name": "NPN",
-					"children": []
-				},
-				{
-					"id": "153",
-					"type": "model",
-					"name": "PNP",
-					"children": []
-				},
-				{
-					"id": "154",
-					"type": "model",
-					"name": "Thyristor",
-					"children": []
-				},
-				{
-					"id": "155",
-					"type": "model",
-					"name": "SimpleTriac",
-					"children": []
-				}
-			]
-		},
-		{
-			"id": "161",
-			"type": "package",
-			"name": "Sensors",
-			"children": [
-				{
-					"id": "157",
-					"type": "model",
-					"name": "PotentialSensor",
-					"children": []
-				},
-				{
-					"id": "158",
-					"type": "model",
-					"name": "VoltageSensor",
-					"children": []
-				},
-				{
-					"id": "159",
-					"type": "model",
-					"name": "CurrentSensor",
-					"children": []
-				},
-				{
-					"id": "160",
-					"type": "model",
-					"name": "PowerSensor",
-					"children": []
-				},
-				{
-					"id": "161",
-					"type": "model",
-					"name": "MultiSensor",
-					"children": []
-				}
-			]
-		},
-		{
-			"id": "191",
-			"type": "package",
-			"name": "Sources",
-			"children": [
-				{
-					"id": "163",
-					"type": "model",
-					"name": "SignalVoltage",
-					"children": []
-				},
-				{
-					"id": "164",
-					"type": "model",
-					"name": "ConstantVoltage",
-					"children": []
-				},
-				{
-					"id": "165",
-					"type": "model",
-					"name": "StepVoltage",
-					"children": []
-				},
-				{
-					"id": "166",
-					"type": "model",
-					"name": "RampVoltage",
-					"children": []
-				},
-				{
-					"id": "167",
-					"type": "model",
-					"name": "SineVoltage",
-					"children": []
-				},
-				{
-					"id": "168",
-					"type": "model",
-					"name": "CosineVoltage",
-					"children": []
-				},
-				{
-					"id": "169",
-					"type": "model",
-					"name": "SineVoltageVariableFrequencyAndAmplitude",
-					"children": []
-				},
-				{
-					"id": "170",
-					"type": "model",
-					"name": "CosineVoltageVariableFrequencyAndAmplitude",
-					"children": []
-				},
-				{
-					"id": "171",
-					"type": "model",
-					"name": "ExpSineVoltage",
-					"children": []
-				},
-				{
-					"id": "172",
-					"type": "model",
-					"name": "ExponentialsVoltage",
-					"children": []
-				},
-				{
-					"id": "173",
-					"type": "model",
-					"name": "PulseVoltage",
-					"children": []
-				},
-				{
-					"id": "174",
-					"type": "model",
-					"name": "SawToothVoltage",
-					"children": []
-				},
-				{
-					"id": "175",
-					"type": "model",
-					"name": "TrapezoidVoltage",
-					"children": []
-				},
-				{
-					"id": "176",
-					"type": "model",
-					"name": "TableVoltage",
-					"children": []
-				},
-				{
-					"id": "177",
-					"type": "model",
-					"name": "SignalCurrent",
-					"children": []
-				},
-				{
-					"id": "178",
-					"type": "model",
-					"name": "ConstantCurrent",
-					"children": []
-				},
-				{
-					"id": "179",
-					"type": "model",
-					"name": "StepCurrent",
-					"children": []
-				},
-				{
-					"id": "180",
-					"type": "model",
-					"name": "RampCurrent",
-					"children": []
-				},
-				{
-					"id": "181",
-					"type": "model",
-					"name": "SineCurrent",
-					"children": []
-				},
-				{
-					"id": "182",
-					"type": "model",
-					"name": "CosineCurrent",
-					"children": []
-				},
-				{
-					"id": "183",
-					"type": "model",
-					"name": "SineCurrentVariableFrequencyAndAmplitude",
-					"children": []
-				},
-				{
-					"id": "184",
-					"type": "model",
-					"name": "CosineCurrentVariableFrequencyAndAmplitude",
-					"children": []
-				},
-				{
-					"id": "185",
-					"type": "model",
-					"name": "ExpSineCurrent",
-					"children": []
-				},
-				{
-					"id": "186",
-					"type": "model",
-					"name": "ExponentialsCurrent",
-					"children": []
-				},
-				{
-					"id": "187",
-					"type": "model",
-					"name": "PulseCurrent",
-					"children": []
-				},
-				{
-					"id": "188",
-					"type": "model",
-					"name": "SawToothCurrent",
-					"children": []
-				},
-				{
-					"id": "189",
-					"type": "model",
-					"name": "TrapezoidCurrent",
-					"children": []
-				},
-				{
-					"id": "190",
-					"type": "model",
-					"name": "TableCurrent",
-					"children": []
-				},
-				{
-					"id": "191",
-					"type": "model",
-					"name": "SupplyVoltage",
-					"children": []
-				}
-			]
-		},
-		{
-			"id": "194",
-			"type": "package",
-			"name": "Icons",
-			"children": [
-				{
-					"id": "193",
-					"type": "model",
-					"name": "VoltageSource",
-					"children": []
-				},
-				{
-					"id": "194",
-					"type": "model",
-					"name": "CurrentSource",
-					"children": []
-				}
-			]
-		}
-	]
+  "id": "195",
+  "type": "package",
+  "name": "Modelica.Electrical.Analog",
+  "children": [
+    {
+      "id": "74",
+      "type": "package",
+      "name": "Examples",
+      "children": [
+        {
+          "id": "4",
+          "type": "model",
+          "name": "CauerLowPassAnalog",
+          "children": []
+        },
+        {
+          "id": "5",
+          "type": "model",
+          "name": "CauerLowPassOPV",
+          "children": []
+        },
+        {
+          "id": "6",
+          "type": "model",
+          "name": "CauerLowPassSC",
+          "children": []
+        },
+        {
+          "id": "7",
+          "type": "model",
+          "name": "CharacteristicIdealDiodes",
+          "children": []
+        },
+        {
+          "id": "8",
+          "type": "model",
+          "name": "CharacteristicThyristors",
+          "children": []
+        },
+        {
+          "id": "9",
+          "type": "model",
+          "name": "ChuaCircuit",
+          "children": []
+        },
+        {
+          "id": "10",
+          "type": "model",
+          "name": "DifferenceAmplifier",
+          "children": []
+        },
+        {
+          "id": "11",
+          "type": "model",
+          "name": "HeatingMOSInverter",
+          "children": []
+        },
+        {
+          "id": "12",
+          "type": "model",
+          "name": "HeatingNPN_NORGate",
+          "children": []
+        },
+        {
+          "id": "13",
+          "type": "model",
+          "name": "HeatingPNP_NORGate",
+          "children": []
+        },
+        {
+          "id": "14",
+          "type": "model",
+          "name": "Resistor",
+          "children": []
+        },
+        {
+          "id": "15",
+          "type": "model",
+          "name": "HeatingRectifier",
+          "children": []
+        },
+        {
+          "id": "16",
+          "type": "model",
+          "name": "NandGate",
+          "children": []
+        },
+        {
+          "id": "17",
+          "type": "model",
+          "name": "OvervoltageProtection",
+          "children": []
+        },
+        {
+          "id": "18",
+          "type": "model",
+          "name": "Rectifier",
+          "children": []
+        },
+        {
+          "id": "19",
+          "type": "model",
+          "name": "ShowSaturatingInductor",
+          "children": []
+        },
+        {
+          "id": "20",
+          "type": "model",
+          "name": "ShowVariableResistor",
+          "children": []
+        },
+        {
+          "id": "21",
+          "type": "model",
+          "name": "SwitchWithArc",
+          "children": []
+        },
+        {
+          "id": "22",
+          "type": "model",
+          "name": "ThyristorBehaviourTest",
+          "children": []
+        },
+        {
+          "id": "23",
+          "type": "model",
+          "name": "AmplifierWithOpAmpDetailed",
+          "children": []
+        },
+        {
+          "id": "24",
+          "type": "model",
+          "name": "CompareTransformers",
+          "children": []
+        },
+        {
+          "id": "25",
+          "type": "model",
+          "name": "ControlledSwitchWithArc",
+          "children": []
+        },
+        {
+          "id": "26",
+          "type": "model",
+          "name": "SimpleTriacCircuit",
+          "children": []
+        },
+        {
+          "id": "27",
+          "type": "model",
+          "name": "IdealTriacCircuit",
+          "children": []
+        },
+        {
+          "id": "28",
+          "type": "model",
+          "name": "AD_DA_conversion",
+          "children": []
+        },
+        {
+          "id": "29",
+          "type": "model",
+          "name": "GenerationOfFMUs",
+          "children": []
+        },
+        {
+          "id": "30",
+          "type": "model",
+          "name": "ResonanceCircuits",
+          "children": []
+        },
+        {
+          "id": "31",
+          "type": "model",
+          "name": "InvertingAmp",
+          "children": []
+        },
+        {
+          "id": "32",
+          "type": "model",
+          "name": "SeriesResonance",
+          "children": []
+        },
+        {
+          "id": "33",
+          "type": "model",
+          "name": "ParallelResonance",
+          "children": []
+        },
+        {
+          "id": "62",
+          "type": "package",
+          "name": "OpAmps",
+          "children": [
+            {
+              "id": "35",
+              "type": "model",
+              "name": "NonInvertingAmplifier",
+              "children": []
+            },
+            {
+              "id": "36",
+              "type": "model",
+              "name": "InvertingAmplifier",
+              "children": []
+            },
+            {
+              "id": "37",
+              "type": "model",
+              "name": "DifferentialAmplifier",
+              "children": []
+            },
+            {
+              "id": "38",
+              "type": "model",
+              "name": "Adder",
+              "children": []
+            },
+            {
+              "id": "39",
+              "type": "model",
+              "name": "Subtracter",
+              "children": []
+            },
+            {
+              "id": "40",
+              "type": "model",
+              "name": "Differentiator",
+              "children": []
+            },
+            {
+              "id": "41",
+              "type": "model",
+              "name": "Integrator",
+              "children": []
+            },
+            {
+              "id": "42",
+              "type": "model",
+              "name": "LowPass",
+              "children": []
+            },
+            {
+              "id": "43",
+              "type": "model",
+              "name": "HighPass",
+              "children": []
+            },
+            {
+              "id": "44",
+              "type": "model",
+              "name": "ControlCircuit",
+              "children": []
+            },
+            {
+              "id": "45",
+              "type": "model",
+              "name": "VoltageFollower",
+              "children": []
+            },
+            {
+              "id": "46",
+              "type": "model",
+              "name": "Comparator",
+              "children": []
+            },
+            {
+              "id": "47",
+              "type": "model",
+              "name": "InvertingSchmittTrigger",
+              "children": []
+            },
+            {
+              "id": "48",
+              "type": "model",
+              "name": "SchmittTrigger",
+              "children": []
+            },
+            {
+              "id": "49",
+              "type": "model",
+              "name": "Multivibrator",
+              "children": []
+            },
+            {
+              "id": "50",
+              "type": "model",
+              "name": "SignalGenerator",
+              "children": []
+            },
+            {
+              "id": "51",
+              "type": "model",
+              "name": "LCOscillator",
+              "children": []
+            },
+            {
+              "id": "62",
+              "type": "package",
+              "name": "OpAmpCircuits",
+              "children": [
+                {
+                  "id": "53",
+                  "type": "model",
+                  "name": "PartialOpAmp",
+                  "children": []
+                },
+                {
+                  "id": "54",
+                  "type": "model",
+                  "name": "Buffer",
+                  "children": []
+                },
+                {
+                  "id": "55",
+                  "type": "model",
+                  "name": "Gain",
+                  "children": []
+                },
+                {
+                  "id": "56",
+                  "type": "model",
+                  "name": "Add",
+                  "children": []
+                },
+                {
+                  "id": "57",
+                  "type": "model",
+                  "name": "Feedback",
+                  "children": []
+                },
+                {
+                  "id": "58",
+                  "type": "model",
+                  "name": "Der",
+                  "children": []
+                },
+                {
+                  "id": "59",
+                  "type": "model",
+                  "name": "Integrator",
+                  "children": []
+                },
+                {
+                  "id": "60",
+                  "type": "model",
+                  "name": "FirstOrder",
+                  "children": []
+                },
+                {
+                  "id": "61",
+                  "type": "model",
+                  "name": "Derivative",
+                  "children": []
+                },
+                {
+                  "id": "62",
+                  "type": "model",
+                  "name": "PI",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "74",
+          "type": "package",
+          "name": "Utilities",
+          "children": [
+            {
+              "id": "64",
+              "type": "model",
+              "name": "Nand",
+              "children": []
+            },
+            {
+              "id": "65",
+              "type": "model",
+              "name": "NonlinearResistor",
+              "children": []
+            },
+            {
+              "id": "66",
+              "type": "model",
+              "name": "RealSwitch",
+              "children": []
+            },
+            {
+              "id": "67",
+              "type": "model",
+              "name": "Transistor",
+              "children": []
+            },
+            {
+              "id": "68",
+              "type": "model",
+              "name": "DirectCapacitor",
+              "children": []
+            },
+            {
+              "id": "69",
+              "type": "model",
+              "name": "InverseCapacitor",
+              "children": []
+            },
+            {
+              "id": "70",
+              "type": "model",
+              "name": "SwitchedCapacitor",
+              "children": []
+            },
+            {
+              "id": "71",
+              "type": "model",
+              "name": "Resistor",
+              "children": []
+            },
+            {
+              "id": "72",
+              "type": "model",
+              "name": "DirectInductor",
+              "children": []
+            },
+            {
+              "id": "73",
+              "type": "model",
+              "name": "InverseInductor",
+              "children": []
+            },
+            {
+              "id": "74",
+              "type": "model",
+              "name": "Conductor",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "99",
+      "type": "package",
+      "name": "Basic",
+      "children": [
+        {
+          "id": "76",
+          "type": "model",
+          "name": "Ground",
+          "children": []
+        },
+        {
+          "id": "77",
+          "type": "model",
+          "name": "Resistor",
+          "children": []
+        },
+        {
+          "id": "78",
+          "type": "model",
+          "name": "Conductor",
+          "children": []
+        },
+        {
+          "id": "79",
+          "type": "model",
+          "name": "Capacitor",
+          "children": []
+        },
+        {
+          "id": "80",
+          "type": "model",
+          "name": "Inductor",
+          "children": []
+        },
+        {
+          "id": "81",
+          "type": "model",
+          "name": "SaturatingInductor",
+          "children": []
+        },
+        {
+          "id": "82",
+          "type": "model",
+          "name": "Transformer",
+          "children": []
+        },
+        {
+          "id": "83",
+          "type": "model",
+          "name": "M_Transformer",
+          "children": []
+        },
+        {
+          "id": "84",
+          "type": "model",
+          "name": "Gyrator",
+          "children": []
+        },
+        {
+          "id": "85",
+          "type": "model",
+          "name": "RotationalEMF",
+          "children": []
+        },
+        {
+          "id": "86",
+          "type": "model",
+          "name": "TranslationalEMF",
+          "children": []
+        },
+        {
+          "id": "87",
+          "type": "model",
+          "name": "VCV",
+          "children": []
+        },
+        {
+          "id": "88",
+          "type": "model",
+          "name": "VCC",
+          "children": []
+        },
+        {
+          "id": "89",
+          "type": "model",
+          "name": "CCV",
+          "children": []
+        },
+        {
+          "id": "90",
+          "type": "model",
+          "name": "CCC",
+          "children": []
+        },
+        {
+          "id": "91",
+          "type": "model",
+          "name": "OpAmp",
+          "children": []
+        },
+        {
+          "id": "92",
+          "type": "model",
+          "name": "OpAmpDetailed",
+          "children": []
+        },
+        {
+          "id": "93",
+          "type": "model",
+          "name": "VariableResistor",
+          "children": []
+        },
+        {
+          "id": "94",
+          "type": "model",
+          "name": "VariableConductor",
+          "children": []
+        },
+        {
+          "id": "95",
+          "type": "model",
+          "name": "VariableCapacitor",
+          "children": []
+        },
+        {
+          "id": "96",
+          "type": "model",
+          "name": "VariableInductor",
+          "children": []
+        },
+        {
+          "id": "97",
+          "type": "model",
+          "name": "Potentiometer",
+          "children": []
+        },
+        {
+          "id": "98",
+          "type": "model",
+          "name": "GeneralCurrentToVoltageAdaptor",
+          "children": []
+        },
+        {
+          "id": "99",
+          "type": "model",
+          "name": "GeneralVoltageToCurrentAdaptor",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "125",
+      "type": "package",
+      "name": "Ideal",
+      "children": [
+        {
+          "id": "101",
+          "type": "model",
+          "name": "IdealDiode",
+          "children": []
+        },
+        {
+          "id": "102",
+          "type": "model",
+          "name": "IdealThyristor",
+          "children": []
+        },
+        {
+          "id": "103",
+          "type": "model",
+          "name": "IdealGTOThyristor",
+          "children": []
+        },
+        {
+          "id": "104",
+          "type": "model",
+          "name": "IdealTwoWaySwitch",
+          "children": []
+        },
+        {
+          "id": "105",
+          "type": "model",
+          "name": "IdealIntermediateSwitch",
+          "children": []
+        },
+        {
+          "id": "106",
+          "type": "model",
+          "name": "ControlledIdealTwoWaySwitch",
+          "children": []
+        },
+        {
+          "id": "107",
+          "type": "model",
+          "name": "ControlledIdealIntermediateSwitch",
+          "children": []
+        },
+        {
+          "id": "108",
+          "type": "model",
+          "name": "IdealOpAmp",
+          "children": []
+        },
+        {
+          "id": "109",
+          "type": "model",
+          "name": "IdealOpAmp3Pin",
+          "children": []
+        },
+        {
+          "id": "110",
+          "type": "model",
+          "name": "IdealOpAmpLimited",
+          "children": []
+        },
+        {
+          "id": "111",
+          "type": "model",
+          "name": "IdealizedOpAmpLimited",
+          "children": []
+        },
+        {
+          "id": "112",
+          "type": "model",
+          "name": "IdealTransformer",
+          "children": []
+        },
+        {
+          "id": "113",
+          "type": "model",
+          "name": "Idle",
+          "children": []
+        },
+        {
+          "id": "114",
+          "type": "model",
+          "name": "Short",
+          "children": []
+        },
+        {
+          "id": "115",
+          "type": "model",
+          "name": "IdealOpeningSwitch",
+          "children": []
+        },
+        {
+          "id": "116",
+          "type": "model",
+          "name": "IdealClosingSwitch",
+          "children": []
+        },
+        {
+          "id": "117",
+          "type": "model",
+          "name": "ControlledIdealOpeningSwitch",
+          "children": []
+        },
+        {
+          "id": "118",
+          "type": "model",
+          "name": "ControlledIdealClosingSwitch",
+          "children": []
+        },
+        {
+          "id": "119",
+          "type": "model",
+          "name": "OpenerWithArc",
+          "children": []
+        },
+        {
+          "id": "120",
+          "type": "model",
+          "name": "CloserWithArc",
+          "children": []
+        },
+        {
+          "id": "121",
+          "type": "model",
+          "name": "ControlledOpenerWithArc",
+          "children": []
+        },
+        {
+          "id": "122",
+          "type": "model",
+          "name": "ControlledCloserWithArc",
+          "children": []
+        },
+        {
+          "id": "123",
+          "type": "model",
+          "name": "IdealTriac",
+          "children": []
+        },
+        {
+          "id": "124",
+          "type": "model",
+          "name": "AD_Converter",
+          "children": []
+        },
+        {
+          "id": "125",
+          "type": "model",
+          "name": "DA_Converter",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "139",
+      "type": "package",
+      "name": "Interfaces",
+      "children": [
+        {
+          "id": "127",
+          "type": "model",
+          "name": "TwoPin",
+          "children": []
+        },
+        {
+          "id": "128",
+          "type": "model",
+          "name": "OnePort",
+          "children": []
+        },
+        {
+          "id": "129",
+          "type": "model",
+          "name": "FourPin",
+          "children": []
+        },
+        {
+          "id": "130",
+          "type": "model",
+          "name": "TwoPort",
+          "children": []
+        },
+        {
+          "id": "131",
+          "type": "model",
+          "name": "ConditionalHeatPort",
+          "children": []
+        },
+        {
+          "id": "132",
+          "type": "model",
+          "name": "PartialConditionalHeatPort",
+          "children": []
+        },
+        {
+          "id": "133",
+          "type": "model",
+          "name": "AbsoluteSensor",
+          "children": []
+        },
+        {
+          "id": "134",
+          "type": "model",
+          "name": "RelativeSensor",
+          "children": []
+        },
+        {
+          "id": "135",
+          "type": "model",
+          "name": "VoltageSource",
+          "children": []
+        },
+        {
+          "id": "136",
+          "type": "model",
+          "name": "CurrentSource",
+          "children": []
+        },
+        {
+          "id": "137",
+          "type": "model",
+          "name": "IdealSemiconductor",
+          "children": []
+        },
+        {
+          "id": "138",
+          "type": "model",
+          "name": "IdealSwitch",
+          "children": []
+        },
+        {
+          "id": "139",
+          "type": "model",
+          "name": "IdealSwitchWithArc",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "146",
+      "type": "package",
+      "name": "Lines",
+      "children": [
+        {
+          "id": "141",
+          "type": "model",
+          "name": "OLine",
+          "children": []
+        },
+        {
+          "id": "142",
+          "type": "model",
+          "name": "M_OLine",
+          "children": []
+        },
+        {
+          "id": "143",
+          "type": "model",
+          "name": "ULine",
+          "children": []
+        },
+        {
+          "id": "144",
+          "type": "model",
+          "name": "TLine1",
+          "children": []
+        },
+        {
+          "id": "145",
+          "type": "model",
+          "name": "TLine2",
+          "children": []
+        },
+        {
+          "id": "146",
+          "type": "model",
+          "name": "TLine3",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "156",
+      "type": "package",
+      "name": "Semiconductors",
+      "children": [
+        {
+          "id": "148",
+          "type": "model",
+          "name": "Diode",
+          "children": []
+        },
+        {
+          "id": "149",
+          "type": "model",
+          "name": "Diode2",
+          "children": []
+        },
+        {
+          "id": "150",
+          "type": "model",
+          "name": "ZDiode",
+          "children": []
+        },
+        {
+          "id": "151",
+          "type": "model",
+          "name": "NMOS",
+          "children": []
+        },
+        {
+          "id": "152",
+          "type": "model",
+          "name": "PMOS",
+          "children": []
+        },
+        {
+          "id": "153",
+          "type": "model",
+          "name": "NPN",
+          "children": []
+        },
+        {
+          "id": "154",
+          "type": "model",
+          "name": "PNP",
+          "children": []
+        },
+        {
+          "id": "155",
+          "type": "model",
+          "name": "Thyristor",
+          "children": []
+        },
+        {
+          "id": "156",
+          "type": "model",
+          "name": "SimpleTriac",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "162",
+      "type": "package",
+      "name": "Sensors",
+      "children": [
+        {
+          "id": "158",
+          "type": "model",
+          "name": "PotentialSensor",
+          "children": []
+        },
+        {
+          "id": "159",
+          "type": "model",
+          "name": "VoltageSensor",
+          "children": []
+        },
+        {
+          "id": "160",
+          "type": "model",
+          "name": "CurrentSensor",
+          "children": []
+        },
+        {
+          "id": "161",
+          "type": "model",
+          "name": "PowerSensor",
+          "children": []
+        },
+        {
+          "id": "162",
+          "type": "model",
+          "name": "MultiSensor",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "192",
+      "type": "package",
+      "name": "Sources",
+      "children": [
+        {
+          "id": "164",
+          "type": "model",
+          "name": "SignalVoltage",
+          "children": []
+        },
+        {
+          "id": "165",
+          "type": "model",
+          "name": "ConstantVoltage",
+          "children": []
+        },
+        {
+          "id": "166",
+          "type": "model",
+          "name": "StepVoltage",
+          "children": []
+        },
+        {
+          "id": "167",
+          "type": "model",
+          "name": "RampVoltage",
+          "children": []
+        },
+        {
+          "id": "168",
+          "type": "model",
+          "name": "SineVoltage",
+          "children": []
+        },
+        {
+          "id": "169",
+          "type": "model",
+          "name": "CosineVoltage",
+          "children": []
+        },
+        {
+          "id": "170",
+          "type": "model",
+          "name": "SineVoltageVariableFrequencyAndAmplitude",
+          "children": []
+        },
+        {
+          "id": "171",
+          "type": "model",
+          "name": "CosineVoltageVariableFrequencyAndAmplitude",
+          "children": []
+        },
+        {
+          "id": "172",
+          "type": "model",
+          "name": "ExpSineVoltage",
+          "children": []
+        },
+        {
+          "id": "173",
+          "type": "model",
+          "name": "ExponentialsVoltage",
+          "children": []
+        },
+        {
+          "id": "174",
+          "type": "model",
+          "name": "PulseVoltage",
+          "children": []
+        },
+        {
+          "id": "175",
+          "type": "model",
+          "name": "SawToothVoltage",
+          "children": []
+        },
+        {
+          "id": "176",
+          "type": "model",
+          "name": "TrapezoidVoltage",
+          "children": []
+        },
+        {
+          "id": "177",
+          "type": "model",
+          "name": "TableVoltage",
+          "children": []
+        },
+        {
+          "id": "178",
+          "type": "model",
+          "name": "SignalCurrent",
+          "children": []
+        },
+        {
+          "id": "179",
+          "type": "model",
+          "name": "ConstantCurrent",
+          "children": []
+        },
+        {
+          "id": "180",
+          "type": "model",
+          "name": "StepCurrent",
+          "children": []
+        },
+        {
+          "id": "181",
+          "type": "model",
+          "name": "RampCurrent",
+          "children": []
+        },
+        {
+          "id": "182",
+          "type": "model",
+          "name": "SineCurrent",
+          "children": []
+        },
+        {
+          "id": "183",
+          "type": "model",
+          "name": "CosineCurrent",
+          "children": []
+        },
+        {
+          "id": "184",
+          "type": "model",
+          "name": "SineCurrentVariableFrequencyAndAmplitude",
+          "children": []
+        },
+        {
+          "id": "185",
+          "type": "model",
+          "name": "CosineCurrentVariableFrequencyAndAmplitude",
+          "children": []
+        },
+        {
+          "id": "186",
+          "type": "model",
+          "name": "ExpSineCurrent",
+          "children": []
+        },
+        {
+          "id": "187",
+          "type": "model",
+          "name": "ExponentialsCurrent",
+          "children": []
+        },
+        {
+          "id": "188",
+          "type": "model",
+          "name": "PulseCurrent",
+          "children": []
+        },
+        {
+          "id": "189",
+          "type": "model",
+          "name": "SawToothCurrent",
+          "children": []
+        },
+        {
+          "id": "190",
+          "type": "model",
+          "name": "TrapezoidCurrent",
+          "children": []
+        },
+        {
+          "id": "191",
+          "type": "model",
+          "name": "TableCurrent",
+          "children": []
+        },
+        {
+          "id": "192",
+          "type": "model",
+          "name": "SupplyVoltage",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "195",
+      "type": "package",
+      "name": "Icons",
+      "children": [
+        {
+          "id": "194",
+          "type": "model",
+          "name": "VoltageSource",
+          "children": []
+        },
+        {
+          "id": "195",
+          "type": "model",
+          "name": "CurrentSource",
+          "children": []
+        }
+      ]
+    }
+  ]
 }

@@ -17,7 +17,7 @@ import Typography from '@mui/material/Typography';
 interface Node {
     id: string;
     name: string;
-    completeName : string;
+    type : string;
     children: Node[];
 
 }
@@ -110,7 +110,7 @@ export class MyTreeView extends React.PureComponent<MyTreeViewprops, {}>{
     renderTree = (node: Node) => (
         <div>
             <CustomTreeItem key={node.id} nodeId={node.id} label={node.name}>
-                {Array.isArray(node.children)&&node.children.length>0 ? node.children.map((x) => this.renderTree(x)) : null}
+                {Array.isArray(node.children) ? node.children.map((x) => this.renderTree(x)) : null}
             </CustomTreeItem>
 
         </div>

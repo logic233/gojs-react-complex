@@ -1,1 +1,3937 @@
-[{"id": "3", "name": "CauerLowPassAnalog", "completeName": "Modelica.Electrical.Analog.Examples.CauerLowPassAnalog", "para": [{"type": "Modelica.Units.SI.Inductance", "name": "l1", "anno": "Filter coefficient I1"}, {"type": "Modelica.Units.SI.Inductance", "name": "l2", "anno": "Filter coefficient I2"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c1", "anno": "Filter coefficient c1"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c2", "anno": "Filter coefficient c2"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c3", "anno": "Filter coefficient c3"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c4", "anno": "Filter coefficient c4"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c5", "anno": "Filter coefficient c5"}]}, {"id": "4", "name": "CauerLowPassOPV", "completeName": "Modelica.Electrical.Analog.Examples.CauerLowPassOPV", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "l1", "anno": "Filter coefficient i1"}, {"type": "Modelica.Units.SI.Capacitance", "name": "l2", "anno": "Filter coefficient i2"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c1", "anno": "Filter coefficient c1"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c2", "anno": "Filter coefficient c2"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c3", "anno": "Filter coefficient c3"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c4", "anno": "Filter coefficient c4"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c5", "anno": "Filter coefficient c5"}]}, {"id": "5", "name": "CauerLowPassSC", "completeName": "Modelica.Electrical.Analog.Examples.CauerLowPassSC", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "l1", "anno": "Filter coefficient i1"}, {"type": "Modelica.Units.SI.Capacitance", "name": "l2", "anno": "Filter coefficient i2"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c1", "anno": "Filter coefficient c1"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c2", "anno": "Filter coefficient c2"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c3", "anno": "Filter coefficient c3"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c4", "anno": "Filter coefficient c4"}, {"type": "Modelica.Units.SI.Capacitance", "name": "c5", "anno": "Filter coefficient c5"}]}, {"id": "6", "name": "CharacteristicIdealDiodes", "completeName": "Modelica.Electrical.Analog.Examples.CharacteristicIdealDiodes", "para": []}, {"id": "7", "name": "CharacteristicThyristors", "completeName": "Modelica.Electrical.Analog.Examples.CharacteristicThyristors", "para": []}, {"id": "8", "name": "ChuaCircuit", "completeName": "Modelica.Electrical.Analog.Examples.ChuaCircuit", "para": []}, {"id": "9", "name": "DifferenceAmplifier", "completeName": "Modelica.Electrical.Analog.Examples.DifferenceAmplifier", "para": []}, {"id": "10", "name": "HeatingMOSInverter", "completeName": "Modelica.Electrical.Analog.Examples.HeatingMOSInverter", "para": []}, {"id": "11", "name": "HeatingNPN_NORGate", "completeName": "Modelica.Electrical.Analog.Examples.HeatingNPN_NORGate", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "CapVal", "anno": "Value for capacitances"}, {"type": "Modelica.Units.SI.Time", "name": "tauVal", "anno": "Value for ideal forward and reverse transit time of semiconductors"}]}, {"id": "12", "name": "HeatingPNP_NORGate", "completeName": "Modelica.Electrical.Analog.Examples.HeatingPNP_NORGate", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "CapVal", "anno": "Value for capacitances"}, {"type": "Modelica.Units.SI.Time", "name": "tauVal", "anno": "Value for ideal forward and reverse transit time of semiconductors"}]}, {"id": "13", "name": "Resistor", "completeName": "Modelica.Electrical.Analog.Examples.Resistor", "para": []}, {"id": "14", "name": "HeatingRectifier", "completeName": "Modelica.Electrical.Analog.Examples.HeatingRectifier", "para": []}, {"id": "15", "name": "NandGate", "completeName": "Modelica.Electrical.Analog.Examples.NandGate", "para": []}, {"id": "16", "name": "OvervoltageProtection", "completeName": "Modelica.Electrical.Analog.Examples.OvervoltageProtection", "para": []}, {"id": "17", "name": "Rectifier", "completeName": "Modelica.Electrical.Analog.Examples.Rectifier", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "VAC", "anno": "RMS line-to-line"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Line frequency"}, {"type": "Modelica.Units.SI.Inductance", "name": "LAC", "anno": "Line inductor"}, {"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Diode forward resistance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Diode backward conductance"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vknee", "anno": "Diode threshold voltage"}, {"type": "Modelica.Units.SI.Capacitance", "name": "CDC", "anno": "DC capacitance"}, {"type": "Modelica.Units.SI.Current", "name": "IDC", "anno": "Load current"}]}, {"id": "18", "name": "ShowSaturatingInductor", "completeName": "Modelica.Electrical.Analog.Examples.ShowSaturatingInductor", "para": [{"type": "Modelica.Units.SI.Inductance", "name": "Lzer", "anno": "Inductance near current=0"}, {"type": "Modelica.Units.SI.Inductance", "name": "Lnom", "anno": "Nominal inductance at Nominal current"}, {"type": "Modelica.Units.SI.Current", "name": "Inom", "anno": "Nominal current"}, {"type": "Modelica.Units.SI.Inductance", "name": "Linf", "anno": "Inductance at large currents"}, {"type": "Modelica.Units.SI.Voltage", "name": "U", "anno": "Source voltage (peak)"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Source frequency"}, {"type": "Modelica.Units.SI.Angle", "name": "phase", "anno": "Source voltage phase shift"}]}, {"id": "19", "name": "ShowVariableResistor", "completeName": "Modelica.Electrical.Analog.Examples.ShowVariableResistor", "para": []}, {"id": "20", "name": "SwitchWithArc", "completeName": "Modelica.Electrical.Analog.Examples.SwitchWithArc", "para": []}, {"id": "21", "name": "ThyristorBehaviourTest", "completeName": "Modelica.Electrical.Analog.Examples.ThyristorBehaviourTest", "para": []}, {"id": "22", "name": "AmplifierWithOpAmpDetailed", "completeName": "Modelica.Electrical.Analog.Examples.AmplifierWithOpAmpDetailed", "para": []}, {"id": "23", "name": "CompareTransformers", "completeName": "Modelica.Electrical.Analog.Examples.CompareTransformers", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vdc", "anno": "DC offset of voltage source"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vpeak", "anno": "Peak voltage of voltage source"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of voltage source"}, {"type": "Modelica.Units.SI.Angle", "name": "phi0", "anno": "Phase of voltage source"}, {"type": "Real", "name": "n", "anno": "Turns ratio primary:secondary voltage"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Primary resistance w.r.t. primary side"}, {"type": "Modelica.Units.SI.Inductance", "name": "L1sigma", "anno": "Primary leakage inductance w.r.t. primary side"}, {"type": "Modelica.Units.SI.Inductance", "name": "Lm1", "anno": "Magnetizing inductance w.r.t. primary side"}, {"type": "Modelica.Units.SI.Inductance", "name": "L2sigma", "anno": "Secondary leakage inductance w.r.t. secondary side"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Secondary resistance w.r.t. secondary side"}, {"type": "Modelica.Units.SI.Resistance", "name": "RL", "anno": "Load resistance"}, {"type": "Modelica.Units.SI.Inductance", "name": "L1", "anno": "Primary no-load inductance"}, {"type": "Modelica.Units.SI.Inductance", "name": "L2", "anno": "Secondary no-load inductance"}, {"type": "Modelica.Units.SI.Inductance", "name": "M", "anno": "Mutual inductance"}]}, {"id": "24", "name": "ControlledSwitchWithArc", "completeName": "Modelica.Electrical.Analog.Examples.ControlledSwitchWithArc", "para": []}, {"id": "25", "name": "SimpleTriacCircuit", "completeName": "Modelica.Electrical.Analog.Examples.SimpleTriacCircuit", "para": []}, {"id": "26", "name": "IdealTriacCircuit", "completeName": "Modelica.Electrical.Analog.Examples.IdealTriacCircuit", "para": []}, {"id": "27", "name": "AD_DA_conversion", "completeName": "Modelica.Electrical.Analog.Examples.AD_DA_conversion", "para": [{"type": "Integer", "name": "N", "anno": "Digital signal width"}]}, {"id": "28", "name": "GenerationOfFMUs", "completeName": "Modelica.Electrical.Analog.Examples.GenerationOfFMUs", "para": []}, {"id": "29", "name": "ResonanceCircuits", "completeName": "Modelica.Electrical.Analog.Examples.ResonanceCircuits", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Capacitance"}, {"type": "Modelica.Units.SI.Inductance", "name": "L", "anno": "Inductance"}, {"type": "Modelica.Units.SI.Frequency", "name": "fRes", "anno": "Source frequency"}, {"type": "Real", "name": "res", "anno": "Built from f/fResonanace"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Source frequency"}]}, {"id": "30", "name": "InvertingAmp", "completeName": "Modelica.Electrical.Analog.Examples.InvertingAmp", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}, {"type": "Real", "name": "k", "anno": "Desired amplification"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Arbitrary resistance"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach desired amplification k"}]}, {"id": "31", "name": "SeriesResonance", "completeName": "Modelica.Electrical.Analog.Examples.SeriesResonance", "para": []}, {"id": "32", "name": "ParallelResonance", "completeName": "Modelica.Electrical.Analog.Examples.ParallelResonance", "para": []}, {"id": "34", "name": "NonInvertingAmplifier", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.NonInvertingAmplifier", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}]}, {"id": "35", "name": "InvertingAmplifier", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.InvertingAmplifier", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}]}, {"id": "36", "name": "DifferentialAmplifier", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.DifferentialAmplifier", "para": [{"type": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.DifferentialAmplifierData", "name": "data", "anno": "Parameters for source, OpAmp and measurement"}]}, {"id": "37", "name": "Adder", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Adder", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}]}, {"id": "38", "name": "Subtracter", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Subtracter", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}]}, {"id": "39", "name": "Differentiator", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Differentiator", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}]}, {"id": "40", "name": "Integrator", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Integrator", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}]}, {"id": "41", "name": "LowPass", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.LowPass", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "fG", "anno": "Limiting frequency"}]}, {"id": "42", "name": "HighPass", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.HighPass", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "fG", "anno": "Limiting frequency"}]}, {"id": "43", "name": "ControlCircuit", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.ControlCircuit", "para": [{"type": "Modelica.Units.SI.Time", "name": "T1", "anno": "Small time constant"}, {"type": "Modelica.Units.SI.Time", "name": "T2", "anno": "Large time constant"}, {"type": "Modelica.Units.SI.Time", "name": "Ti", "anno": "Integral time constant"}, {"type": "Real", "name": "kp", "anno": "Proportional gain"}]}, {"id": "44", "name": "VoltageFollower", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.VoltageFollower", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}, {"type": "Modelica.Units.SI.Resistance", "name": "Ri", "anno": "Inner resistance of input voltage source"}, {"type": "Modelica.Units.SI.Resistance", "name": "Rl", "anno": "Load resistance"}]}, {"id": "45", "name": "Comparator", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Comparator", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vref", "anno": "Reference voltage"}, {"type": "Real", "name": "k", "anno": "Calculated potentiometer ratio to reach Vref"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Resistance of potentiometer"}]}, {"id": "46", "name": "InvertingSchmittTrigger", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.InvertingSchmittTrigger", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}, {"type": "Modelica.Units.SI.Voltage", "name": "vHys", "anno": "(Positive) hysteresis voltage"}, {"type": "Real", "name": "k", "anno": "Auxiliary calculated parameter to be used in R2 calculation"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Arbitrary resistance"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach hysteresis voltage"}]}, {"id": "47", "name": "SchmittTrigger", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.SchmittTrigger", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vin", "anno": "Amplitude of input voltage"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of input voltage"}, {"type": "Modelica.Units.SI.Voltage", "name": "vHys", "anno": "(Positive) hysteresis voltage"}, {"type": "Real", "name": "k", "anno": "Auxiliary calculated parameter to be used in R2 calculation"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Arbitrary resistance"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach hysteresis voltage"}]}, {"id": "48", "name": "Multivibrator", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Multivibrator", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Desired frequency"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance 1 for adjusting the Schmitt trigger voltage level"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Resistance 2 for adjusting the Schmitt trigger voltage level"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Arbitrary resistance"}, {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach the desired frequency f"}]}, {"id": "49", "name": "SignalGenerator", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.SignalGenerator", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "VAmp", "anno": "Desired amplitude of output"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Arbitrary resistance for Schmitt trigger part"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance for Schmitt trigger to reach VAmp"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Desired frequency"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Arbitrary resistance of integrator part"}, {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance of integrator part to reach f"}]}, {"id": "50", "name": "LCOscillator", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.LCOscillator", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "VAmp", "anno": "Amplitude of output"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Desired frequency"}, {"type": "Real", "name": "A", "anno": "Amplification constant: A > 1 amplification, A = 1 pure sinusoidal oscillation, A < 0 damping"}, {"type": "Modelica.Units.SI.Inductance", "name": "L", "anno": "Arbitrary inductance > 0"}, {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach frequency f"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Damping resistance"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Arbitrary high resistance"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach amplification A"}, {"type": "Real", "name": "gamma", "anno": "Calculated characteristical parameter"}]}, {"id": "52", "name": "PartialOpAmp", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.PartialOpAmp", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}, {"type": "Real", "name": "V0", "anno": "No-load amplification"}]}, {"id": "53", "name": "Buffer", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Buffer", "para": [{"type": "Real", "name": "k", "anno": "Desired amplification"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative pin(s)"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach desired amplification k"}]}, {"id": "54", "name": "Gain", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Gain", "para": [{"type": "Real", "name": "k", "anno": "Desired amplification"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach desired amplification k"}]}, {"id": "55", "name": "Add", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Add", "para": [{"type": "Real", "name": "k1", "anno": "Weight of input 1"}, {"type": "Real", "name": "k2", "anno": "Weight of input 2"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Resistance at output of OpAmp"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Calculated resistance to reach desired weight 1"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach desired weight 2"}]}, {"id": "56", "name": "Feedback", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Feedback", "para": [{"type": "Real", "name": "k", "anno": "Desired amplification"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at inputs of OpAmp"}, {"type": "Modelica.Units.SI.Resistance", "name": "R3", "anno": "Calculated resistance to reach desired amplification k"}]}, {"id": "57", "name": "Der", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Der", "para": [{"type": "Real", "name": "k", "anno": "Desired amplification at frequency f"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Resistance at output of OpAmp"}, {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach desired amplification k"}]}, {"id": "58", "name": "Integrator", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Integrator", "para": [{"type": "Real", "name": "k", "anno": "Desired amplification at frequency f"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Resistance at negative input of OpAmp"}, {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach desired amplification k"}]}, {"id": "59", "name": "FirstOrder", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.FirstOrder", "para": [{"type": "Real", "name": "k", "anno": "Desired amplification"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k"}, {"type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant"}, {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T"}]}, {"id": "60", "name": "Derivative", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Derivative", "para": [{"type": "Real", "name": "k", "anno": "Desired amplification"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k"}, {"type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant"}, {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T"}]}, {"id": "61", "name": "PI", "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.PI", "para": [{"type": "Real", "name": "k", "anno": "Desired amplification"}, {"type": "Modelica.Units.SI.Resistance", "name": "R1", "anno": "Resistance at negative input of OpAmp"}, {"type": "Modelica.Units.SI.Resistance", "name": "R2", "anno": "Calculated resistance to reach k"}, {"type": "Modelica.Units.SI.Time", "name": "T", "anno": "Time constant"}, {"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Calculated capacitance to reach T"}]}, {"id": "63", "name": "Nand", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Nand", "para": []}, {"id": "64", "name": "NonlinearResistor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.NonlinearResistor", "para": [{"type": "Modelica.Units.SI.Conductance", "name": "Ga", "anno": "Conductance in inner voltage range"}, {"type": "Modelica.Units.SI.Conductance", "name": "Gb", "anno": "Conductance in outer voltage range"}, {"type": "Modelica.Units.SI.Voltage", "name": "Ve", "anno": "Inner voltage range limit"}]}, {"id": "65", "name": "RealSwitch", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.RealSwitch", "para": []}, {"id": "66", "name": "Transistor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Transistor", "para": []}, {"id": "67", "name": "DirectCapacitor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.DirectCapacitor", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Capacitance"}]}, {"id": "68", "name": "InverseCapacitor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.InverseCapacitor", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Capacitance"}]}, {"id": "69", "name": "SwitchedCapacitor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.SwitchedCapacitor", "para": [{"type": "Modelica.Units.SI.Time", "name": "clock", "anno": "Clock"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Resistance"}]}, {"id": "70", "name": "Resistor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Resistor", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Resistance"}]}, {"id": "71", "name": "DirectInductor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.DirectInductor", "para": [{"type": "Modelica.Units.SI.Inductance", "name": "L", "anno": "Inductance"}]}, {"id": "72", "name": "InverseInductor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.InverseInductor", "para": [{"type": "Modelica.Units.SI.Inductance", "name": "L", "anno": "Inductance"}]}, {"id": "73", "name": "Conductor", "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Conductor", "para": [{"type": "Modelica.Units.SI.Conductance", "name": "G", "anno": "Conductance"}]}, {"id": "75", "name": "Ground", "completeName": "Modelica.Electrical.Analog.Basic.Ground", "para": []}, {"id": "76", "name": "Resistor", "completeName": "Modelica.Electrical.Analog.Basic.Resistor", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Resistance at temperature T_ref"}, {"type": "Modelica.Units.SI.Temperature", "name": "T_ref", "anno": "Reference temperature"}, {"type": "Modelica.Units.SI.LinearTemperatureCoefficient", "name": "alpha", "anno": "Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"}]}, {"id": "77", "name": "Conductor", "completeName": "Modelica.Electrical.Analog.Basic.Conductor", "para": [{"type": "Modelica.Units.SI.Conductance", "name": "G", "anno": "Conductance at temperature T_ref"}, {"type": "Modelica.Units.SI.Temperature", "name": "T_ref", "anno": "Reference temperature"}, {"type": "Modelica.Units.SI.LinearTemperatureCoefficient", "name": "alpha", "anno": "Temperature coefficient of conductance (G_actual = G_ref/(1 + alpha*(T_heatPort - T_ref))"}]}, {"id": "78", "name": "Capacitor", "completeName": "Modelica.Electrical.Analog.Basic.Capacitor", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "C", "anno": "Capacitance"}]}, {"id": "79", "name": "Inductor", "completeName": "Modelica.Electrical.Analog.Basic.Inductor", "para": [{"type": "Modelica.Units.SI.Inductance", "name": "L", "anno": "Inductance"}]}, {"id": "80", "name": "SaturatingInductor", "completeName": "Modelica.Electrical.Analog.Basic.SaturatingInductor", "para": [{"type": "Modelica.Units.SI.Current", "name": "Inom", "anno": "Nominal current"}, {"type": "Modelica.Units.SI.Inductance", "name": "Lnom", "anno": "Nominal inductance at Nominal current"}, {"type": "Modelica.Units.SI.Inductance", "name": "Lzer", "anno": "Inductance near current=0"}, {"type": "Modelica.Units.SI.Inductance", "name": "Linf", "anno": "Inductance at large currents"}, {"type": "Modelica.Units.SI.Current", "name": "Ipar", "anno": ""}]}, {"id": "81", "name": "Transformer", "completeName": "Modelica.Electrical.Analog.Basic.Transformer", "para": [{"type": "Modelica.Units.SI.Inductance", "name": "L1", "anno": "Primary inductance"}, {"type": "Modelica.Units.SI.Inductance", "name": "L2", "anno": "Secondary inductance"}, {"type": "Modelica.Units.SI.Inductance", "name": "M", "anno": "Coupling inductance"}]}, {"id": "82", "name": "M_Transformer", "completeName": "Modelica.Electrical.Analog.Basic.M_Transformer", "para": [{"type": "Integer", "name": "N", "anno": "Number of inductors"}, {"type": "Modelica.Units.SI.Inductance", "name": "L", "anno": "Inductances and coupling inductances"}, {"type": "Modelica.Units.SI.Inductance", "name": "Lm", "anno": "Complete symmetric inductance matrix, calculated internally"}, {"type": "Integer", "name": "dimL", "anno": ""}]}, {"id": "83", "name": "Gyrator", "completeName": "Modelica.Electrical.Analog.Basic.Gyrator", "para": [{"type": "Modelica.Units.SI.Conductance", "name": "G1", "anno": "Primary gyration conductance"}, {"type": "Modelica.Units.SI.Conductance", "name": "G2", "anno": "Secondary gyration conductance"}]}, {"id": "84", "name": "RotationalEMF", "completeName": "Modelica.Electrical.Analog.Basic.RotationalEMF", "para": [{"type": "Boolean", "name": "useSupport", "anno": "= true, if support flange enabled, otherwise implicitly grounded"}, {"type": "Modelica.Units.SI.ElectricalTorqueConstant", "name": "k", "anno": "Transformation coefficient"}]}, {"id": "85", "name": "TranslationalEMF", "completeName": "Modelica.Electrical.Analog.Basic.TranslationalEMF", "para": [{"type": "Boolean", "name": "useSupport", "anno": "= true, if support flange enabled, otherwise implicitly grounded"}, {"type": "Modelica.Units.SI.ElectricalForceConstant", "name": "k", "anno": "Transformation coefficient"}]}, {"id": "86", "name": "VCV", "completeName": "Modelica.Electrical.Analog.Basic.VCV", "para": [{"type": "Real", "name": "gain", "anno": "Voltage gain"}]}, {"id": "87", "name": "VCC", "completeName": "Modelica.Electrical.Analog.Basic.VCC", "para": [{"type": "Modelica.Units.SI.Conductance", "name": "transConductance", "anno": "Transconductance"}]}, {"id": "88", "name": "CCV", "completeName": "Modelica.Electrical.Analog.Basic.CCV", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "transResistance", "anno": "Transresistance"}]}, {"id": "89", "name": "CCC", "completeName": "Modelica.Electrical.Analog.Basic.CCC", "para": [{"type": "Real", "name": "gain", "anno": "Current gain"}]}, {"id": "90", "name": "OpAmp", "completeName": "Modelica.Electrical.Analog.Basic.OpAmp", "para": [{"type": "Real", "name": "Slope", "anno": "Slope of the out.v/vin characteristic at vin=0"}]}, {"id": "91", "name": "OpAmpDetailed", "completeName": "Modelica.Electrical.Analog.Basic.OpAmpDetailed", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Rdm", "anno": "Input resistance (differential input mode)"}, {"type": "Modelica.Units.SI.Resistance", "name": "Rcm", "anno": "Input resistance (common mode)"}, {"type": "Modelica.Units.SI.Capacitance", "name": "Cin", "anno": "Input capacitance"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vos", "anno": "Input offset voltage"}, {"type": "Modelica.Units.SI.Current", "name": "Ib", "anno": "Input bias current"}, {"type": "Modelica.Units.SI.Current", "name": "Ios", "anno": "Input offset current"}, {"type": "Modelica.Units.SI.Voltage", "name": "vcp", "anno": "Correction value for limiting by p_supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "vcm", "anno": "Correction value for limiting by msupply"}, {"type": "Real", "name": "Avd0", "anno": "Differential amplifier [dB]"}, {"type": "Real", "name": "CMRR", "anno": "Common-mode rejection [dB]"}, {"type": "Modelica.Units.SI.Frequency", "name": "fp1", "anno": "Dominant pole"}, {"type": "Modelica.Units.SI.Frequency", "name": "fp2", "anno": "Pole frequency"}, {"type": "Modelica.Units.SI.Frequency", "name": "fp3", "anno": "Pole frequency"}, {"type": "Modelica.Units.SI.Frequency", "name": "fp4", "anno": "Pole frequency"}, {"type": "Modelica.Units.SI.Frequency", "name": "fz", "anno": "Zero frequency"}, {"type": "Modelica.Units.SI.VoltageSlope", "name": "sr_p", "anno": "Slew rate for increase"}, {"type": "Modelica.Units.SI.VoltageSlope", "name": "sr_m", "anno": "Slew rate for decrease"}, {"type": "Modelica.Units.SI.Resistance", "name": "Rout", "anno": "Output resistance"}, {"type": "Modelica.Units.SI.Current", "name": "Imaxso", "anno": "Maximal output current (source current)"}, {"type": "Modelica.Units.SI.Current", "name": "Imaxsi", "anno": "Maximal output current (sink current)"}, {"type": "Modelica.Units.SI.Time", "name": "Ts", "anno": "Sampling time"}, {"type": "Modelica.Units.SI.Voltage", "name": "vcp_abs", "anno": "Positive correction value for limiting by p_supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "vcm_abs", "anno": "Positive correction value for limiting by msupply"}, {"type": "Modelica.Units.SI.Current", "name": "I1", "anno": "Current of internal source I1"}, {"type": "Modelica.Units.SI.Current", "name": "I2", "anno": "Current of internal source I2"}, {"type": "Real", "name": "Avd0_val", "anno": "Differential mode gain"}, {"type": "Real", "name": "Avcm_val", "anno": "Common mode gain"}, {"type": "Modelica.Units.SI.VoltageSlope", "name": "sr_p_val", "anno": "Value of slew rate for increase"}, {"type": "Modelica.Units.SI.VoltageSlope", "name": "sr_m_val", "anno": "Negative value of slew rate for increase"}, {"type": "Modelica.Units.SI.Current", "name": "Imaxso_val", "anno": "Orientation out outp"}, {"type": "Modelica.Units.SI.Current", "name": "Imaxsi_val", "anno": "Orientation into outp"}]}, {"id": "92", "name": "VariableResistor", "completeName": "Modelica.Electrical.Analog.Basic.VariableResistor", "para": [{"type": "Modelica.Units.SI.Temperature", "name": "T_ref", "anno": "Reference temperature"}, {"type": "Modelica.Units.SI.LinearTemperatureCoefficient", "name": "alpha", "anno": "Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"}]}, {"id": "93", "name": "VariableConductor", "completeName": "Modelica.Electrical.Analog.Basic.VariableConductor", "para": [{"type": "Modelica.Units.SI.Temperature", "name": "T_ref", "anno": "Reference temperature"}, {"type": "Modelica.Units.SI.LinearTemperatureCoefficient", "name": "alpha", "anno": "Temperature coefficient of conductance (G_actual = G/(1 + alpha*(T_heatPort - T_ref))"}]}, {"id": "94", "name": "VariableCapacitor", "completeName": "Modelica.Electrical.Analog.Basic.VariableCapacitor", "para": [{"type": "Modelica.Units.SI.Capacitance", "name": "Cmin", "anno": "Lower bound for variable capacitance"}, {"type": "Modelica.Units.SI.Voltage", "name": "IC", "anno": "Initial Value"}, {"type": "Boolean", "name": "UIC", "anno": "Decision if initial value IC shall be used"}]}, {"id": "95", "name": "VariableInductor", "completeName": "Modelica.Electrical.Analog.Basic.VariableInductor", "para": [{"type": "Modelica.Units.SI.Inductance", "name": "Lmin", "anno": "Lower bound for variable inductance"}, {"type": "Modelica.Units.SI.Current", "name": "IC", "anno": "Initial Value"}, {"type": "Boolean", "name": "UIC", "anno": "Decision if initial value IC shall be used"}]}, {"id": "96", "name": "Potentiometer", "completeName": "Modelica.Electrical.Analog.Basic.Potentiometer", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Resistance at temperature T_ref"}, {"type": "Modelica.Units.SI.Temperature", "name": "T_ref", "anno": "Reference temperature"}, {"type": "Modelica.Units.SI.LinearTemperatureCoefficient", "name": "alpha", "anno": "Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"}, {"type": "Boolean", "name": "useRinput", "anno": "Use input for 0<r<1 (else constant)"}, {"type": "Real", "name": "rConstant", "anno": "Contact between n (r=0) and p (r=1)"}]}, {"id": "97", "name": "GeneralCurrentToVoltageAdaptor", "completeName": "Modelica.Electrical.Analog.Basic.GeneralCurrentToVoltageAdaptor", "para": []}, {"id": "98", "name": "GeneralVoltageToCurrentAdaptor", "completeName": "Modelica.Electrical.Analog.Basic.GeneralVoltageToCurrentAdaptor", "para": []}, {"id": "100", "name": "IdealDiode", "completeName": "Modelica.Electrical.Analog.Ideal.IdealDiode", "para": []}, {"id": "101", "name": "IdealThyristor", "completeName": "Modelica.Electrical.Analog.Ideal.IdealThyristor", "para": []}, {"id": "102", "name": "IdealGTOThyristor", "completeName": "Modelica.Electrical.Analog.Ideal.IdealGTOThyristor", "para": []}, {"id": "103", "name": "IdealTwoWaySwitch", "completeName": "Modelica.Electrical.Analog.Ideal.IdealTwoWaySwitch", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Closed switch resistance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Opened switch conductance"}]}, {"id": "104", "name": "IdealIntermediateSwitch", "completeName": "Modelica.Electrical.Analog.Ideal.IdealIntermediateSwitch", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Closed switch resistance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Opened switch conductance"}]}, {"id": "105", "name": "ControlledIdealTwoWaySwitch", "completeName": "Modelica.Electrical.Analog.Ideal.ControlledIdealTwoWaySwitch", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "level", "anno": "Switch level"}, {"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Closed switch resistance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Opened switch conductance"}]}, {"id": "106", "name": "ControlledIdealIntermediateSwitch", "completeName": "Modelica.Electrical.Analog.Ideal.ControlledIdealIntermediateSwitch", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "level", "anno": "Switch level"}, {"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Closed switch resistance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Opened switch conductance"}]}, {"id": "107", "name": "IdealOpAmp", "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmp", "para": []}, {"id": "108", "name": "IdealOpAmp3Pin", "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmp3Pin", "para": []}, {"id": "109", "name": "IdealOpAmpLimited", "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmpLimited", "para": []}, {"id": "110", "name": "IdealizedOpAmpLimited", "completeName": "Modelica.Electrical.Analog.Ideal.IdealizedOpAmpLimited", "para": [{"type": "Real", "name": "V0", "anno": "No-load amplification"}, {"type": "Boolean", "name": "useSupply", "anno": "Use supply pins (otherwise constant supply)"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply voltage"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply voltage"}, {"type": "Boolean", "name": "strict", "anno": "= true, if strict limits with noEvent(..)"}, {"type": "Modelica.Blocks.Types.LimiterHomotopy", "name": "homotopyType", "anno": "Simplified model for homotopy-based initialization"}]}, {"id": "111", "name": "IdealTransformer", "completeName": "Modelica.Electrical.Analog.Ideal.IdealTransformer", "para": [{"type": "Real", "name": "n", "anno": "Turns ratio primary:secondary voltage"}, {"type": "Boolean", "name": "considerMagnetization", "anno": "Choice of considering magnetization"}, {"type": "Modelica.Units.SI.Inductance", "name": "Lm1", "anno": "Magnetization inductance w.r.t. primary side"}]}, {"id": "112", "name": "Idle", "completeName": "Modelica.Electrical.Analog.Ideal.Idle", "para": []}, {"id": "113", "name": "Short", "completeName": "Modelica.Electrical.Analog.Ideal.Short", "para": []}, {"id": "114", "name": "IdealOpeningSwitch", "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpeningSwitch", "para": []}, {"id": "115", "name": "IdealClosingSwitch", "completeName": "Modelica.Electrical.Analog.Ideal.IdealClosingSwitch", "para": []}, {"id": "116", "name": "ControlledIdealOpeningSwitch", "completeName": "Modelica.Electrical.Analog.Ideal.ControlledIdealOpeningSwitch", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "level", "anno": "Switch level"}]}, {"id": "117", "name": "ControlledIdealClosingSwitch", "completeName": "Modelica.Electrical.Analog.Ideal.ControlledIdealClosingSwitch", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "level", "anno": "Switch level"}]}, {"id": "118", "name": "OpenerWithArc", "completeName": "Modelica.Electrical.Analog.Ideal.OpenerWithArc", "para": []}, {"id": "119", "name": "CloserWithArc", "completeName": "Modelica.Electrical.Analog.Ideal.CloserWithArc", "para": []}, {"id": "120", "name": "ControlledOpenerWithArc", "completeName": "Modelica.Electrical.Analog.Ideal.ControlledOpenerWithArc", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "level", "anno": "Switch level"}]}, {"id": "121", "name": "ControlledCloserWithArc", "completeName": "Modelica.Electrical.Analog.Ideal.ControlledCloserWithArc", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "level", "anno": "Switch level"}]}, {"id": "122", "name": "IdealTriac", "completeName": "Modelica.Electrical.Analog.Ideal.IdealTriac", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Closed triac resistance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Opened triac conductance"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vknee", "anno": "Threshold voltage for positive and negative phase"}, {"type": "Modelica.Units.SI.Resistance", "name": "Rdis", "anno": "Resistance of disturbance elimination"}, {"type": "Modelica.Units.SI.Capacitance", "name": "Cdis", "anno": "Capacity of disturbance elimination"}]}, {"id": "123", "name": "AD_Converter", "completeName": "Modelica.Electrical.Analog.Ideal.AD_Converter", "para": [{"type": "Integer", "name": "N", "anno": "Resolution in bits - output signal width"}, {"type": "Modelica.Units.SI.Voltage", "name": "VRefHigh", "anno": "High reference voltage"}, {"type": "Modelica.Units.SI.Voltage", "name": "VRefLow", "anno": "Low reference voltage"}, {"type": "Modelica.Units.SI.Resistance", "name": "Rin", "anno": "Input resistance"}]}, {"id": "124", "name": "DA_Converter", "completeName": "Modelica.Electrical.Analog.Ideal.DA_Converter", "para": [{"type": "Integer", "name": "N", "anno": "Resolution - input signal width"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vref", "anno": "Reference voltage"}]}, {"id": "126", "name": "TwoPin", "completeName": "Modelica.Electrical.Analog.Interfaces.TwoPin", "para": []}, {"id": "127", "name": "OnePort", "completeName": "Modelica.Electrical.Analog.Interfaces.OnePort", "para": []}, {"id": "128", "name": "FourPin", "completeName": "Modelica.Electrical.Analog.Interfaces.FourPin", "para": []}, {"id": "129", "name": "TwoPort", "completeName": "Modelica.Electrical.Analog.Interfaces.TwoPort", "para": []}, {"id": "130", "name": "ConditionalHeatPort", "completeName": "Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort", "para": [{"type": "Boolean", "name": "useHeatPort", "anno": "= true, if heatPort is enabled"}, {"type": "Modelica.Units.SI.Temperature", "name": "T", "anno": "Fixed device temperature if useHeatPort = false"}]}, {"id": "131", "name": "PartialConditionalHeatPort", "completeName": "Modelica.Electrical.Analog.Interfaces.PartialConditionalHeatPort", "para": [{"type": "Boolean", "name": "useHeatPort", "anno": "=true, if HeatPort is enabled"}, {"type": "Modelica.Units.SI.Temperature", "name": "T", "anno": "Fixed device temperature if useHeatPort = false"}]}, {"id": "132", "name": "AbsoluteSensor", "completeName": "Modelica.Electrical.Analog.Interfaces.AbsoluteSensor", "para": []}, {"id": "133", "name": "RelativeSensor", "completeName": "Modelica.Electrical.Analog.Interfaces.RelativeSensor", "para": []}, {"id": "134", "name": "VoltageSource", "completeName": "Modelica.Electrical.Analog.Interfaces.VoltageSource", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "offset", "anno": "Voltage offset"}, {"type": "Modelica.Units.SI.Time", "name": "startTime", "anno": "Time offset"}]}, {"id": "135", "name": "CurrentSource", "completeName": "Modelica.Electrical.Analog.Interfaces.CurrentSource", "para": [{"type": "Modelica.Units.SI.Current", "name": "offset", "anno": "Current offset"}, {"type": "Modelica.Units.SI.Time", "name": "startTime", "anno": "Time offset"}]}, {"id": "136", "name": "IdealSemiconductor", "completeName": "Modelica.Electrical.Analog.Interfaces.IdealSemiconductor", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Forward state-on differential resistance (closed resistance)"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Backward state-off conductance (opened conductance)"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vknee", "anno": "Forward threshold voltage"}]}, {"id": "137", "name": "IdealSwitch", "completeName": "Modelica.Electrical.Analog.Interfaces.IdealSwitch", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Closed switch resistance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Opened switch conductance"}]}, {"id": "138", "name": "IdealSwitchWithArc", "completeName": "Modelica.Electrical.Analog.Interfaces.IdealSwitchWithArc", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Closed switch resistance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Goff", "anno": "Opened switch conductance"}, {"type": "Modelica.Units.SI.Voltage", "name": "V0", "anno": "Initial arc voltage"}, {"type": "Modelica.Units.SI.VoltageSlope", "name": "dVdt", "anno": "Arc voltage slope"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vmax", "anno": "Max. arc voltage"}]}, {"id": "140", "name": "OLine", "completeName": "Modelica.Electrical.Analog.Lines.OLine", "para": []}, {"id": "141", "name": "M_OLine", "completeName": "Modelica.Electrical.Analog.Lines.M_OLine", "para": []}, {"id": "142", "name": "ULine", "completeName": "Modelica.Electrical.Analog.Lines.ULine", "para": []}, {"id": "143", "name": "TLine1", "completeName": "Modelica.Electrical.Analog.Lines.TLine1", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Z0", "anno": "Characteristic impedance"}, {"type": "Modelica.Units.SI.Time", "name": "TD", "anno": "Transmission delay"}]}, {"id": "144", "name": "TLine2", "completeName": "Modelica.Electrical.Analog.Lines.TLine2", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Z0", "anno": "Characteristic impedance"}, {"type": "Modelica.Units.SI.Frequency", "name": "F", "anno": "Frequency"}, {"type": "Real", "name": "NL", "anno": "Normalized length"}, {"type": "Modelica.Units.SI.Time", "name": "TD", "anno": ""}]}, {"id": "145", "name": "TLine3", "completeName": "Modelica.Electrical.Analog.Lines.TLine3", "para": [{"type": "Modelica.Units.SI.Resistance", "name": "Z0", "anno": "Natural impedance"}, {"type": "Modelica.Units.SI.Frequency", "name": "F", "anno": "Frequency"}, {"type": "Modelica.Units.SI.Time", "name": "TD", "anno": ""}]}, {"id": "147", "name": "Diode", "completeName": "Modelica.Electrical.Analog.Semiconductors.Diode", "para": [{"type": "Modelica.Units.SI.Current", "name": "Ids", "anno": "Saturation current"}, {"type": "Boolean", "name": "useTemperatureDependency", "anno": "= true, if the diode current depends on temperature, otherwise utilizes the voltage equivalent of temperature"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Voltage equivalent of temperature (kT/qn)"}, {"type": "Real", "name": "Maxexp", "anno": "Max. exponent for linear continuation"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Parallel ohmic resistance"}, {"type": "Real", "name": "EG", "anno": "Activation energy"}, {"type": "Real", "name": "N", "anno": "Emission coefficient"}, {"type": "Modelica.Units.SI.Temperature", "name": "TNOM", "anno": "Parameter measurement temperature"}, {"type": "Real", "name": "XTI", "anno": "Temperature exponent of saturation current"}]}, {"id": "148", "name": "Diode2", "completeName": "Modelica.Electrical.Analog.Semiconductors.Diode2", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vf", "anno": "Forward voltage"}, {"type": "Modelica.Units.SI.Current", "name": "Ids", "anno": "Reverse saturation current"}, {"type": "Modelica.Units.SI.Resistance", "name": "Rs", "anno": "Ohmic resistance"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Thermal voltage (kT/q), 0.026 at normal conditions (around 20 degC)"}, {"type": "Real", "name": "N", "anno": "Emission coefficient"}, {"type": "Modelica.Units.SI.Voltage", "name": "Bv", "anno": "Reverse breakdown voltage"}, {"type": "Modelica.Units.SI.Conductance", "name": "Gp", "anno": "Parallel conductance for numerical stability"}]}, {"id": "149", "name": "ZDiode", "completeName": "Modelica.Electrical.Analog.Semiconductors.ZDiode", "para": [{"type": "Modelica.Units.SI.Current", "name": "Ids", "anno": "Saturation current"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Voltage equivalent of temperature (kT/qn)"}, {"type": "Real", "name": "Maxexp", "anno": "Max. exponent for linear continuation"}, {"type": "Modelica.Units.SI.Resistance", "name": "R", "anno": "Parallel ohmic resistance"}, {"type": "Modelica.Units.SI.Voltage", "name": "Bv", "anno": "Breakthrough voltage = Zener- or Z-voltage"}, {"type": "Modelica.Units.SI.Current", "name": "Ibv", "anno": "Breakthrough knee current"}, {"type": "Real", "name": "Nbv", "anno": "Breakthrough emission coefficient"}]}, {"id": "150", "name": "NMOS", "completeName": "Modelica.Electrical.Analog.Semiconductors.NMOS", "para": [{"type": "Modelica.Units.SI.Length", "name": "W", "anno": "Width"}, {"type": "Modelica.Units.SI.Length", "name": "L", "anno": "Length"}, {"type": "Modelica.Units.SI.Transconductance", "name": "Beta", "anno": "Transconductance parameter"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Zero bias threshold voltage"}, {"type": "Real", "name": "K2", "anno": "Bulk threshold parameter"}, {"type": "Real", "name": "K5", "anno": "Reduction of pinch-off region"}, {"type": "Modelica.Units.SI.Length", "name": "dW", "anno": "Narrowing of channel"}, {"type": "Modelica.Units.SI.Length", "name": "dL", "anno": "Shortening of channel"}, {"type": "Modelica.Units.SI.Resistance", "name": "RDS", "anno": "Drain-Source-Resistance"}, {"type": "Boolean", "name": "useTemperatureDependency", "anno": "= true, if parameters Beta, K2 and Vt depend on temperature"}, {"type": "Modelica.Units.SI.Temperature", "name": "Tnom", "anno": "Parameter measurement temperature"}, {"type": "Real", "name": "kvt", "anno": "Fitting parameter for Vt"}, {"type": "Real", "name": "kk2", "anno": "Fitting parameter for K2"}]}, {"id": "151", "name": "PMOS", "completeName": "Modelica.Electrical.Analog.Semiconductors.PMOS", "para": [{"type": "Modelica.Units.SI.Length", "name": "W", "anno": "Width"}, {"type": "Modelica.Units.SI.Length", "name": "L", "anno": "Length"}, {"type": "Modelica.Units.SI.Transconductance", "name": "Beta", "anno": "Transconductance parameter"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Zero bias threshold voltage"}, {"type": "Real", "name": "K2", "anno": "Bulk threshold parameter"}, {"type": "Real", "name": "K5", "anno": "Reduction of pinch-off region"}, {"type": "Modelica.Units.SI.Length", "name": "dW", "anno": "Narrowing of channel"}, {"type": "Modelica.Units.SI.Length", "name": "dL", "anno": "Shortening of channel"}, {"type": "Modelica.Units.SI.Resistance", "name": "RDS", "anno": "Drain-Source-Resistance"}, {"type": "Boolean", "name": "useTemperatureDependency", "anno": "= true, if parameters Beta, K2 and Vt depend on temperature"}, {"type": "Modelica.Units.SI.Temperature", "name": "Tnom", "anno": "Parameter measurement temperature"}, {"type": "Real", "name": "kvt", "anno": "Fitting parameter for Vt"}, {"type": "Real", "name": "kk2", "anno": "Fitting parameter for K2"}]}, {"id": "152", "name": "NPN", "completeName": "Modelica.Electrical.Analog.Semiconductors.NPN", "para": [{"type": "Real", "name": "Bf", "anno": "Forward beta"}, {"type": "Real", "name": "Br", "anno": "Reverse beta"}, {"type": "Modelica.Units.SI.Current", "name": "Is", "anno": "Transport saturation current"}, {"type": "Modelica.Units.SI.InversePotential", "name": "Vak", "anno": "Early voltage (inverse), 1/Volt"}, {"type": "Modelica.Units.SI.Time", "name": "Tauf", "anno": "Ideal forward transit time"}, {"type": "Modelica.Units.SI.Time", "name": "Taur", "anno": "Ideal reverse transit time"}, {"type": "Modelica.Units.SI.Capacitance", "name": "Ccs", "anno": "Collector-substrate(ground) cap."}, {"type": "Modelica.Units.SI.Capacitance", "name": "Cje", "anno": "Base-emitter zero bias depletion cap."}, {"type": "Modelica.Units.SI.Capacitance", "name": "Cjc", "anno": "Base-coll. zero bias depletion cap."}, {"type": "Modelica.Units.SI.Voltage", "name": "Phie", "anno": "Base-emitter diffusion voltage"}, {"type": "Real", "name": "Me", "anno": "Base-emitter gradation exponent"}, {"type": "Modelica.Units.SI.Voltage", "name": "Phic", "anno": "Base-collector diffusion voltage"}, {"type": "Real", "name": "Mc", "anno": "Base-collector gradation exponent"}, {"type": "Modelica.Units.SI.Conductance", "name": "Gbc", "anno": "Base-collector conductance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Gbe", "anno": "Base-emitter conductance"}, {"type": "Real", "name": "EMin", "anno": "If x < EMin, the exp(x) function is linearized"}, {"type": "Real", "name": "EMax", "anno": "If x > EMax, the exp(x) function is linearized"}, {"type": "Boolean", "name": "useTemperatureDependency", "anno": "= true, if parameters Bf, Br, Is and Vt depend on temperature"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Voltage equivalent of temperature"}, {"type": "Modelica.Units.SI.Temperature", "name": "Tnom", "anno": "Parameter measurement temperature"}, {"type": "Real", "name": "XTI", "anno": "Temperature exponent for effect on Is"}, {"type": "Real", "name": "XTB", "anno": "Forward and reverse beta temperature exponent"}, {"type": "Modelica.Units.SI.Voltage", "name": "EG", "anno": "Energy gap for temperature effect on Is"}, {"type": "Real", "name": "NF", "anno": "Forward current emission coefficient"}, {"type": "Real", "name": "NR", "anno": "Reverse current emission coefficient"}, {"type": "Modelica.Units.SI.Voltage", "name": "IC", "anno": "Initial value of collector to substrate voltage"}, {"type": "Boolean", "name": "UIC", "anno": "Decision if initial value IC should be used"}, {"type": "Boolean", "name": "useSubstrate", "anno": "= false, if substrate is implicitly grounded"}]}, {"id": "153", "name": "PNP", "completeName": "Modelica.Electrical.Analog.Semiconductors.PNP", "para": [{"type": "Real", "name": "Bf", "anno": "Forward beta"}, {"type": "Real", "name": "Br", "anno": "Reverse beta"}, {"type": "Modelica.Units.SI.Current", "name": "Is", "anno": "Transport saturation current"}, {"type": "Modelica.Units.SI.InversePotential", "name": "Vak", "anno": "Early voltage (inverse), 1/Volt"}, {"type": "Modelica.Units.SI.Time", "name": "Tauf", "anno": "Ideal forward transit time"}, {"type": "Modelica.Units.SI.Time", "name": "Taur", "anno": "Ideal reverse transit time"}, {"type": "Modelica.Units.SI.Capacitance", "name": "Ccs", "anno": "Collector-substrate(ground) cap."}, {"type": "Modelica.Units.SI.Capacitance", "name": "Cje", "anno": "Base-emitter zero bias depletion cap."}, {"type": "Modelica.Units.SI.Capacitance", "name": "Cjc", "anno": "Base-coll. zero bias depletion cap."}, {"type": "Modelica.Units.SI.Voltage", "name": "Phie", "anno": "Base-emitter diffusion voltage"}, {"type": "Real", "name": "Me", "anno": "Base-emitter gradation exponent"}, {"type": "Modelica.Units.SI.Voltage", "name": "Phic", "anno": "Base-collector diffusion voltage"}, {"type": "Real", "name": "Mc", "anno": "Base-collector gradation exponent"}, {"type": "Modelica.Units.SI.Conductance", "name": "Gbc", "anno": "Base-collector conductance"}, {"type": "Modelica.Units.SI.Conductance", "name": "Gbe", "anno": "Base-emitter conductance"}, {"type": "Real", "name": "EMin", "anno": "If x < EMin, the exp(x) function is linearized"}, {"type": "Real", "name": "EMax", "anno": "If x > EMax, the exp(x) function is linearized"}, {"type": "Boolean", "name": "useTemperatureDependency", "anno": "= true, if parameters Bf, Br, Is and Vt depend on temperature"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Voltage equivalent of temperature"}, {"type": "Modelica.Units.SI.Temperature", "name": "Tnom", "anno": "Parameter measurement temperature"}, {"type": "Real", "name": "XTI", "anno": "Temperature exponent for effect on Is"}, {"type": "Real", "name": "XTB", "anno": "Forward and reverse beta temperature exponent"}, {"type": "Modelica.Units.SI.Voltage", "name": "EG", "anno": "Energy gap for temperature effect on Is"}, {"type": "Real", "name": "NF", "anno": "Forward current emission coefficient"}, {"type": "Real", "name": "NR", "anno": "Reverse current emission coefficient"}, {"type": "Modelica.Units.SI.Voltage", "name": "IC", "anno": "Initial value of collector to substrate voltage"}, {"type": "Boolean", "name": "UIC", "anno": "Decision if initial value IC should be used"}, {"type": "Boolean", "name": "useSubstrate", "anno": "= false, if substrate is implicitly grounded"}]}, {"id": "154", "name": "Thyristor", "completeName": "Modelica.Electrical.Analog.Semiconductors.Thyristor", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "VDRM", "anno": "Forward breakthrough voltage"}, {"type": "Modelica.Units.SI.Voltage", "name": "VRRM", "anno": "Reverse breakthrough voltage"}, {"type": "Modelica.Units.SI.Current", "name": "IDRM", "anno": "Saturation current"}, {"type": "Modelica.Units.SI.Voltage", "name": "VTM", "anno": "Conducting voltage"}, {"type": "Modelica.Units.SI.Current", "name": "IH", "anno": "Holding current"}, {"type": "Modelica.Units.SI.Current", "name": "ITM", "anno": "Conducting current"}, {"type": "Modelica.Units.SI.Voltage", "name": "VGT", "anno": "Gate trigger voltage"}, {"type": "Modelica.Units.SI.Current", "name": "IGT", "anno": "Gate trigger current"}, {"type": "Modelica.Units.SI.Time", "name": "TON", "anno": "Switch on time"}, {"type": "Modelica.Units.SI.Time", "name": "TOFF", "anno": "Switch off time"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Voltage equivalent of temperature (kT/qn)"}, {"type": "Real", "name": "Nbv", "anno": "Reverse Breakthrough emission coefficient"}, {"type": "Modelica.Units.SI.Voltage", "name": "Von", "anno": ""}, {"type": "Modelica.Units.SI.Voltage", "name": "Voff", "anno": ""}, {"type": "Modelica.Units.SI.Resistance", "name": "Ron", "anno": "Forward conducting mode resistance"}, {"type": "Modelica.Units.SI.Resistance", "name": "Roff", "anno": "Blocking mode resistance"}]}, {"id": "155", "name": "SimpleTriac", "completeName": "Modelica.Electrical.Analog.Semiconductors.SimpleTriac", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "VDRM", "anno": "Forward breakthrough voltage"}, {"type": "Modelica.Units.SI.Voltage", "name": "VRRM", "anno": "Reverse breakthrough voltage"}, {"type": "Modelica.Units.SI.Current", "name": "IDRM", "anno": "Saturation current"}, {"type": "Modelica.Units.SI.Voltage", "name": "VTM", "anno": "Conducting voltage"}, {"type": "Modelica.Units.SI.Current", "name": "IH", "anno": "Holding current"}, {"type": "Modelica.Units.SI.Current", "name": "ITM", "anno": "Conducting current"}, {"type": "Modelica.Units.SI.Voltage", "name": "VGT", "anno": "Gate trigger voltage"}, {"type": "Modelica.Units.SI.Current", "name": "IGT", "anno": "Gate trigger current"}, {"type": "Modelica.Units.SI.Time", "name": "TON", "anno": "Switch on time"}, {"type": "Modelica.Units.SI.Time", "name": "TOFF", "anno": "Switch off time"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vt", "anno": "Voltage equivalent of temperature (kT/qn)"}, {"type": "Real", "name": "Nbv", "anno": "Reverse Breakthrough emission coefficient"}]}, {"id": "157", "name": "PotentialSensor", "completeName": "Modelica.Electrical.Analog.Sensors.PotentialSensor", "para": []}, {"id": "158", "name": "VoltageSensor", "completeName": "Modelica.Electrical.Analog.Sensors.VoltageSensor", "para": []}, {"id": "159", "name": "CurrentSensor", "completeName": "Modelica.Electrical.Analog.Sensors.CurrentSensor", "para": []}, {"id": "160", "name": "PowerSensor", "completeName": "Modelica.Electrical.Analog.Sensors.PowerSensor", "para": []}, {"id": "161", "name": "MultiSensor", "completeName": "Modelica.Electrical.Analog.Sensors.MultiSensor", "para": []}, {"id": "163", "name": "SignalVoltage", "completeName": "Modelica.Electrical.Analog.Sources.SignalVoltage", "para": []}, {"id": "164", "name": "ConstantVoltage", "completeName": "Modelica.Electrical.Analog.Sources.ConstantVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Value of constant voltage"}]}, {"id": "165", "name": "StepVoltage", "completeName": "Modelica.Electrical.Analog.Sources.StepVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Height of step"}]}, {"id": "166", "name": "RampVoltage", "completeName": "Modelica.Electrical.Analog.Sources.RampVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Height of ramp"}, {"type": "Modelica.Units.SI.Time", "name": "duration", "anno": "Duration of ramp"}]}, {"id": "167", "name": "SineVoltage", "completeName": "Modelica.Electrical.Analog.Sources.SineVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Amplitude of sine wave"}, {"type": "Modelica.Units.SI.Angle", "name": "phase", "anno": "Phase of sine wave"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of sine wave"}]}, {"id": "168", "name": "CosineVoltage", "completeName": "Modelica.Electrical.Analog.Sources.CosineVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Amplitude of cosine wave"}, {"type": "Modelica.Units.SI.Angle", "name": "phase", "anno": "Phase of cosine wave"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of cosine wave"}]}, {"id": "169", "name": "SineVoltageVariableFrequencyAndAmplitude", "completeName": "Modelica.Electrical.Analog.Sources.SineVoltageVariableFrequencyAndAmplitude", "para": [{"type": "Boolean", "name": "useConstantAmplitude", "anno": "Enable constant amplitude"}, {"type": "Modelica.Units.SI.Voltage", "name": "constantAmplitude", "anno": "Constant amplitude"}, {"type": "Boolean", "name": "useConstantFrequency", "anno": "Enable constant frequency"}, {"type": "Modelica.Units.SI.Frequency", "name": "constantFrequency", "anno": "Constant frequency"}, {"type": "Modelica.Units.SI.Voltage", "name": "offset", "anno": "Offset of the sine wave"}]}, {"id": "170", "name": "CosineVoltageVariableFrequencyAndAmplitude", "completeName": "Modelica.Electrical.Analog.Sources.CosineVoltageVariableFrequencyAndAmplitude", "para": [{"type": "Boolean", "name": "useConstantAmplitude", "anno": "Enable constant amplitude"}, {"type": "Modelica.Units.SI.Voltage", "name": "constantAmplitude", "anno": "Constant amplitude"}, {"type": "Boolean", "name": "useConstantFrequency", "anno": "Enable constant frequency"}, {"type": "Modelica.Units.SI.Frequency", "name": "constantFrequency", "anno": "Constant frequency"}, {"type": "Modelica.Units.SI.Voltage", "name": "offset", "anno": "Offset of the sine wave"}]}, {"id": "171", "name": "ExpSineVoltage", "completeName": "Modelica.Electrical.Analog.Sources.ExpSineVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Amplitude of sine wave"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of sine wave"}, {"type": "Modelica.Units.SI.Angle", "name": "phase", "anno": "Phase of sine wave"}, {"type": "Modelica.Units.SI.Damping", "name": "damping", "anno": "Damping coefficient of sine wave"}]}, {"id": "172", "name": "ExponentialsVoltage", "completeName": "Modelica.Electrical.Analog.Sources.ExponentialsVoltage", "para": [{"type": "Real", "name": "vMax", "anno": "Upper bound for rising edge"}, {"type": "Modelica.Units.SI.Time", "name": "riseTime", "anno": "Rise time"}, {"type": "Modelica.Units.SI.Time", "name": "riseTimeConst", "anno": "Rise time constant"}, {"type": "Modelica.Units.SI.Time", "name": "fallTimeConst", "anno": "Fall time constant"}]}, {"id": "173", "name": "PulseVoltage", "completeName": "Modelica.Electrical.Analog.Sources.PulseVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Amplitude of pulse"}, {"type": "Real", "name": "width", "anno": "Width of pulse in % of period"}, {"type": "Modelica.Units.SI.Time", "name": "period", "anno": "Time for one period"}]}, {"id": "174", "name": "SawToothVoltage", "completeName": "Modelica.Electrical.Analog.Sources.SawToothVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Amplitude of saw tooth"}, {"type": "Modelica.Units.SI.Time", "name": "period", "anno": "Time for one period"}]}, {"id": "175", "name": "TrapezoidVoltage", "completeName": "Modelica.Electrical.Analog.Sources.TrapezoidVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "V", "anno": "Amplitude of trapezoid"}, {"type": "Modelica.Units.SI.Time", "name": "rising", "anno": "Rising duration of trapezoid"}, {"type": "Modelica.Units.SI.Time", "name": "width", "anno": "Width duration of trapezoid"}, {"type": "Modelica.Units.SI.Time", "name": "falling", "anno": "Falling duration of trapezoid"}, {"type": "Modelica.Units.SI.Time", "name": "period", "anno": "Time for one period"}, {"type": "Integer", "name": "nperiod", "anno": "Number of periods (< 0 means infinite number of periods)"}]}, {"id": "176", "name": "TableVoltage", "completeName": "Modelica.Electrical.Analog.Sources.TableVoltage", "para": []}, {"id": "177", "name": "SignalCurrent", "completeName": "Modelica.Electrical.Analog.Sources.SignalCurrent", "para": []}, {"id": "178", "name": "ConstantCurrent", "completeName": "Modelica.Electrical.Analog.Sources.ConstantCurrent", "para": [{"type": "Modelica.Units.SI.Current", "name": "I", "anno": "Value of constant current"}]}, {"id": "179", "name": "StepCurrent", "completeName": "Modelica.Electrical.Analog.Sources.StepCurrent", "para": [{"type": "Modelica.Units.SI.Current", "name": "I", "anno": "Height of step"}]}, {"id": "180", "name": "RampCurrent", "completeName": "Modelica.Electrical.Analog.Sources.RampCurrent", "para": [{"type": "Modelica.Units.SI.Current", "name": "I", "anno": "Height of ramp"}, {"type": "Modelica.Units.SI.Time", "name": "duration", "anno": "Duration of ramp"}]}, {"id": "181", "name": "SineCurrent", "completeName": "Modelica.Electrical.Analog.Sources.SineCurrent", "para": [{"type": "Modelica.Units.SI.Current", "name": "I", "anno": "Amplitude of sine wave"}, {"type": "Modelica.Units.SI.Angle", "name": "phase", "anno": "Phase of sine wave"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of sine wave"}]}, {"id": "182", "name": "CosineCurrent", "completeName": "Modelica.Electrical.Analog.Sources.CosineCurrent", "para": [{"type": "Modelica.Units.SI.Current", "name": "I", "anno": "Amplitude of cosine wave"}, {"type": "Modelica.Units.SI.Angle", "name": "phase", "anno": "Phase of cosine wave"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of cosine wave"}]}, {"id": "183", "name": "SineCurrentVariableFrequencyAndAmplitude", "completeName": "Modelica.Electrical.Analog.Sources.SineCurrentVariableFrequencyAndAmplitude", "para": [{"type": "Boolean", "name": "useConstantAmplitude", "anno": "Enable constant amplitude"}, {"type": "Modelica.Units.SI.Current", "name": "constantAmplitude", "anno": "Constant amplitude"}, {"type": "Boolean", "name": "useConstantFrequency", "anno": "Enable constant frequency"}, {"type": "Modelica.Units.SI.Frequency", "name": "constantFrequency", "anno": "Constant frequency"}, {"type": "Modelica.Units.SI.Current", "name": "offset", "anno": "Offset of the sine wave"}]}, {"id": "184", "name": "CosineCurrentVariableFrequencyAndAmplitude", "completeName": "Modelica.Electrical.Analog.Sources.CosineCurrentVariableFrequencyAndAmplitude", "para": [{"type": "Boolean", "name": "useConstantAmplitude", "anno": "Enable constant amplitude"}, {"type": "Modelica.Units.SI.Current", "name": "constantAmplitude", "anno": "Constant amplitude"}, {"type": "Boolean", "name": "useConstantFrequency", "anno": "Enable constant frequency"}, {"type": "Modelica.Units.SI.Frequency", "name": "constantFrequency", "anno": "Constant frequency"}, {"type": "Modelica.Units.SI.Current", "name": "offset", "anno": "Offset of the sine wave"}]}, {"id": "185", "name": "ExpSineCurrent", "completeName": "Modelica.Electrical.Analog.Sources.ExpSineCurrent", "para": [{"type": "Real", "name": "I", "anno": "Amplitude of sine wave"}, {"type": "Modelica.Units.SI.Frequency", "name": "f", "anno": "Frequency of sine wave"}, {"type": "Modelica.Units.SI.Angle", "name": "phase", "anno": "Phase of sine wave"}, {"type": "Modelica.Units.SI.Damping", "name": "damping", "anno": "Damping coefficient of sine wave"}]}, {"id": "186", "name": "ExponentialsCurrent", "completeName": "Modelica.Electrical.Analog.Sources.ExponentialsCurrent", "para": [{"type": "Real", "name": "iMax", "anno": "Upper bound for rising edge"}, {"type": "Modelica.Units.SI.Time", "name": "riseTime", "anno": "Rise time"}, {"type": "Modelica.Units.SI.Time", "name": "riseTimeConst", "anno": "Rise time constant"}, {"type": "Modelica.Units.SI.Time", "name": "fallTimeConst", "anno": "Fall time constant"}]}, {"id": "187", "name": "PulseCurrent", "completeName": "Modelica.Electrical.Analog.Sources.PulseCurrent", "para": [{"type": "Modelica.Units.SI.Current", "name": "I", "anno": "Amplitude of pulse"}, {"type": "Real", "name": "width", "anno": "Width of pulse in % of period"}, {"type": "Modelica.Units.SI.Time", "name": "period", "anno": "Time for one period"}]}, {"id": "188", "name": "SawToothCurrent", "completeName": "Modelica.Electrical.Analog.Sources.SawToothCurrent", "para": [{"type": "Modelica.Units.SI.Current", "name": "I", "anno": "Amplitude of saw tooth"}, {"type": "Modelica.Units.SI.Time", "name": "period", "anno": "Time for one period"}]}, {"id": "189", "name": "TrapezoidCurrent", "completeName": "Modelica.Electrical.Analog.Sources.TrapezoidCurrent", "para": [{"type": "Modelica.Units.SI.Current", "name": "I", "anno": "Amplitude of trapezoid"}, {"type": "Modelica.Units.SI.Time", "name": "rising", "anno": "Rising duration of trapezoid"}, {"type": "Modelica.Units.SI.Time", "name": "width", "anno": "Width duration of trapezoid"}, {"type": "Modelica.Units.SI.Time", "name": "falling", "anno": "Falling duration of trapezoid"}, {"type": "Modelica.Units.SI.Time", "name": "period", "anno": "Time for one period"}, {"type": "Integer", "name": "nperiod", "anno": "Number of periods (< 0 means infinite number of periods)"}]}, {"id": "190", "name": "TableCurrent", "completeName": "Modelica.Electrical.Analog.Sources.TableCurrent", "para": []}, {"id": "191", "name": "SupplyVoltage", "completeName": "Modelica.Electrical.Analog.Sources.SupplyVoltage", "para": [{"type": "Modelica.Units.SI.Voltage", "name": "Vps", "anno": "Positive supply"}, {"type": "Modelica.Units.SI.Voltage", "name": "Vns", "anno": "Negative supply"}]}, {"id": "193", "name": "VoltageSource", "completeName": "Modelica.Electrical.Analog.Icons.VoltageSource", "para": []}, {"id": "194", "name": "CurrentSource", "completeName": "Modelica.Electrical.Analog.Icons.CurrentSource", "para": []}]
+[
+  {
+    "id": "4",
+    "name": "CauerLowPassAnalog",
+    "completeName": "Modelica.Electrical.Analog.Examples.CauerLowPassAnalog",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "l1",
+        "anno": "Filter coefficient I1"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "l2",
+        "anno": "Filter coefficient I2"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c1",
+        "anno": "Filter coefficient c1"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c2",
+        "anno": "Filter coefficient c2"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c3",
+        "anno": "Filter coefficient c3"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c4",
+        "anno": "Filter coefficient c4"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c5",
+        "anno": "Filter coefficient c5"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "CauerLowPassOPV",
+    "completeName": "Modelica.Electrical.Analog.Examples.CauerLowPassOPV",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "l1",
+        "anno": "Filter coefficient i1"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "l2",
+        "anno": "Filter coefficient i2"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c1",
+        "anno": "Filter coefficient c1"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c2",
+        "anno": "Filter coefficient c2"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c3",
+        "anno": "Filter coefficient c3"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c4",
+        "anno": "Filter coefficient c4"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c5",
+        "anno": "Filter coefficient c5"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "CauerLowPassSC",
+    "completeName": "Modelica.Electrical.Analog.Examples.CauerLowPassSC",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "l1",
+        "anno": "Filter coefficient i1"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "l2",
+        "anno": "Filter coefficient i2"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c1",
+        "anno": "Filter coefficient c1"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c2",
+        "anno": "Filter coefficient c2"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c3",
+        "anno": "Filter coefficient c3"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c4",
+        "anno": "Filter coefficient c4"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "c5",
+        "anno": "Filter coefficient c5"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "CharacteristicIdealDiodes",
+    "completeName": "Modelica.Electrical.Analog.Examples.CharacteristicIdealDiodes",
+    "para": []
+  },
+  {
+    "id": "8",
+    "name": "CharacteristicThyristors",
+    "completeName": "Modelica.Electrical.Analog.Examples.CharacteristicThyristors",
+    "para": []
+  },
+  {
+    "id": "9",
+    "name": "ChuaCircuit",
+    "completeName": "Modelica.Electrical.Analog.Examples.ChuaCircuit",
+    "para": []
+  },
+  {
+    "id": "10",
+    "name": "DifferenceAmplifier",
+    "completeName": "Modelica.Electrical.Analog.Examples.DifferenceAmplifier",
+    "para": []
+  },
+  {
+    "id": "11",
+    "name": "HeatingMOSInverter",
+    "completeName": "Modelica.Electrical.Analog.Examples.HeatingMOSInverter",
+    "para": []
+  },
+  {
+    "id": "12",
+    "name": "HeatingNPN_NORGate",
+    "completeName": "Modelica.Electrical.Analog.Examples.HeatingNPN_NORGate",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "CapVal",
+        "anno": "Value for capacitances"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "tauVal",
+        "anno": "Value for ideal forward and reverse transit time of semiconductors"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "HeatingPNP_NORGate",
+    "completeName": "Modelica.Electrical.Analog.Examples.HeatingPNP_NORGate",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "CapVal",
+        "anno": "Value for capacitances"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "tauVal",
+        "anno": "Value for ideal forward and reverse transit time of semiconductors"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Resistor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Resistor",
+    "para": []
+  },
+  {
+    "id": "15",
+    "name": "HeatingRectifier",
+    "completeName": "Modelica.Electrical.Analog.Examples.HeatingRectifier",
+    "para": []
+  },
+  {
+    "id": "16",
+    "name": "NandGate",
+    "completeName": "Modelica.Electrical.Analog.Examples.NandGate",
+    "para": []
+  },
+  {
+    "id": "17",
+    "name": "OvervoltageProtection",
+    "completeName": "Modelica.Electrical.Analog.Examples.OvervoltageProtection",
+    "para": []
+  },
+  {
+    "id": "18",
+    "name": "Rectifier",
+    "completeName": "Modelica.Electrical.Analog.Examples.Rectifier",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VAC",
+        "anno": "RMS line-to-line"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Line frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "LAC",
+        "anno": "Line inductor"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Diode forward resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Diode backward conductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vknee",
+        "anno": "Diode threshold voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "CDC",
+        "anno": "DC capacitance"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "IDC",
+        "anno": "Load current"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "ShowSaturatingInductor",
+    "completeName": "Modelica.Electrical.Analog.Examples.ShowSaturatingInductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Lzer",
+        "anno": "Inductance near current=0"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Lnom",
+        "anno": "Nominal inductance at Nominal current"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Inom",
+        "anno": "Nominal current"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Linf",
+        "anno": "Inductance at large currents"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "U",
+        "anno": "Source voltage (peak)"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Source frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Angle",
+        "name": "phase",
+        "anno": "Source voltage phase shift"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "ShowVariableResistor",
+    "completeName": "Modelica.Electrical.Analog.Examples.ShowVariableResistor",
+    "para": []
+  },
+  {
+    "id": "21",
+    "name": "SwitchWithArc",
+    "completeName": "Modelica.Electrical.Analog.Examples.SwitchWithArc",
+    "para": []
+  },
+  {
+    "id": "22",
+    "name": "ThyristorBehaviourTest",
+    "completeName": "Modelica.Electrical.Analog.Examples.ThyristorBehaviourTest",
+    "para": []
+  },
+  {
+    "id": "23",
+    "name": "AmplifierWithOpAmpDetailed",
+    "completeName": "Modelica.Electrical.Analog.Examples.AmplifierWithOpAmpDetailed",
+    "para": []
+  },
+  {
+    "id": "24",
+    "name": "CompareTransformers",
+    "completeName": "Modelica.Electrical.Analog.Examples.CompareTransformers",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vdc",
+        "anno": "DC offset of voltage source"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vpeak",
+        "anno": "Peak voltage of voltage source"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of voltage source"
+      },
+      {
+        "type": "Modelica.Units.SI.Angle",
+        "name": "phi0",
+        "anno": "Phase of voltage source"
+      },
+      {
+        "type": "Real",
+        "name": "n",
+        "anno": "Turns ratio primary:secondary voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Primary resistance w.r.t. primary side"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L1sigma",
+        "anno": "Primary leakage inductance w.r.t. primary side"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Lm1",
+        "anno": "Magnetizing inductance w.r.t. primary side"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L2sigma",
+        "anno": "Secondary leakage inductance w.r.t. secondary side"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Secondary resistance w.r.t. secondary side"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "RL",
+        "anno": "Load resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L1",
+        "anno": "Primary no-load inductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L2",
+        "anno": "Secondary no-load inductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "M",
+        "anno": "Mutual inductance"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "name": "ControlledSwitchWithArc",
+    "completeName": "Modelica.Electrical.Analog.Examples.ControlledSwitchWithArc",
+    "para": []
+  },
+  {
+    "id": "26",
+    "name": "SimpleTriacCircuit",
+    "completeName": "Modelica.Electrical.Analog.Examples.SimpleTriacCircuit",
+    "para": []
+  },
+  {
+    "id": "27",
+    "name": "IdealTriacCircuit",
+    "completeName": "Modelica.Electrical.Analog.Examples.IdealTriacCircuit",
+    "para": []
+  },
+  {
+    "id": "28",
+    "name": "AD_DA_conversion",
+    "completeName": "Modelica.Electrical.Analog.Examples.AD_DA_conversion",
+    "para": [
+      {
+        "type": "Integer",
+        "name": "N",
+        "anno": "Digital signal width"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "GenerationOfFMUs",
+    "completeName": "Modelica.Electrical.Analog.Examples.GenerationOfFMUs",
+    "para": []
+  },
+  {
+    "id": "30",
+    "name": "ResonanceCircuits",
+    "completeName": "Modelica.Electrical.Analog.Examples.ResonanceCircuits",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Capacitance"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L",
+        "anno": "Inductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "fRes",
+        "anno": "Source frequency"
+      },
+      {
+        "type": "Real",
+        "name": "res",
+        "anno": "Built from f/fResonanace"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Source frequency"
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "name": "InvertingAmp",
+    "completeName": "Modelica.Electrical.Analog.Examples.InvertingAmp",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      },
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Arbitrary resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach desired amplification k"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "name": "SeriesResonance",
+    "completeName": "Modelica.Electrical.Analog.Examples.SeriesResonance",
+    "para": []
+  },
+  {
+    "id": "33",
+    "name": "ParallelResonance",
+    "completeName": "Modelica.Electrical.Analog.Examples.ParallelResonance",
+    "para": []
+  },
+  {
+    "id": "35",
+    "name": "NonInvertingAmplifier",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.NonInvertingAmplifier",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "name": "InvertingAmplifier",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.InvertingAmplifier",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "name": "DifferentialAmplifier",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.DifferentialAmplifier",
+    "para": [
+      {
+        "type": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.DifferentialAmplifierData",
+        "name": "data",
+        "anno": "Parameters for source, OpAmp and measurement"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "name": "Adder",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Adder",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Subtracter",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Subtracter",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "name": "Differentiator",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Differentiator",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "name": "Integrator",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Integrator",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "name": "LowPass",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.LowPass",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "fG",
+        "anno": "Limiting frequency"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "name": "HighPass",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.HighPass",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "fG",
+        "anno": "Limiting frequency"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "name": "ControlCircuit",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.ControlCircuit",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "T1",
+        "anno": "Small time constant"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "T2",
+        "anno": "Large time constant"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "Ti",
+        "anno": "Integral time constant"
+      },
+      {
+        "type": "Real",
+        "name": "kp",
+        "anno": "Proportional gain"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "name": "VoltageFollower",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.VoltageFollower",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ri",
+        "anno": "Inner resistance of input voltage source"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Rl",
+        "anno": "Load resistance"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "name": "Comparator",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Comparator",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vref",
+        "anno": "Reference voltage"
+      },
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Calculated potentiometer ratio to reach Vref"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Resistance of potentiometer"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "name": "InvertingSchmittTrigger",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.InvertingSchmittTrigger",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "vHys",
+        "anno": "(Positive) hysteresis voltage"
+      },
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Auxiliary calculated parameter to be used in R2 calculation"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Arbitrary resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach hysteresis voltage"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "SchmittTrigger",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.SchmittTrigger",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vin",
+        "anno": "Amplitude of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of input voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "vHys",
+        "anno": "(Positive) hysteresis voltage"
+      },
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Auxiliary calculated parameter to be used in R2 calculation"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Arbitrary resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach hysteresis voltage"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "Multivibrator",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.Multivibrator",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Desired frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Resistance 1 for adjusting the Schmitt trigger voltage level"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Resistance 2 for adjusting the Schmitt trigger voltage level"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Arbitrary resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Calculated capacitance to reach the desired frequency f"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "name": "SignalGenerator",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.SignalGenerator",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VAmp",
+        "anno": "Desired amplitude of output"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Arbitrary resistance for Schmitt trigger part"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance for Schmitt trigger to reach VAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Desired frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Arbitrary resistance of integrator part"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Calculated capacitance of integrator part to reach f"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "name": "LCOscillator",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.LCOscillator",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VAmp",
+        "anno": "Amplitude of output"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Desired frequency"
+      },
+      {
+        "type": "Real",
+        "name": "A",
+        "anno": "Amplification constant: A > 1 amplification, A = 1 pure sinusoidal oscillation, A < 0 damping"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L",
+        "anno": "Arbitrary inductance > 0"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Calculated capacitance to reach frequency f"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Damping resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Arbitrary high resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach amplification A"
+      },
+      {
+        "type": "Real",
+        "name": "gamma",
+        "anno": "Calculated characteristical parameter"
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "name": "PartialOpAmp",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.PartialOpAmp",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      },
+      {
+        "type": "Real",
+        "name": "V0",
+        "anno": "No-load amplification"
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "name": "Buffer",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Buffer",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Resistance at negative pin(s)"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach desired amplification k"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "name": "Gain",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Gain",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Resistance at negative input of OpAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach desired amplification k"
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "name": "Add",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Add",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k1",
+        "anno": "Weight of input 1"
+      },
+      {
+        "type": "Real",
+        "name": "k2",
+        "anno": "Weight of input 2"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Resistance at output of OpAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Calculated resistance to reach desired weight 1"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach desired weight 2"
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "name": "Feedback",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Feedback",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Resistance at inputs of OpAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R3",
+        "anno": "Calculated resistance to reach desired amplification k"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "name": "Der",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Der",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification at frequency f"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Resistance at output of OpAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Calculated capacitance to reach desired amplification k"
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "name": "Integrator",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Integrator",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification at frequency f"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Resistance at negative input of OpAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Calculated capacitance to reach desired amplification k"
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "name": "FirstOrder",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.FirstOrder",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Resistance at negative input of OpAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach k"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "T",
+        "anno": "Time constant"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Calculated capacitance to reach T"
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "name": "Derivative",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.Derivative",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Resistance at negative input of OpAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach k"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "T",
+        "anno": "Time constant"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Calculated capacitance to reach T"
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "name": "PI",
+    "completeName": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.PI",
+    "para": [
+      {
+        "type": "Real",
+        "name": "k",
+        "anno": "Desired amplification"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R1",
+        "anno": "Resistance at negative input of OpAmp"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R2",
+        "anno": "Calculated resistance to reach k"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "T",
+        "anno": "Time constant"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Calculated capacitance to reach T"
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "name": "Nand",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Nand",
+    "para": []
+  },
+  {
+    "id": "65",
+    "name": "NonlinearResistor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.NonlinearResistor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Ga",
+        "anno": "Conductance in inner voltage range"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Gb",
+        "anno": "Conductance in outer voltage range"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Ve",
+        "anno": "Inner voltage range limit"
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "name": "RealSwitch",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.RealSwitch",
+    "para": []
+  },
+  {
+    "id": "67",
+    "name": "Transistor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Transistor",
+    "para": []
+  },
+  {
+    "id": "68",
+    "name": "DirectCapacitor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.DirectCapacitor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Capacitance"
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "name": "InverseCapacitor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.InverseCapacitor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Capacitance"
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "name": "SwitchedCapacitor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.SwitchedCapacitor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "clock",
+        "anno": "Clock"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Resistance"
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "name": "Resistor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Resistor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Resistance"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "name": "DirectInductor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.DirectInductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L",
+        "anno": "Inductance"
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "name": "InverseInductor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.InverseInductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L",
+        "anno": "Inductance"
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "name": "Conductor",
+    "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Conductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "G",
+        "anno": "Conductance"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "name": "Ground",
+    "completeName": "Modelica.Electrical.Analog.Basic.Ground",
+    "para": []
+  },
+  {
+    "id": "77",
+    "name": "Resistor",
+    "completeName": "Modelica.Electrical.Analog.Basic.Resistor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Resistance at temperature T_ref"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "T_ref",
+        "anno": "Reference temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.LinearTemperatureCoefficient",
+        "name": "alpha",
+        "anno": "Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "name": "Conductor",
+    "completeName": "Modelica.Electrical.Analog.Basic.Conductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "G",
+        "anno": "Conductance at temperature T_ref"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "T_ref",
+        "anno": "Reference temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.LinearTemperatureCoefficient",
+        "name": "alpha",
+        "anno": "Temperature coefficient of conductance (G_actual = G_ref/(1 + alpha*(T_heatPort - T_ref))"
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "name": "Capacitor",
+    "completeName": "Modelica.Electrical.Analog.Basic.Capacitor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "C",
+        "anno": "Capacitance"
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "name": "Inductor",
+    "completeName": "Modelica.Electrical.Analog.Basic.Inductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L",
+        "anno": "Inductance"
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "name": "SaturatingInductor",
+    "completeName": "Modelica.Electrical.Analog.Basic.SaturatingInductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Inom",
+        "anno": "Nominal current"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Lnom",
+        "anno": "Nominal inductance at Nominal current"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Lzer",
+        "anno": "Inductance near current=0"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Linf",
+        "anno": "Inductance at large currents"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Ipar",
+        "anno": ""
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "name": "Transformer",
+    "completeName": "Modelica.Electrical.Analog.Basic.Transformer",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L1",
+        "anno": "Primary inductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L2",
+        "anno": "Secondary inductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "M",
+        "anno": "Coupling inductance"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "name": "M_Transformer",
+    "completeName": "Modelica.Electrical.Analog.Basic.M_Transformer",
+    "para": [
+      {
+        "type": "Integer",
+        "name": "N",
+        "anno": "Number of inductors"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "L",
+        "anno": "Inductances and coupling inductances"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Lm",
+        "anno": "Complete symmetric inductance matrix, calculated internally"
+      },
+      {
+        "type": "Integer",
+        "name": "dimL",
+        "anno": ""
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "name": "Gyrator",
+    "completeName": "Modelica.Electrical.Analog.Basic.Gyrator",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "G1",
+        "anno": "Primary gyration conductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "G2",
+        "anno": "Secondary gyration conductance"
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "name": "RotationalEMF",
+    "completeName": "Modelica.Electrical.Analog.Basic.RotationalEMF",
+    "para": [
+      {
+        "type": "Boolean",
+        "name": "useSupport",
+        "anno": "= true, if support flange enabled, otherwise implicitly grounded"
+      },
+      {
+        "type": "Modelica.Units.SI.ElectricalTorqueConstant",
+        "name": "k",
+        "anno": "Transformation coefficient"
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "name": "TranslationalEMF",
+    "completeName": "Modelica.Electrical.Analog.Basic.TranslationalEMF",
+    "para": [
+      {
+        "type": "Boolean",
+        "name": "useSupport",
+        "anno": "= true, if support flange enabled, otherwise implicitly grounded"
+      },
+      {
+        "type": "Modelica.Units.SI.ElectricalForceConstant",
+        "name": "k",
+        "anno": "Transformation coefficient"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "name": "VCV",
+    "completeName": "Modelica.Electrical.Analog.Basic.VCV",
+    "para": [
+      {
+        "type": "Real",
+        "name": "gain",
+        "anno": "Voltage gain"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "name": "VCC",
+    "completeName": "Modelica.Electrical.Analog.Basic.VCC",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "transConductance",
+        "anno": "Transconductance"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "name": "CCV",
+    "completeName": "Modelica.Electrical.Analog.Basic.CCV",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "transResistance",
+        "anno": "Transresistance"
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "name": "CCC",
+    "completeName": "Modelica.Electrical.Analog.Basic.CCC",
+    "para": [
+      {
+        "type": "Real",
+        "name": "gain",
+        "anno": "Current gain"
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "name": "OpAmp",
+    "completeName": "Modelica.Electrical.Analog.Basic.OpAmp",
+    "para": [
+      {
+        "type": "Real",
+        "name": "Slope",
+        "anno": "Slope of the out.v/vin characteristic at vin=0"
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "name": "OpAmpDetailed",
+    "completeName": "Modelica.Electrical.Analog.Basic.OpAmpDetailed",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Rdm",
+        "anno": "Input resistance (differential input mode)"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Rcm",
+        "anno": "Input resistance (common mode)"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Cin",
+        "anno": "Input capacitance"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vos",
+        "anno": "Input offset voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Ib",
+        "anno": "Input bias current"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Ios",
+        "anno": "Input offset current"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "vcp",
+        "anno": "Correction value for limiting by p_supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "vcm",
+        "anno": "Correction value for limiting by msupply"
+      },
+      {
+        "type": "Real",
+        "name": "Avd0",
+        "anno": "Differential amplifier [dB]"
+      },
+      {
+        "type": "Real",
+        "name": "CMRR",
+        "anno": "Common-mode rejection [dB]"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "fp1",
+        "anno": "Dominant pole"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "fp2",
+        "anno": "Pole frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "fp3",
+        "anno": "Pole frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "fp4",
+        "anno": "Pole frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "fz",
+        "anno": "Zero frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.VoltageSlope",
+        "name": "sr_p",
+        "anno": "Slew rate for increase"
+      },
+      {
+        "type": "Modelica.Units.SI.VoltageSlope",
+        "name": "sr_m",
+        "anno": "Slew rate for decrease"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Rout",
+        "anno": "Output resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Imaxso",
+        "anno": "Maximal output current (source current)"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Imaxsi",
+        "anno": "Maximal output current (sink current)"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "Ts",
+        "anno": "Sampling time"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "vcp_abs",
+        "anno": "Positive correction value for limiting by p_supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "vcm_abs",
+        "anno": "Positive correction value for limiting by msupply"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I1",
+        "anno": "Current of internal source I1"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I2",
+        "anno": "Current of internal source I2"
+      },
+      {
+        "type": "Real",
+        "name": "Avd0_val",
+        "anno": "Differential mode gain"
+      },
+      {
+        "type": "Real",
+        "name": "Avcm_val",
+        "anno": "Common mode gain"
+      },
+      {
+        "type": "Modelica.Units.SI.VoltageSlope",
+        "name": "sr_p_val",
+        "anno": "Value of slew rate for increase"
+      },
+      {
+        "type": "Modelica.Units.SI.VoltageSlope",
+        "name": "sr_m_val",
+        "anno": "Negative value of slew rate for increase"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Imaxso_val",
+        "anno": "Orientation out outp"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Imaxsi_val",
+        "anno": "Orientation into outp"
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "name": "VariableResistor",
+    "completeName": "Modelica.Electrical.Analog.Basic.VariableResistor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "T_ref",
+        "anno": "Reference temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.LinearTemperatureCoefficient",
+        "name": "alpha",
+        "anno": "Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "name": "VariableConductor",
+    "completeName": "Modelica.Electrical.Analog.Basic.VariableConductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "T_ref",
+        "anno": "Reference temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.LinearTemperatureCoefficient",
+        "name": "alpha",
+        "anno": "Temperature coefficient of conductance (G_actual = G/(1 + alpha*(T_heatPort - T_ref))"
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "name": "VariableCapacitor",
+    "completeName": "Modelica.Electrical.Analog.Basic.VariableCapacitor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Cmin",
+        "anno": "Lower bound for variable capacitance"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "IC",
+        "anno": "Initial Value"
+      },
+      {
+        "type": "Boolean",
+        "name": "UIC",
+        "anno": "Decision if initial value IC shall be used"
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "name": "VariableInductor",
+    "completeName": "Modelica.Electrical.Analog.Basic.VariableInductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Lmin",
+        "anno": "Lower bound for variable inductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "IC",
+        "anno": "Initial Value"
+      },
+      {
+        "type": "Boolean",
+        "name": "UIC",
+        "anno": "Decision if initial value IC shall be used"
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "name": "Potentiometer",
+    "completeName": "Modelica.Electrical.Analog.Basic.Potentiometer",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Resistance at temperature T_ref"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "T_ref",
+        "anno": "Reference temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.LinearTemperatureCoefficient",
+        "name": "alpha",
+        "anno": "Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"
+      },
+      {
+        "type": "Boolean",
+        "name": "useRinput",
+        "anno": "Use input for 0<r<1 (else constant)"
+      },
+      {
+        "type": "Real",
+        "name": "rConstant",
+        "anno": "Contact between n (r=0) and p (r=1)"
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "name": "GeneralCurrentToVoltageAdaptor",
+    "completeName": "Modelica.Electrical.Analog.Basic.GeneralCurrentToVoltageAdaptor",
+    "para": []
+  },
+  {
+    "id": "99",
+    "name": "GeneralVoltageToCurrentAdaptor",
+    "completeName": "Modelica.Electrical.Analog.Basic.GeneralVoltageToCurrentAdaptor",
+    "para": []
+  },
+  {
+    "id": "101",
+    "name": "IdealDiode",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealDiode",
+    "para": []
+  },
+  {
+    "id": "102",
+    "name": "IdealThyristor",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealThyristor",
+    "para": []
+  },
+  {
+    "id": "103",
+    "name": "IdealGTOThyristor",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealGTOThyristor",
+    "para": []
+  },
+  {
+    "id": "104",
+    "name": "IdealTwoWaySwitch",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealTwoWaySwitch",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Closed switch resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Opened switch conductance"
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "name": "IdealIntermediateSwitch",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealIntermediateSwitch",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Closed switch resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Opened switch conductance"
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "name": "ControlledIdealTwoWaySwitch",
+    "completeName": "Modelica.Electrical.Analog.Ideal.ControlledIdealTwoWaySwitch",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "level",
+        "anno": "Switch level"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Closed switch resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Opened switch conductance"
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "name": "ControlledIdealIntermediateSwitch",
+    "completeName": "Modelica.Electrical.Analog.Ideal.ControlledIdealIntermediateSwitch",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "level",
+        "anno": "Switch level"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Closed switch resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Opened switch conductance"
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "name": "IdealOpAmp",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmp",
+    "para": []
+  },
+  {
+    "id": "109",
+    "name": "IdealOpAmp3Pin",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmp3Pin",
+    "para": []
+  },
+  {
+    "id": "110",
+    "name": "IdealOpAmpLimited",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmpLimited",
+    "para": []
+  },
+  {
+    "id": "111",
+    "name": "IdealizedOpAmpLimited",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealizedOpAmpLimited",
+    "para": [
+      {
+        "type": "Real",
+        "name": "V0",
+        "anno": "No-load amplification"
+      },
+      {
+        "type": "Boolean",
+        "name": "useSupply",
+        "anno": "Use supply pins (otherwise constant supply)"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply voltage"
+      },
+      {
+        "type": "Boolean",
+        "name": "strict",
+        "anno": "= true, if strict limits with noEvent(..)"
+      },
+      {
+        "type": "Modelica.Blocks.Types.LimiterHomotopy",
+        "name": "homotopyType",
+        "anno": "Simplified model for homotopy-based initialization"
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "name": "IdealTransformer",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealTransformer",
+    "para": [
+      {
+        "type": "Real",
+        "name": "n",
+        "anno": "Turns ratio primary:secondary voltage"
+      },
+      {
+        "type": "Boolean",
+        "name": "considerMagnetization",
+        "anno": "Choice of considering magnetization"
+      },
+      {
+        "type": "Modelica.Units.SI.Inductance",
+        "name": "Lm1",
+        "anno": "Magnetization inductance w.r.t. primary side"
+      }
+    ]
+  },
+  {
+    "id": "113",
+    "name": "Idle",
+    "completeName": "Modelica.Electrical.Analog.Ideal.Idle",
+    "para": []
+  },
+  {
+    "id": "114",
+    "name": "Short",
+    "completeName": "Modelica.Electrical.Analog.Ideal.Short",
+    "para": []
+  },
+  {
+    "id": "115",
+    "name": "IdealOpeningSwitch",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpeningSwitch",
+    "para": []
+  },
+  {
+    "id": "116",
+    "name": "IdealClosingSwitch",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealClosingSwitch",
+    "para": []
+  },
+  {
+    "id": "117",
+    "name": "ControlledIdealOpeningSwitch",
+    "completeName": "Modelica.Electrical.Analog.Ideal.ControlledIdealOpeningSwitch",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "level",
+        "anno": "Switch level"
+      }
+    ]
+  },
+  {
+    "id": "118",
+    "name": "ControlledIdealClosingSwitch",
+    "completeName": "Modelica.Electrical.Analog.Ideal.ControlledIdealClosingSwitch",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "level",
+        "anno": "Switch level"
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "name": "OpenerWithArc",
+    "completeName": "Modelica.Electrical.Analog.Ideal.OpenerWithArc",
+    "para": []
+  },
+  {
+    "id": "120",
+    "name": "CloserWithArc",
+    "completeName": "Modelica.Electrical.Analog.Ideal.CloserWithArc",
+    "para": []
+  },
+  {
+    "id": "121",
+    "name": "ControlledOpenerWithArc",
+    "completeName": "Modelica.Electrical.Analog.Ideal.ControlledOpenerWithArc",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "level",
+        "anno": "Switch level"
+      }
+    ]
+  },
+  {
+    "id": "122",
+    "name": "ControlledCloserWithArc",
+    "completeName": "Modelica.Electrical.Analog.Ideal.ControlledCloserWithArc",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "level",
+        "anno": "Switch level"
+      }
+    ]
+  },
+  {
+    "id": "123",
+    "name": "IdealTriac",
+    "completeName": "Modelica.Electrical.Analog.Ideal.IdealTriac",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Closed triac resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Opened triac conductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vknee",
+        "anno": "Threshold voltage for positive and negative phase"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Rdis",
+        "anno": "Resistance of disturbance elimination"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Cdis",
+        "anno": "Capacity of disturbance elimination"
+      }
+    ]
+  },
+  {
+    "id": "124",
+    "name": "AD_Converter",
+    "completeName": "Modelica.Electrical.Analog.Ideal.AD_Converter",
+    "para": [
+      {
+        "type": "Integer",
+        "name": "N",
+        "anno": "Resolution in bits - output signal width"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VRefHigh",
+        "anno": "High reference voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VRefLow",
+        "anno": "Low reference voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Rin",
+        "anno": "Input resistance"
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "name": "DA_Converter",
+    "completeName": "Modelica.Electrical.Analog.Ideal.DA_Converter",
+    "para": [
+      {
+        "type": "Integer",
+        "name": "N",
+        "anno": "Resolution - input signal width"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vref",
+        "anno": "Reference voltage"
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "name": "TwoPin",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.TwoPin",
+    "para": []
+  },
+  {
+    "id": "128",
+    "name": "OnePort",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.OnePort",
+    "para": []
+  },
+  {
+    "id": "129",
+    "name": "FourPin",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.FourPin",
+    "para": []
+  },
+  {
+    "id": "130",
+    "name": "TwoPort",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.TwoPort",
+    "para": []
+  },
+  {
+    "id": "131",
+    "name": "ConditionalHeatPort",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort",
+    "para": [
+      {
+        "type": "Boolean",
+        "name": "useHeatPort",
+        "anno": "= true, if heatPort is enabled"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "T",
+        "anno": "Fixed device temperature if useHeatPort = false"
+      }
+    ]
+  },
+  {
+    "id": "132",
+    "name": "PartialConditionalHeatPort",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.PartialConditionalHeatPort",
+    "para": [
+      {
+        "type": "Boolean",
+        "name": "useHeatPort",
+        "anno": "=true, if HeatPort is enabled"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "T",
+        "anno": "Fixed device temperature if useHeatPort = false"
+      }
+    ]
+  },
+  {
+    "id": "133",
+    "name": "AbsoluteSensor",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.AbsoluteSensor",
+    "para": []
+  },
+  {
+    "id": "134",
+    "name": "RelativeSensor",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.RelativeSensor",
+    "para": []
+  },
+  {
+    "id": "135",
+    "name": "VoltageSource",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.VoltageSource",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "offset",
+        "anno": "Voltage offset"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "startTime",
+        "anno": "Time offset"
+      }
+    ]
+  },
+  {
+    "id": "136",
+    "name": "CurrentSource",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.CurrentSource",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "offset",
+        "anno": "Current offset"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "startTime",
+        "anno": "Time offset"
+      }
+    ]
+  },
+  {
+    "id": "137",
+    "name": "IdealSemiconductor",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.IdealSemiconductor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Forward state-on differential resistance (closed resistance)"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Backward state-off conductance (opened conductance)"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vknee",
+        "anno": "Forward threshold voltage"
+      }
+    ]
+  },
+  {
+    "id": "138",
+    "name": "IdealSwitch",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.IdealSwitch",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Closed switch resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Opened switch conductance"
+      }
+    ]
+  },
+  {
+    "id": "139",
+    "name": "IdealSwitchWithArc",
+    "completeName": "Modelica.Electrical.Analog.Interfaces.IdealSwitchWithArc",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Closed switch resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Goff",
+        "anno": "Opened switch conductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V0",
+        "anno": "Initial arc voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.VoltageSlope",
+        "name": "dVdt",
+        "anno": "Arc voltage slope"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vmax",
+        "anno": "Max. arc voltage"
+      }
+    ]
+  },
+  {
+    "id": "141",
+    "name": "OLine",
+    "completeName": "Modelica.Electrical.Analog.Lines.OLine",
+    "para": []
+  },
+  {
+    "id": "142",
+    "name": "M_OLine",
+    "completeName": "Modelica.Electrical.Analog.Lines.M_OLine",
+    "para": []
+  },
+  {
+    "id": "143",
+    "name": "ULine",
+    "completeName": "Modelica.Electrical.Analog.Lines.ULine",
+    "para": []
+  },
+  {
+    "id": "144",
+    "name": "TLine1",
+    "completeName": "Modelica.Electrical.Analog.Lines.TLine1",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Z0",
+        "anno": "Characteristic impedance"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "TD",
+        "anno": "Transmission delay"
+      }
+    ]
+  },
+  {
+    "id": "145",
+    "name": "TLine2",
+    "completeName": "Modelica.Electrical.Analog.Lines.TLine2",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Z0",
+        "anno": "Characteristic impedance"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "F",
+        "anno": "Frequency"
+      },
+      {
+        "type": "Real",
+        "name": "NL",
+        "anno": "Normalized length"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "TD",
+        "anno": ""
+      }
+    ]
+  },
+  {
+    "id": "146",
+    "name": "TLine3",
+    "completeName": "Modelica.Electrical.Analog.Lines.TLine3",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Z0",
+        "anno": "Natural impedance"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "F",
+        "anno": "Frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "TD",
+        "anno": ""
+      }
+    ]
+  },
+  {
+    "id": "148",
+    "name": "Diode",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.Diode",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Ids",
+        "anno": "Saturation current"
+      },
+      {
+        "type": "Boolean",
+        "name": "useTemperatureDependency",
+        "anno": "= true, if the diode current depends on temperature, otherwise utilizes the voltage equivalent of temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Voltage equivalent of temperature (kT/qn)"
+      },
+      {
+        "type": "Real",
+        "name": "Maxexp",
+        "anno": "Max. exponent for linear continuation"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Parallel ohmic resistance"
+      },
+      {
+        "type": "Real",
+        "name": "EG",
+        "anno": "Activation energy"
+      },
+      {
+        "type": "Real",
+        "name": "N",
+        "anno": "Emission coefficient"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "TNOM",
+        "anno": "Parameter measurement temperature"
+      },
+      {
+        "type": "Real",
+        "name": "XTI",
+        "anno": "Temperature exponent of saturation current"
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "name": "Diode2",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.Diode2",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vf",
+        "anno": "Forward voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Ids",
+        "anno": "Reverse saturation current"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Rs",
+        "anno": "Ohmic resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Thermal voltage (kT/q), 0.026 at normal conditions (around 20 degC)"
+      },
+      {
+        "type": "Real",
+        "name": "N",
+        "anno": "Emission coefficient"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Bv",
+        "anno": "Reverse breakdown voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Gp",
+        "anno": "Parallel conductance for numerical stability"
+      }
+    ]
+  },
+  {
+    "id": "150",
+    "name": "ZDiode",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.ZDiode",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Ids",
+        "anno": "Saturation current"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Voltage equivalent of temperature (kT/qn)"
+      },
+      {
+        "type": "Real",
+        "name": "Maxexp",
+        "anno": "Max. exponent for linear continuation"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "R",
+        "anno": "Parallel ohmic resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Bv",
+        "anno": "Breakthrough voltage = Zener- or Z-voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Ibv",
+        "anno": "Breakthrough knee current"
+      },
+      {
+        "type": "Real",
+        "name": "Nbv",
+        "anno": "Breakthrough emission coefficient"
+      }
+    ]
+  },
+  {
+    "id": "151",
+    "name": "NMOS",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.NMOS",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Length",
+        "name": "W",
+        "anno": "Width"
+      },
+      {
+        "type": "Modelica.Units.SI.Length",
+        "name": "L",
+        "anno": "Length"
+      },
+      {
+        "type": "Modelica.Units.SI.Transconductance",
+        "name": "Beta",
+        "anno": "Transconductance parameter"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Zero bias threshold voltage"
+      },
+      {
+        "type": "Real",
+        "name": "K2",
+        "anno": "Bulk threshold parameter"
+      },
+      {
+        "type": "Real",
+        "name": "K5",
+        "anno": "Reduction of pinch-off region"
+      },
+      {
+        "type": "Modelica.Units.SI.Length",
+        "name": "dW",
+        "anno": "Narrowing of channel"
+      },
+      {
+        "type": "Modelica.Units.SI.Length",
+        "name": "dL",
+        "anno": "Shortening of channel"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "RDS",
+        "anno": "Drain-Source-Resistance"
+      },
+      {
+        "type": "Boolean",
+        "name": "useTemperatureDependency",
+        "anno": "= true, if parameters Beta, K2 and Vt depend on temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "Tnom",
+        "anno": "Parameter measurement temperature"
+      },
+      {
+        "type": "Real",
+        "name": "kvt",
+        "anno": "Fitting parameter for Vt"
+      },
+      {
+        "type": "Real",
+        "name": "kk2",
+        "anno": "Fitting parameter for K2"
+      }
+    ]
+  },
+  {
+    "id": "152",
+    "name": "PMOS",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.PMOS",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Length",
+        "name": "W",
+        "anno": "Width"
+      },
+      {
+        "type": "Modelica.Units.SI.Length",
+        "name": "L",
+        "anno": "Length"
+      },
+      {
+        "type": "Modelica.Units.SI.Transconductance",
+        "name": "Beta",
+        "anno": "Transconductance parameter"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Zero bias threshold voltage"
+      },
+      {
+        "type": "Real",
+        "name": "K2",
+        "anno": "Bulk threshold parameter"
+      },
+      {
+        "type": "Real",
+        "name": "K5",
+        "anno": "Reduction of pinch-off region"
+      },
+      {
+        "type": "Modelica.Units.SI.Length",
+        "name": "dW",
+        "anno": "Narrowing of channel"
+      },
+      {
+        "type": "Modelica.Units.SI.Length",
+        "name": "dL",
+        "anno": "Shortening of channel"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "RDS",
+        "anno": "Drain-Source-Resistance"
+      },
+      {
+        "type": "Boolean",
+        "name": "useTemperatureDependency",
+        "anno": "= true, if parameters Beta, K2 and Vt depend on temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "Tnom",
+        "anno": "Parameter measurement temperature"
+      },
+      {
+        "type": "Real",
+        "name": "kvt",
+        "anno": "Fitting parameter for Vt"
+      },
+      {
+        "type": "Real",
+        "name": "kk2",
+        "anno": "Fitting parameter for K2"
+      }
+    ]
+  },
+  {
+    "id": "153",
+    "name": "NPN",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.NPN",
+    "para": [
+      {
+        "type": "Real",
+        "name": "Bf",
+        "anno": "Forward beta"
+      },
+      {
+        "type": "Real",
+        "name": "Br",
+        "anno": "Reverse beta"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Is",
+        "anno": "Transport saturation current"
+      },
+      {
+        "type": "Modelica.Units.SI.InversePotential",
+        "name": "Vak",
+        "anno": "Early voltage (inverse), 1/Volt"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "Tauf",
+        "anno": "Ideal forward transit time"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "Taur",
+        "anno": "Ideal reverse transit time"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Ccs",
+        "anno": "Collector-substrate(ground) cap."
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Cje",
+        "anno": "Base-emitter zero bias depletion cap."
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Cjc",
+        "anno": "Base-coll. zero bias depletion cap."
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Phie",
+        "anno": "Base-emitter diffusion voltage"
+      },
+      {
+        "type": "Real",
+        "name": "Me",
+        "anno": "Base-emitter gradation exponent"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Phic",
+        "anno": "Base-collector diffusion voltage"
+      },
+      {
+        "type": "Real",
+        "name": "Mc",
+        "anno": "Base-collector gradation exponent"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Gbc",
+        "anno": "Base-collector conductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Gbe",
+        "anno": "Base-emitter conductance"
+      },
+      {
+        "type": "Real",
+        "name": "EMin",
+        "anno": "If x < EMin, the exp(x) function is linearized"
+      },
+      {
+        "type": "Real",
+        "name": "EMax",
+        "anno": "If x > EMax, the exp(x) function is linearized"
+      },
+      {
+        "type": "Boolean",
+        "name": "useTemperatureDependency",
+        "anno": "= true, if parameters Bf, Br, Is and Vt depend on temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Voltage equivalent of temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "Tnom",
+        "anno": "Parameter measurement temperature"
+      },
+      {
+        "type": "Real",
+        "name": "XTI",
+        "anno": "Temperature exponent for effect on Is"
+      },
+      {
+        "type": "Real",
+        "name": "XTB",
+        "anno": "Forward and reverse beta temperature exponent"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "EG",
+        "anno": "Energy gap for temperature effect on Is"
+      },
+      {
+        "type": "Real",
+        "name": "NF",
+        "anno": "Forward current emission coefficient"
+      },
+      {
+        "type": "Real",
+        "name": "NR",
+        "anno": "Reverse current emission coefficient"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "IC",
+        "anno": "Initial value of collector to substrate voltage"
+      },
+      {
+        "type": "Boolean",
+        "name": "UIC",
+        "anno": "Decision if initial value IC should be used"
+      },
+      {
+        "type": "Boolean",
+        "name": "useSubstrate",
+        "anno": "= false, if substrate is implicitly grounded"
+      }
+    ]
+  },
+  {
+    "id": "154",
+    "name": "PNP",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.PNP",
+    "para": [
+      {
+        "type": "Real",
+        "name": "Bf",
+        "anno": "Forward beta"
+      },
+      {
+        "type": "Real",
+        "name": "Br",
+        "anno": "Reverse beta"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "Is",
+        "anno": "Transport saturation current"
+      },
+      {
+        "type": "Modelica.Units.SI.InversePotential",
+        "name": "Vak",
+        "anno": "Early voltage (inverse), 1/Volt"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "Tauf",
+        "anno": "Ideal forward transit time"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "Taur",
+        "anno": "Ideal reverse transit time"
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Ccs",
+        "anno": "Collector-substrate(ground) cap."
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Cje",
+        "anno": "Base-emitter zero bias depletion cap."
+      },
+      {
+        "type": "Modelica.Units.SI.Capacitance",
+        "name": "Cjc",
+        "anno": "Base-coll. zero bias depletion cap."
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Phie",
+        "anno": "Base-emitter diffusion voltage"
+      },
+      {
+        "type": "Real",
+        "name": "Me",
+        "anno": "Base-emitter gradation exponent"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Phic",
+        "anno": "Base-collector diffusion voltage"
+      },
+      {
+        "type": "Real",
+        "name": "Mc",
+        "anno": "Base-collector gradation exponent"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Gbc",
+        "anno": "Base-collector conductance"
+      },
+      {
+        "type": "Modelica.Units.SI.Conductance",
+        "name": "Gbe",
+        "anno": "Base-emitter conductance"
+      },
+      {
+        "type": "Real",
+        "name": "EMin",
+        "anno": "If x < EMin, the exp(x) function is linearized"
+      },
+      {
+        "type": "Real",
+        "name": "EMax",
+        "anno": "If x > EMax, the exp(x) function is linearized"
+      },
+      {
+        "type": "Boolean",
+        "name": "useTemperatureDependency",
+        "anno": "= true, if parameters Bf, Br, Is and Vt depend on temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Voltage equivalent of temperature"
+      },
+      {
+        "type": "Modelica.Units.SI.Temperature",
+        "name": "Tnom",
+        "anno": "Parameter measurement temperature"
+      },
+      {
+        "type": "Real",
+        "name": "XTI",
+        "anno": "Temperature exponent for effect on Is"
+      },
+      {
+        "type": "Real",
+        "name": "XTB",
+        "anno": "Forward and reverse beta temperature exponent"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "EG",
+        "anno": "Energy gap for temperature effect on Is"
+      },
+      {
+        "type": "Real",
+        "name": "NF",
+        "anno": "Forward current emission coefficient"
+      },
+      {
+        "type": "Real",
+        "name": "NR",
+        "anno": "Reverse current emission coefficient"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "IC",
+        "anno": "Initial value of collector to substrate voltage"
+      },
+      {
+        "type": "Boolean",
+        "name": "UIC",
+        "anno": "Decision if initial value IC should be used"
+      },
+      {
+        "type": "Boolean",
+        "name": "useSubstrate",
+        "anno": "= false, if substrate is implicitly grounded"
+      }
+    ]
+  },
+  {
+    "id": "155",
+    "name": "Thyristor",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.Thyristor",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VDRM",
+        "anno": "Forward breakthrough voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VRRM",
+        "anno": "Reverse breakthrough voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "IDRM",
+        "anno": "Saturation current"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VTM",
+        "anno": "Conducting voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "IH",
+        "anno": "Holding current"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "ITM",
+        "anno": "Conducting current"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VGT",
+        "anno": "Gate trigger voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "IGT",
+        "anno": "Gate trigger current"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "TON",
+        "anno": "Switch on time"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "TOFF",
+        "anno": "Switch off time"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Voltage equivalent of temperature (kT/qn)"
+      },
+      {
+        "type": "Real",
+        "name": "Nbv",
+        "anno": "Reverse Breakthrough emission coefficient"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Von",
+        "anno": ""
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Voff",
+        "anno": ""
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Ron",
+        "anno": "Forward conducting mode resistance"
+      },
+      {
+        "type": "Modelica.Units.SI.Resistance",
+        "name": "Roff",
+        "anno": "Blocking mode resistance"
+      }
+    ]
+  },
+  {
+    "id": "156",
+    "name": "SimpleTriac",
+    "completeName": "Modelica.Electrical.Analog.Semiconductors.SimpleTriac",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VDRM",
+        "anno": "Forward breakthrough voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VRRM",
+        "anno": "Reverse breakthrough voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "IDRM",
+        "anno": "Saturation current"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VTM",
+        "anno": "Conducting voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "IH",
+        "anno": "Holding current"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "ITM",
+        "anno": "Conducting current"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "VGT",
+        "anno": "Gate trigger voltage"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "IGT",
+        "anno": "Gate trigger current"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "TON",
+        "anno": "Switch on time"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "TOFF",
+        "anno": "Switch off time"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vt",
+        "anno": "Voltage equivalent of temperature (kT/qn)"
+      },
+      {
+        "type": "Real",
+        "name": "Nbv",
+        "anno": "Reverse Breakthrough emission coefficient"
+      }
+    ]
+  },
+  {
+    "id": "158",
+    "name": "PotentialSensor",
+    "completeName": "Modelica.Electrical.Analog.Sensors.PotentialSensor",
+    "para": []
+  },
+  {
+    "id": "159",
+    "name": "VoltageSensor",
+    "completeName": "Modelica.Electrical.Analog.Sensors.VoltageSensor",
+    "para": []
+  },
+  {
+    "id": "160",
+    "name": "CurrentSensor",
+    "completeName": "Modelica.Electrical.Analog.Sensors.CurrentSensor",
+    "para": []
+  },
+  {
+    "id": "161",
+    "name": "PowerSensor",
+    "completeName": "Modelica.Electrical.Analog.Sensors.PowerSensor",
+    "para": []
+  },
+  {
+    "id": "162",
+    "name": "MultiSensor",
+    "completeName": "Modelica.Electrical.Analog.Sensors.MultiSensor",
+    "para": []
+  },
+  {
+    "id": "164",
+    "name": "SignalVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.SignalVoltage",
+    "para": []
+  },
+  {
+    "id": "165",
+    "name": "ConstantVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.ConstantVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Value of constant voltage"
+      }
+    ]
+  },
+  {
+    "id": "166",
+    "name": "StepVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.StepVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Height of step"
+      }
+    ]
+  },
+  {
+    "id": "167",
+    "name": "RampVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.RampVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Height of ramp"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "duration",
+        "anno": "Duration of ramp"
+      }
+    ]
+  },
+  {
+    "id": "168",
+    "name": "SineVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.SineVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Amplitude of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Angle",
+        "name": "phase",
+        "anno": "Phase of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of sine wave"
+      }
+    ]
+  },
+  {
+    "id": "169",
+    "name": "CosineVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.CosineVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Amplitude of cosine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Angle",
+        "name": "phase",
+        "anno": "Phase of cosine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of cosine wave"
+      }
+    ]
+  },
+  {
+    "id": "170",
+    "name": "SineVoltageVariableFrequencyAndAmplitude",
+    "completeName": "Modelica.Electrical.Analog.Sources.SineVoltageVariableFrequencyAndAmplitude",
+    "para": [
+      {
+        "type": "Boolean",
+        "name": "useConstantAmplitude",
+        "anno": "Enable constant amplitude"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "constantAmplitude",
+        "anno": "Constant amplitude"
+      },
+      {
+        "type": "Boolean",
+        "name": "useConstantFrequency",
+        "anno": "Enable constant frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "constantFrequency",
+        "anno": "Constant frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "offset",
+        "anno": "Offset of the sine wave"
+      }
+    ]
+  },
+  {
+    "id": "171",
+    "name": "CosineVoltageVariableFrequencyAndAmplitude",
+    "completeName": "Modelica.Electrical.Analog.Sources.CosineVoltageVariableFrequencyAndAmplitude",
+    "para": [
+      {
+        "type": "Boolean",
+        "name": "useConstantAmplitude",
+        "anno": "Enable constant amplitude"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "constantAmplitude",
+        "anno": "Constant amplitude"
+      },
+      {
+        "type": "Boolean",
+        "name": "useConstantFrequency",
+        "anno": "Enable constant frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "constantFrequency",
+        "anno": "Constant frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "offset",
+        "anno": "Offset of the sine wave"
+      }
+    ]
+  },
+  {
+    "id": "172",
+    "name": "ExpSineVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.ExpSineVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Amplitude of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Angle",
+        "name": "phase",
+        "anno": "Phase of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Damping",
+        "name": "damping",
+        "anno": "Damping coefficient of sine wave"
+      }
+    ]
+  },
+  {
+    "id": "173",
+    "name": "ExponentialsVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.ExponentialsVoltage",
+    "para": [
+      {
+        "type": "Real",
+        "name": "vMax",
+        "anno": "Upper bound for rising edge"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "riseTime",
+        "anno": "Rise time"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "riseTimeConst",
+        "anno": "Rise time constant"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "fallTimeConst",
+        "anno": "Fall time constant"
+      }
+    ]
+  },
+  {
+    "id": "174",
+    "name": "PulseVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.PulseVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Amplitude of pulse"
+      },
+      {
+        "type": "Real",
+        "name": "width",
+        "anno": "Width of pulse in % of period"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "period",
+        "anno": "Time for one period"
+      }
+    ]
+  },
+  {
+    "id": "175",
+    "name": "SawToothVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.SawToothVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Amplitude of saw tooth"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "period",
+        "anno": "Time for one period"
+      }
+    ]
+  },
+  {
+    "id": "176",
+    "name": "TrapezoidVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.TrapezoidVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "V",
+        "anno": "Amplitude of trapezoid"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "rising",
+        "anno": "Rising duration of trapezoid"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "width",
+        "anno": "Width duration of trapezoid"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "falling",
+        "anno": "Falling duration of trapezoid"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "period",
+        "anno": "Time for one period"
+      },
+      {
+        "type": "Integer",
+        "name": "nperiod",
+        "anno": "Number of periods (< 0 means infinite number of periods)"
+      }
+    ]
+  },
+  {
+    "id": "177",
+    "name": "TableVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.TableVoltage",
+    "para": []
+  },
+  {
+    "id": "178",
+    "name": "SignalCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.SignalCurrent",
+    "para": []
+  },
+  {
+    "id": "179",
+    "name": "ConstantCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.ConstantCurrent",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I",
+        "anno": "Value of constant current"
+      }
+    ]
+  },
+  {
+    "id": "180",
+    "name": "StepCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.StepCurrent",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I",
+        "anno": "Height of step"
+      }
+    ]
+  },
+  {
+    "id": "181",
+    "name": "RampCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.RampCurrent",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I",
+        "anno": "Height of ramp"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "duration",
+        "anno": "Duration of ramp"
+      }
+    ]
+  },
+  {
+    "id": "182",
+    "name": "SineCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.SineCurrent",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I",
+        "anno": "Amplitude of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Angle",
+        "name": "phase",
+        "anno": "Phase of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of sine wave"
+      }
+    ]
+  },
+  {
+    "id": "183",
+    "name": "CosineCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.CosineCurrent",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I",
+        "anno": "Amplitude of cosine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Angle",
+        "name": "phase",
+        "anno": "Phase of cosine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of cosine wave"
+      }
+    ]
+  },
+  {
+    "id": "184",
+    "name": "SineCurrentVariableFrequencyAndAmplitude",
+    "completeName": "Modelica.Electrical.Analog.Sources.SineCurrentVariableFrequencyAndAmplitude",
+    "para": [
+      {
+        "type": "Boolean",
+        "name": "useConstantAmplitude",
+        "anno": "Enable constant amplitude"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "constantAmplitude",
+        "anno": "Constant amplitude"
+      },
+      {
+        "type": "Boolean",
+        "name": "useConstantFrequency",
+        "anno": "Enable constant frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "constantFrequency",
+        "anno": "Constant frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "offset",
+        "anno": "Offset of the sine wave"
+      }
+    ]
+  },
+  {
+    "id": "185",
+    "name": "CosineCurrentVariableFrequencyAndAmplitude",
+    "completeName": "Modelica.Electrical.Analog.Sources.CosineCurrentVariableFrequencyAndAmplitude",
+    "para": [
+      {
+        "type": "Boolean",
+        "name": "useConstantAmplitude",
+        "anno": "Enable constant amplitude"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "constantAmplitude",
+        "anno": "Constant amplitude"
+      },
+      {
+        "type": "Boolean",
+        "name": "useConstantFrequency",
+        "anno": "Enable constant frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "constantFrequency",
+        "anno": "Constant frequency"
+      },
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "offset",
+        "anno": "Offset of the sine wave"
+      }
+    ]
+  },
+  {
+    "id": "186",
+    "name": "ExpSineCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.ExpSineCurrent",
+    "para": [
+      {
+        "type": "Real",
+        "name": "I",
+        "anno": "Amplitude of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Frequency",
+        "name": "f",
+        "anno": "Frequency of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Angle",
+        "name": "phase",
+        "anno": "Phase of sine wave"
+      },
+      {
+        "type": "Modelica.Units.SI.Damping",
+        "name": "damping",
+        "anno": "Damping coefficient of sine wave"
+      }
+    ]
+  },
+  {
+    "id": "187",
+    "name": "ExponentialsCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.ExponentialsCurrent",
+    "para": [
+      {
+        "type": "Real",
+        "name": "iMax",
+        "anno": "Upper bound for rising edge"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "riseTime",
+        "anno": "Rise time"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "riseTimeConst",
+        "anno": "Rise time constant"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "fallTimeConst",
+        "anno": "Fall time constant"
+      }
+    ]
+  },
+  {
+    "id": "188",
+    "name": "PulseCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.PulseCurrent",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I",
+        "anno": "Amplitude of pulse"
+      },
+      {
+        "type": "Real",
+        "name": "width",
+        "anno": "Width of pulse in % of period"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "period",
+        "anno": "Time for one period"
+      }
+    ]
+  },
+  {
+    "id": "189",
+    "name": "SawToothCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.SawToothCurrent",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I",
+        "anno": "Amplitude of saw tooth"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "period",
+        "anno": "Time for one period"
+      }
+    ]
+  },
+  {
+    "id": "190",
+    "name": "TrapezoidCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.TrapezoidCurrent",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Current",
+        "name": "I",
+        "anno": "Amplitude of trapezoid"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "rising",
+        "anno": "Rising duration of trapezoid"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "width",
+        "anno": "Width duration of trapezoid"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "falling",
+        "anno": "Falling duration of trapezoid"
+      },
+      {
+        "type": "Modelica.Units.SI.Time",
+        "name": "period",
+        "anno": "Time for one period"
+      },
+      {
+        "type": "Integer",
+        "name": "nperiod",
+        "anno": "Number of periods (< 0 means infinite number of periods)"
+      }
+    ]
+  },
+  {
+    "id": "191",
+    "name": "TableCurrent",
+    "completeName": "Modelica.Electrical.Analog.Sources.TableCurrent",
+    "para": []
+  },
+  {
+    "id": "192",
+    "name": "SupplyVoltage",
+    "completeName": "Modelica.Electrical.Analog.Sources.SupplyVoltage",
+    "para": [
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vps",
+        "anno": "Positive supply"
+      },
+      {
+        "type": "Modelica.Units.SI.Voltage",
+        "name": "Vns",
+        "anno": "Negative supply"
+      }
+    ]
+  },
+  {
+    "id": "194",
+    "name": "VoltageSource",
+    "completeName": "Modelica.Electrical.Analog.Icons.VoltageSource",
+    "para": []
+  },
+  {
+    "id": "195",
+    "name": "CurrentSource",
+    "completeName": "Modelica.Electrical.Analog.Icons.CurrentSource",
+    "para": []
+  }
+]

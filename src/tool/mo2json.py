@@ -94,8 +94,6 @@ def GetAllModel(completeName,thisname):
 				childInfo = GetAllModel(childCompleteName,childName)
 				if len(childInfo["children"])!=0:
 					childList.append(childInfo)
-				else:
-					id-=1
 	else:
 		modelItem.append({"id":str(id),"name":thisname,"completeName":completeName,"para":GetParametersList(completeName)})
 	return {"id":str(id),"type":type,"name":thisname,"children":childList}
