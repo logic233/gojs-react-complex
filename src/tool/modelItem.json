@@ -39,7 +39,8 @@
         "name": "c5",
         "anno": "Filter coefficient c5"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "5",
@@ -80,6 +81,179 @@
         "type": "Modelica.Units.SI.Capacitance",
         "name": "c5",
         "anno": "Filter coefficient c5"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "",
+        "pos": [
+          -0.56,
+          0.7
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "",
+        "pos": [
+          -0.56,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n3",
+        "anno": "",
+        "pos": [
+          -0.56,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n4",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n5",
+        "anno": "",
+        "pos": [
+          -0.06000000000000005,
+          0.75
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "",
+        "pos": [
+          -0.255,
+          1.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n6",
+        "anno": "",
+        "pos": [
+          0.2,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n7",
+        "anno": "",
+        "pos": [
+          0.48,
+          0.75
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n8",
+        "anno": "",
+        "pos": [
+          0.48,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "",
+        "pos": [
+          0.48,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "out1",
+        "anno": "",
+        "pos": [
+          0.73,
+          1.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p3",
+        "anno": "",
+        "pos": [
+          0.8,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n9",
+        "anno": "",
+        "pos": [
+          0.94,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n10",
+        "anno": "",
+        "pos": [
+          0.94,
+          0.75
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n11",
+        "anno": "",
+        "pos": [
+          1.2,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n12",
+        "anno": "",
+        "pos": [
+          1.7,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n13",
+        "anno": "",
+        "pos": [
+          1.7,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p4",
+        "anno": "",
+        "pos": [
+          1.455,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n14",
+        "anno": "",
+        "pos": [
+          1.455,
+          0.75
+        ]
       }
     ]
   },
@@ -123,37 +297,215 @@
         "name": "c5",
         "anno": "Filter coefficient c5"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "",
+        "pos": [
+          -0.565,
+          0.6
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "",
+        "pos": [
+          -0.565,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n3",
+        "anno": "",
+        "pos": [
+          -0.565,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n4",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n5",
+        "anno": "",
+        "pos": [
+          -0.06499999999999995,
+          0.65
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "",
+        "pos": [
+          -0.26,
+          1.1
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n6",
+        "anno": "",
+        "pos": [
+          0.195,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n7",
+        "anno": "",
+        "pos": [
+          0.475,
+          0.65
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n8",
+        "anno": "",
+        "pos": [
+          0.475,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "",
+        "pos": [
+          0.475,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "out1",
+        "anno": "",
+        "pos": [
+          0.725,
+          1.1
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p3",
+        "anno": "",
+        "pos": [
+          0.7949999999999999,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n9",
+        "anno": "",
+        "pos": [
+          0.935,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n10",
+        "anno": "",
+        "pos": [
+          0.935,
+          0.65
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n11",
+        "anno": "",
+        "pos": [
+          1.1949999999999998,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n12",
+        "anno": "",
+        "pos": [
+          1.695,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n13",
+        "anno": "",
+        "pos": [
+          1.695,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p4",
+        "anno": "",
+        "pos": [
+          1.45,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n14",
+        "anno": "",
+        "pos": [
+          1.45,
+          0.65
+        ]
+      }
     ]
   },
   {
     "id": "7",
     "name": "CharacteristicIdealDiodes",
     "completeName": "Modelica.Electrical.Analog.Examples.CharacteristicIdealDiodes",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "8",
     "name": "CharacteristicThyristors",
     "completeName": "Modelica.Electrical.Analog.Examples.CharacteristicThyristors",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "9",
     "name": "ChuaCircuit",
     "completeName": "Modelica.Electrical.Analog.Examples.ChuaCircuit",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "10",
     "name": "DifferenceAmplifier",
     "completeName": "Modelica.Electrical.Analog.Examples.DifferenceAmplifier",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "11",
     "name": "HeatingMOSInverter",
     "completeName": "Modelica.Electrical.Analog.Examples.HeatingMOSInverter",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "12",
@@ -170,7 +522,8 @@
         "name": "tauVal",
         "anno": "Value for ideal forward and reverse transit time of semiconductors"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "13",
@@ -187,31 +540,36 @@
         "name": "tauVal",
         "anno": "Value for ideal forward and reverse transit time of semiconductors"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "14",
     "name": "Resistor",
     "completeName": "Modelica.Electrical.Analog.Examples.Resistor",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "15",
     "name": "HeatingRectifier",
     "completeName": "Modelica.Electrical.Analog.Examples.HeatingRectifier",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "16",
     "name": "NandGate",
     "completeName": "Modelica.Electrical.Analog.Examples.NandGate",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "17",
     "name": "OvervoltageProtection",
     "completeName": "Modelica.Electrical.Analog.Examples.OvervoltageProtection",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "18",
@@ -258,7 +616,8 @@
         "name": "IDC",
         "anno": "Load current"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "19",
@@ -300,31 +659,36 @@
         "name": "phase",
         "anno": "Source voltage phase shift"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "20",
     "name": "ShowVariableResistor",
     "completeName": "Modelica.Electrical.Analog.Examples.ShowVariableResistor",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "21",
     "name": "SwitchWithArc",
     "completeName": "Modelica.Electrical.Analog.Examples.SwitchWithArc",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "22",
     "name": "ThyristorBehaviourTest",
     "completeName": "Modelica.Electrical.Analog.Examples.ThyristorBehaviourTest",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "23",
     "name": "AmplifierWithOpAmpDetailed",
     "completeName": "Modelica.Electrical.Analog.Examples.AmplifierWithOpAmpDetailed",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "24",
@@ -401,25 +765,29 @@
         "name": "M",
         "anno": "Mutual inductance"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "25",
     "name": "ControlledSwitchWithArc",
     "completeName": "Modelica.Electrical.Analog.Examples.ControlledSwitchWithArc",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "26",
     "name": "SimpleTriacCircuit",
     "completeName": "Modelica.Electrical.Analog.Examples.SimpleTriacCircuit",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "27",
     "name": "IdealTriacCircuit",
     "completeName": "Modelica.Electrical.Analog.Examples.IdealTriacCircuit",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "28",
@@ -431,13 +799,15 @@
         "name": "N",
         "anno": "Digital signal width"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "29",
     "name": "GenerationOfFMUs",
     "completeName": "Modelica.Electrical.Analog.Examples.GenerationOfFMUs",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "30",
@@ -469,7 +839,8 @@
         "name": "f",
         "anno": "Source frequency"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "31",
@@ -511,19 +882,22 @@
         "name": "R2",
         "anno": "Calculated resistance to reach desired amplification k"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "32",
     "name": "SeriesResonance",
     "completeName": "Modelica.Electrical.Analog.Examples.SeriesResonance",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "33",
     "name": "ParallelResonance",
     "completeName": "Modelica.Electrical.Analog.Examples.ParallelResonance",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "35",
@@ -540,7 +914,8 @@
         "name": "f",
         "anno": "Frequency of input voltage"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "36",
@@ -557,7 +932,8 @@
         "name": "f",
         "anno": "Frequency of input voltage"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "37",
@@ -568,6 +944,26 @@
         "type": "Modelica.Electrical.Analog.Examples.OpAmps.OpAmpCircuits.DifferentialAmplifierData",
         "name": "data",
         "anno": "Parameters for source, OpAmp and measurement"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "groundSource",
+        "anno": "Negative electrical pin",
+        "pos": [
+          -0.050000000000000044,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "groundOpAmp",
+        "anno": "Negative electrical pin",
+        "pos": [
+          0.5,
+          0.8
+        ]
       }
     ]
   },
@@ -586,7 +982,8 @@
         "name": "f",
         "anno": "Frequency of input voltage"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "39",
@@ -603,7 +1000,8 @@
         "name": "f",
         "anno": "Frequency of input voltage"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "40",
@@ -620,7 +1018,8 @@
         "name": "f",
         "anno": "Frequency of input voltage"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "41",
@@ -637,7 +1036,8 @@
         "name": "f",
         "anno": "Frequency of input voltage"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "42",
@@ -659,7 +1059,8 @@
         "name": "fG",
         "anno": "Limiting frequency"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "43",
@@ -681,7 +1082,8 @@
         "name": "fG",
         "anno": "Limiting frequency"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "44",
@@ -708,7 +1110,8 @@
         "name": "kp",
         "anno": "Proportional gain"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "45",
@@ -745,7 +1148,8 @@
         "name": "Rl",
         "anno": "Load resistance"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "46",
@@ -787,7 +1191,8 @@
         "name": "R",
         "anno": "Resistance of potentiometer"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "47",
@@ -834,7 +1239,8 @@
         "name": "R2",
         "anno": "Calculated resistance to reach hysteresis voltage"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "48",
@@ -881,7 +1287,8 @@
         "name": "R2",
         "anno": "Calculated resistance to reach hysteresis voltage"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "49",
@@ -923,7 +1330,8 @@
         "name": "C",
         "anno": "Calculated capacitance to reach the desired frequency f"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "50",
@@ -970,7 +1378,8 @@
         "name": "C",
         "anno": "Calculated capacitance of integrator part to reach f"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "51",
@@ -1022,7 +1431,8 @@
         "name": "gamma",
         "anno": "Calculated characteristical parameter"
       }
-    ]
+    ],
+    "conn": []
   },
   {
     "id": "53",
@@ -1043,6 +1453,44 @@
         "type": "Real",
         "name": "V0",
         "anno": "No-load amplification"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1066,6 +1514,44 @@
         "name": "R2",
         "anno": "Calculated resistance to reach desired amplification k"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1087,6 +1573,44 @@
         "type": "Modelica.Units.SI.Resistance",
         "name": "R2",
         "anno": "Calculated resistance to reach desired amplification k"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1120,6 +1644,53 @@
         "name": "R2",
         "anno": "Calculated resistance to reach desired weight 2"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1_2",
+        "anno": "Positive electrical pin 1.2",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1141,6 +1712,53 @@
         "type": "Modelica.Units.SI.Resistance",
         "name": "R3",
         "anno": "Calculated resistance to reach desired amplification k"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1_2",
+        "anno": "Positive electrical pin 1.2",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1169,6 +1787,44 @@
         "name": "C",
         "anno": "Calculated capacitance to reach desired amplification k"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1195,6 +1851,44 @@
         "type": "Modelica.Units.SI.Capacitance",
         "name": "C",
         "anno": "Calculated capacitance to reach desired amplification k"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1228,6 +1922,44 @@
         "name": "C",
         "anno": "Calculated capacitance to reach T"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1259,6 +1991,44 @@
         "type": "Modelica.Units.SI.Capacitance",
         "name": "C",
         "anno": "Calculated capacitance to reach T"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1292,13 +2062,89 @@
         "name": "C",
         "anno": "Calculated capacitance to reach T"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
     "id": "64",
     "name": "Nand",
     "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Nand",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "x1",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.25
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "x2",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.75
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "Vdd",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "y",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "65",
@@ -1320,19 +2166,106 @@
         "name": "Ve",
         "anno": "Inner voltage range limit"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
     "id": "66",
     "name": "RealSwitch",
     "completeName": "Modelica.Electrical.Analog.Examples.Utilities.RealSwitch",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "p",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.62
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "n1",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.52
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "n2",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.75
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "control",
+        "anno": "",
+        "pos": [
+          0.67,
+          0.32
+        ]
+      }
+    ]
   },
   {
     "id": "67",
     "name": "Transistor",
     "completeName": "Modelica.Electrical.Analog.Examples.Utilities.Transistor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "c",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "b",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "e",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.8
+        ]
+      }
+    ]
   },
   {
     "id": "68",
@@ -1343,6 +2276,44 @@
         "type": "Modelica.Units.SI.Capacitance",
         "name": "C",
         "anno": "Capacitance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "iDrive",
+        "anno": "",
+        "pos": [
+          -0.09999999999999998,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "v",
+        "anno": "Capacitor changes voltage due to current",
+        "pos": [
+          1.05,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "dv",
+        "anno": "Capacitor changes voltage due to current",
+        "pos": [
+          1.05,
+          0.35
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "i",
+        "anno": "Current to the capacitor",
+        "pos": [
+          1.1,
+          0.9
+        ]
       }
     ]
   },
@@ -1355,6 +2326,35 @@
         "type": "Modelica.Units.SI.Capacitance",
         "name": "C",
         "anno": "Capacitance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "v",
+        "anno": "Voltage to drive the Capacitor",
+        "pos": [
+          -0.09999999999999998,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "dv",
+        "anno": "Voltage to drive the Capacitor",
+        "pos": [
+          -0.09999999999999998,
+          0.35
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "i",
+        "anno": "Current needed to drive the oneport according to v, dv",
+        "pos": [
+          -0.050000000000000044,
+          0.9
+        ]
       }
     ]
   },
@@ -1373,6 +2373,26 @@
         "name": "R",
         "anno": "Resistance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "",
+        "pos": [
+          -0.010000000000000009,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -1384,6 +2404,44 @@
         "type": "Modelica.Units.SI.Resistance",
         "name": "R",
         "anno": "Resistance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "v1",
+        "anno": "Voltage of left oneport of conduction element",
+        "pos": [
+          -0.09999999999999998,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "i1",
+        "anno": "Current generated by the conduction element",
+        "pos": [
+          -0.050000000000000044,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "v2",
+        "anno": "Voltage of right oneport of conduction element",
+        "pos": [
+          1.1,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "i2",
+        "anno": "Current generated by the conduction element",
+        "pos": [
+          1.05,
+          0.9
+        ]
       }
     ]
   },
@@ -1397,6 +2455,44 @@
         "name": "L",
         "anno": "Inductance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "vDrive",
+        "anno": "",
+        "pos": [
+          -0.09999999999999998,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "i",
+        "anno": "Inductor changes current due to voltage",
+        "pos": [
+          1.05,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "di",
+        "anno": "Inductor changes current due to voltage",
+        "pos": [
+          1.05,
+          0.65
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "v",
+        "anno": "Voltage to the inductor",
+        "pos": [
+          1.1,
+          0.09999999999999998
+        ]
+      }
     ]
   },
   {
@@ -1408,6 +2504,35 @@
         "type": "Modelica.Units.SI.Inductance",
         "name": "L",
         "anno": "Inductance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "i",
+        "anno": "Current to drive the Inductor",
+        "pos": [
+          -0.09999999999999998,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "di",
+        "anno": "Current to drive the Inductor",
+        "pos": [
+          -0.09999999999999998,
+          0.65
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "v",
+        "anno": "Voltage needed to drive the oneport according to i, di",
+        "pos": [
+          -0.050000000000000044,
+          0.09999999999999998
+        ]
       }
     ]
   },
@@ -1421,13 +2546,62 @@
         "name": "G",
         "anno": "Conductance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "i1",
+        "anno": "Current of left oneport of resistance element",
+        "pos": [
+          -0.09999999999999998,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "v1",
+        "anno": "Voltage generated by the resistance element",
+        "pos": [
+          -0.050000000000000044,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "i2",
+        "anno": "Current of right oneport of conduction element",
+        "pos": [
+          1.1,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "v2",
+        "anno": "Voltage generated by the resistance element",
+        "pos": [
+          1.05,
+          0.09999999999999998
+        ]
+      }
     ]
   },
   {
     "id": "76",
     "name": "Ground",
     "completeName": "Modelica.Electrical.Analog.Basic.Ground",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "p",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "77",
@@ -1448,6 +2622,35 @@
         "type": "Modelica.Units.SI.LinearTemperatureCoefficient",
         "name": "alpha",
         "anno": "Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -1471,6 +2674,35 @@
         "name": "alpha",
         "anno": "Temperature coefficient of conductance (G_actual = G_ref/(1 + alpha*(T_heatPort - T_ref))"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1483,6 +2715,26 @@
         "name": "C",
         "anno": "Capacitance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -1494,6 +2746,26 @@
         "type": "Modelica.Units.SI.Inductance",
         "name": "L",
         "anno": "Inductance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -1527,6 +2799,26 @@
         "name": "Ipar",
         "anno": ""
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -1548,6 +2840,44 @@
         "type": "Modelica.Units.SI.Inductance",
         "name": "M",
         "anno": "Coupling inductance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1576,6 +2906,26 @@
         "name": "dimL",
         "anno": ""
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -1592,6 +2942,44 @@
         "type": "Modelica.Units.SI.Conductance",
         "name": "G2",
         "anno": "Secondary gyration conductance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1610,6 +2998,44 @@
         "name": "k",
         "anno": "Transformation coefficient"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Mechanics.Rotational.Interfaces.Flange_b",
+        "name": "flange",
+        "anno": "Flange",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Mechanics.Rotational.Interfaces.Support",
+        "name": "support",
+        "anno": "Support/housing of emf shaft",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -1627,6 +3053,44 @@
         "name": "k",
         "anno": "Transformation coefficient"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Mechanics.Translational.Interfaces.Flange_b",
+        "name": "flange",
+        "anno": "Flange",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Mechanics.Translational.Interfaces.Support",
+        "name": "support",
+        "anno": "Support/housing",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -1638,6 +3102,44 @@
         "type": "Real",
         "name": "gain",
         "anno": "Voltage gain"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1651,6 +3153,44 @@
         "name": "transConductance",
         "anno": "Transconductance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1662,6 +3202,44 @@
         "type": "Modelica.Units.SI.Resistance",
         "name": "transResistance",
         "anno": "Transresistance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -1675,6 +3253,44 @@
         "name": "gain",
         "anno": "Current gain"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1686,6 +3302,53 @@
         "type": "Real",
         "name": "Slope",
         "anno": "Slope of the out.v/vin characteristic at vin=0"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "in_p",
+        "anno": "Positive pin of the input port",
+        "pos": [
+          0.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "in_n",
+        "anno": "Negative pin of the input port",
+        "pos": [
+          0.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "out",
+        "anno": "Output pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "VMax",
+        "anno": "Positive output voltage limitation",
+        "pos": [
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "VMin",
+        "anno": "Negative output voltage limitation",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -1849,6 +3512,53 @@
         "name": "Imaxsi_val",
         "anno": "Orientation into outp"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive pin of the input port",
+        "pos": [
+          0.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "m",
+        "anno": "Negative pin of the input port",
+        "pos": [
+          0.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "outp",
+        "anno": "Output pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p_supply",
+        "anno": "Positive output voltage limitation",
+        "pos": [
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "m_supply",
+        "anno": "Negative output voltage limitation",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1866,6 +3576,44 @@
         "name": "alpha",
         "anno": "Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "R",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -1882,6 +3630,44 @@
         "type": "Modelica.Units.SI.LinearTemperatureCoefficient",
         "name": "alpha",
         "anno": "Temperature coefficient of conductance (G_actual = G/(1 + alpha*(T_heatPort - T_ref))"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "G",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -1905,6 +3691,35 @@
         "name": "UIC",
         "anno": "Decision if initial value IC shall be used"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "C",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -1926,6 +3741,35 @@
         "type": "Boolean",
         "name": "UIC",
         "anno": "Decision if initial value IC shall be used"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "L",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -1959,37 +3803,418 @@
         "name": "rConstant",
         "anno": "Contact between n (r=0) and p (r=1)"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "pin_p",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "contact",
+        "anno": "",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "pin_n",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "r",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "rInt",
+        "anno": "",
+        "pos": [
+          0.09999999999999998,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
     "id": "98",
     "name": "GeneralCurrentToVoltageAdaptor",
     "completeName": "Modelica.Electrical.Analog.Basic.GeneralCurrentToVoltageAdaptor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "pin_p",
+        "anno": "",
+        "pos": [
+          0.4,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "pin_n",
+        "anno": "",
+        "pos": [
+          0.4,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "p",
+        "anno": "Output for potential",
+        "pos": [
+          0.65,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "pder",
+        "anno": "Optional output for der(potential)",
+        "pos": [
+          0.65,
+          0.25
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "pder2",
+        "anno": "Optional output for der2(potential)",
+        "pos": [
+          0.65,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f",
+        "anno": "Input for flow",
+        "pos": [
+          0.65,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "fder",
+        "anno": "Optional input for der(flow)",
+        "pos": [
+          0.65,
+          0.75
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "fder2",
+        "anno": "Optional input for der2(flow)",
+        "pos": [
+          0.65,
+          0.6
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "y1",
+        "anno": "Optional 1st derivative of output",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "y2",
+        "anno": "Optional 2nd derivative of output",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "u1",
+        "anno": "Optional 1st derivative of input",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "u2",
+        "anno": "Optional 2nd derivative of input",
+        "pos": [
+          0,
+          0
+        ]
+      }
+    ]
   },
   {
     "id": "99",
     "name": "GeneralVoltageToCurrentAdaptor",
     "completeName": "Modelica.Electrical.Analog.Basic.GeneralVoltageToCurrentAdaptor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "pin_p",
+        "anno": "",
+        "pos": [
+          0.6,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "pin_n",
+        "anno": "",
+        "pos": [
+          0.6,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "p",
+        "anno": "Input for potential",
+        "pos": [
+          0.35,
+          0.09999999999999998
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "pder",
+        "anno": "Optional input for der(potential)",
+        "pos": [
+          0.35,
+          0.25
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "pder2",
+        "anno": "Optional input for der2(potential)",
+        "pos": [
+          0.35,
+          0.4
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "f",
+        "anno": "Output for flow",
+        "pos": [
+          0.35,
+          0.9
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "fder",
+        "anno": "Optional output for der(flow)",
+        "pos": [
+          0.35,
+          0.75
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "fder2",
+        "anno": "Optional output for der2(flow)",
+        "pos": [
+          0.35,
+          0.6
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "y1",
+        "anno": "Optional 1st derivative of output",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "y2",
+        "anno": "Optional 2nd derivative of output",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "u1",
+        "anno": "Optional 1st derivative of input",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "u2",
+        "anno": "Optional 2nd derivative of input",
+        "pos": [
+          0,
+          0
+        ]
+      }
+    ]
   },
   {
     "id": "101",
     "name": "IdealDiode",
     "completeName": "Modelica.Electrical.Analog.Ideal.IdealDiode",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "102",
     "name": "IdealThyristor",
     "completeName": "Modelica.Electrical.Analog.Ideal.IdealThyristor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "fire",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "103",
     "name": "IdealGTOThyristor",
     "completeName": "Modelica.Electrical.Analog.Ideal.IdealGTOThyristor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "fire",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "104",
@@ -2005,6 +4230,53 @@
         "type": "Modelica.Units.SI.Conductance",
         "name": "Goff",
         "anno": "Opened switch conductance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "control",
+        "anno": "true => p--n2 connected, false => p--n1 connected",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2022,6 +4294,62 @@
         "type": "Modelica.Units.SI.Conductance",
         "name": "Goff",
         "anno": "Opened switch conductance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "control",
+        "anno": "true => p1--n2, p2--n1 connected, otherwise p1--n1, p2--n2  connected",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2045,6 +4373,53 @@
         "name": "Goff",
         "anno": "Opened switch conductance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "control",
+        "anno": "Control pin: if control.v > level p--n2 connected, otherwise p--n1 connected",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -2067,25 +4442,195 @@
         "name": "Goff",
         "anno": "Opened switch conductance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.3
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "control",
+        "anno": "Control pin: if control.v > level p1--n2, p2--n1 connected,\n         otherwise p1--n1, p2--n2  connected",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
     "id": "108",
     "name": "IdealOpAmp",
     "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmp",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive pin of the left port",
+        "pos": [
+          0.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative pin of the left port",
+        "pos": [
+          0.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive pin of the right port",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative pin of the right port",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "109",
     "name": "IdealOpAmp3Pin",
     "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmp3Pin",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "in_p",
+        "anno": "Positive pin of the input port",
+        "pos": [
+          0.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "in_n",
+        "anno": "Negative pin of the input port",
+        "pos": [
+          0.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "out",
+        "anno": "Output pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "110",
     "name": "IdealOpAmpLimited",
     "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpAmpLimited",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "in_p",
+        "anno": "Positive pin of the input port",
+        "pos": [
+          0.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "in_n",
+        "anno": "Negative pin of the input port",
+        "pos": [
+          0.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "out",
+        "anno": "Output pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "VMax",
+        "anno": "Positive output voltage limitation",
+        "pos": [
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "VMin",
+        "anno": "Negative output voltage limitation",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "111",
@@ -2122,6 +4667,53 @@
         "name": "homotopyType",
         "anno": "Simplified model for homotopy-based initialization"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "in_p",
+        "anno": "Positive pin of the input port",
+        "pos": [
+          0.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "in_n",
+        "anno": "Negative pin of the input port",
+        "pos": [
+          0.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "out",
+        "anno": "Pin of the output port",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "s_p",
+        "anno": "Optional positive supply pin",
+        "pos": [
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "s_n",
+        "anno": "Optional negative supply pin",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -2144,31 +4736,185 @@
         "name": "Lm1",
         "anno": "Magnetization inductance w.r.t. primary side"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
     "id": "113",
     "name": "Idle",
     "completeName": "Modelica.Electrical.Analog.Ideal.Idle",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "114",
     "name": "Short",
     "completeName": "Modelica.Electrical.Analog.Ideal.Short",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "115",
     "name": "IdealOpeningSwitch",
     "completeName": "Modelica.Electrical.Analog.Ideal.IdealOpeningSwitch",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "control",
+        "anno": "true => switch open, false => p--n connected",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "116",
     "name": "IdealClosingSwitch",
     "completeName": "Modelica.Electrical.Analog.Ideal.IdealClosingSwitch",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "control",
+        "anno": "true => p--n connected, false => switch open",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "117",
@@ -2179,6 +4925,44 @@
         "type": "Modelica.Units.SI.Voltage",
         "name": "level",
         "anno": "Switch level"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "control",
+        "anno": "Control pin: control.v > level switch open, otherwise p--n connected",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2192,19 +4976,133 @@
         "name": "level",
         "anno": "Switch level"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "control",
+        "anno": "Control pin: control.v > level switch closed, otherwise switch open",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
     "id": "119",
     "name": "OpenerWithArc",
     "completeName": "Modelica.Electrical.Analog.Ideal.OpenerWithArc",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "control",
+        "anno": "false => p--n connected, true => switch open",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "120",
     "name": "CloserWithArc",
     "completeName": "Modelica.Electrical.Analog.Ideal.CloserWithArc",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "control",
+        "anno": "true => p--n connected, false => switch open",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "121",
@@ -2215,6 +5113,44 @@
         "type": "Modelica.Units.SI.Voltage",
         "name": "level",
         "anno": "Switch level"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "control",
+        "anno": "Control pin: control.v > level switch open, otherwise p--n connected",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2227,6 +5163,44 @@
         "type": "Modelica.Units.SI.Voltage",
         "name": "level",
         "anno": "Switch level"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "control",
+        "anno": "Control pin: control.v > level switch closed, otherwise switch open",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2260,6 +5234,35 @@
         "name": "Cdis",
         "anno": "Capacity of disturbance elimination"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.BooleanInput",
+        "name": "fire1",
+        "anno": "Gate",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Cathode",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Anode",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -2287,6 +5290,44 @@
         "name": "Rin",
         "anno": "Input resistance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin (input)",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin (input)",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Digital.Interfaces.DigitalOutput",
+        "name": "y",
+        "anno": "Digital output",
+        "pos": [
+          1.05,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Digital.Interfaces.DigitalInput",
+        "name": "trig",
+        "anno": "Trigger input",
+        "pos": [
+          0.51,
+          0.0
+        ]
+      }
     ]
   },
   {
@@ -2304,31 +5345,185 @@
         "name": "Vref",
         "anno": "Reference voltage"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Digital.Interfaces.DigitalInput",
+        "name": "trig",
+        "anno": "Trigger input",
+        "pos": [
+          0.5,
+          -0.010000000000000009
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Digital.Interfaces.DigitalInput",
+        "name": "x",
+        "anno": "Digital input",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin (output)",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin (output)",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
     "id": "127",
     "name": "TwoPin",
     "completeName": "Modelica.Electrical.Analog.Interfaces.TwoPin",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "128",
     "name": "OnePort",
     "completeName": "Modelica.Electrical.Analog.Interfaces.OnePort",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "129",
     "name": "FourPin",
     "completeName": "Modelica.Electrical.Analog.Interfaces.FourPin",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "130",
     "name": "TwoPort",
     "completeName": "Modelica.Electrical.Analog.Interfaces.TwoPort",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "id": "131",
@@ -2344,6 +5539,17 @@
         "type": "Modelica.Units.SI.Temperature",
         "name": "T",
         "anno": "Fixed device temperature if useHeatPort = false"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2362,19 +5568,88 @@
         "name": "T",
         "anno": "Fixed device temperature if useHeatPort = false"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Optional port to which dissipated losses are transported in form of heat",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "internalHeatPort",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.9
+        ]
+      }
     ]
   },
   {
     "id": "133",
     "name": "AbsoluteSensor",
     "completeName": "Modelica.Electrical.Analog.Interfaces.AbsoluteSensor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "y",
+        "anno": "Measured quantity as Real output signal",
+        "pos": [
+          1.05,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "134",
     "name": "RelativeSensor",
     "completeName": "Modelica.Electrical.Analog.Interfaces.RelativeSensor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "y",
+        "anno": "Measured quantity as Real output signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "135",
@@ -2390,6 +5665,26 @@
         "type": "Modelica.Units.SI.Time",
         "name": "startTime",
         "anno": "Time offset"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -2407,6 +5702,26 @@
         "type": "Modelica.Units.SI.Time",
         "name": "startTime",
         "anno": "Time offset"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -2430,6 +5745,35 @@
         "name": "Vknee",
         "anno": "Forward threshold voltage"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -2446,6 +5790,35 @@
         "type": "Modelica.Units.SI.Conductance",
         "name": "Goff",
         "anno": "Opened switch conductance"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2479,25 +5852,57 @@
         "name": "Vmax",
         "anno": "Max. arc voltage"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
     "id": "141",
     "name": "OLine",
     "completeName": "Modelica.Electrical.Analog.Lines.OLine",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "142",
     "name": "M_OLine",
     "completeName": "Modelica.Electrical.Analog.Lines.M_OLine",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "143",
     "name": "ULine",
     "completeName": "Modelica.Electrical.Analog.Lines.ULine",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "144",
@@ -2513,6 +5918,44 @@
         "type": "Modelica.Units.SI.Time",
         "name": "TD",
         "anno": "Transmission delay"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -2541,6 +5984,44 @@
         "name": "TD",
         "anno": ""
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -2562,6 +6043,44 @@
         "type": "Modelica.Units.SI.Time",
         "name": "TD",
         "anno": ""
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p1",
+        "anno": "Positive electrical pin of port 1",
+        "pos": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n1",
+        "anno": "Negative electrical pin of port 1",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p2",
+        "anno": "Positive electrical pin of port 2",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n2",
+        "anno": "Negative electrical pin of port 2",
+        "pos": [
+          1.0,
+          1.0
+        ]
       }
     ]
   },
@@ -2615,6 +6134,35 @@
         "name": "XTI",
         "anno": "Temperature exponent of saturation current"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -2657,6 +6205,35 @@
         "name": "Gp",
         "anno": "Parallel conductance for numerical stability"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -2698,6 +6275,35 @@
         "type": "Real",
         "name": "Nbv",
         "anno": "Breakthrough emission coefficient"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2771,6 +6377,53 @@
         "name": "kk2",
         "anno": "Fitting parameter for K2"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "D",
+        "anno": "Drain",
+        "pos": [
+          1.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "G",
+        "anno": "Gate",
+        "pos": [
+          0.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "S",
+        "anno": "Source",
+        "pos": [
+          1.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "B",
+        "anno": "Bulk",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -2842,6 +6495,53 @@
         "type": "Real",
         "name": "kk2",
         "anno": "Fitting parameter for K2"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "D",
+        "anno": "Drain",
+        "pos": [
+          1.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "G",
+        "anno": "Gate",
+        "pos": [
+          0.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "S",
+        "anno": "Source",
+        "pos": [
+          1.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "B",
+        "anno": "Bulk",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
       }
     ]
   },
@@ -2990,6 +6690,53 @@
         "name": "useSubstrate",
         "anno": "= false, if substrate is implicitly grounded"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "C",
+        "anno": "Collector",
+        "pos": [
+          1.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "B",
+        "anno": "Base",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "E",
+        "anno": "Emitter",
+        "pos": [
+          1.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "S",
+        "anno": "Substrate",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -3137,6 +6884,53 @@
         "name": "useSubstrate",
         "anno": "= false, if substrate is implicitly grounded"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "C",
+        "anno": "Collector",
+        "pos": [
+          1.0,
+          0.2
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "B",
+        "anno": "Base",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.Pin",
+        "name": "E",
+        "anno": "Emitter",
+        "pos": [
+          1.0,
+          0.8
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "S",
+        "anno": "Substrate",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -3224,6 +7018,44 @@
         "name": "Roff",
         "anno": "Blocking mode resistance"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "Anode",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "Cathode",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "Gate",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
@@ -3291,43 +7123,300 @@
         "name": "Nbv",
         "anno": "Reverse Breakthrough emission coefficient"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Cathode",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Anode",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "g",
+        "anno": "Gate",
+        "pos": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a",
+        "name": "heatPort",
+        "anno": "Conditional heat port",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      }
     ]
   },
   {
     "id": "158",
     "name": "PotentialSensor",
     "completeName": "Modelica.Electrical.Analog.Sensors.PotentialSensor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Pin to be measured",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "phi",
+        "anno": "Absolute voltage potential as output signal",
+        "pos": [
+          1.05,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "159",
     "name": "VoltageSensor",
     "completeName": "Modelica.Electrical.Analog.Sensors.VoltageSensor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "v",
+        "anno": "Voltage between pin p and n (= p.v - n.v) as output signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "160",
     "name": "CurrentSensor",
     "completeName": "Modelica.Electrical.Analog.Sensors.CurrentSensor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "i",
+        "anno": "Current in the branch from p to n as output signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "161",
     "name": "PowerSensor",
     "completeName": "Modelica.Electrical.Analog.Sensors.PowerSensor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "pc",
+        "anno": "Positive pin, current path",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "nc",
+        "anno": "Negative pin, current path",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "pv",
+        "anno": "Positive pin, voltage path",
+        "pos": [
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "nv",
+        "anno": "Negative pin, voltage path",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "power",
+        "anno": "Instantaneous power as output signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "162",
     "name": "MultiSensor",
     "completeName": "Modelica.Electrical.Analog.Sensors.MultiSensor",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "pc",
+        "anno": "Positive pin, current path",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "nc",
+        "anno": "Negative pin, current path",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "pv",
+        "anno": "Positive pin, voltage path",
+        "pos": [
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "nv",
+        "anno": "Negative pin, voltage path",
+        "pos": [
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "i",
+        "anno": "Current as output signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "v",
+        "anno": "Voltage as output signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealOutput",
+        "name": "power",
+        "anno": "Instantaneous power as output signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "164",
     "name": "SignalVoltage",
     "completeName": "Modelica.Electrical.Analog.Sources.SignalVoltage",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "v",
+        "anno": "Voltage between pin p and n (= p.v - n.v) as input signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "165",
@@ -3338,6 +7427,26 @@
         "type": "Modelica.Units.SI.Voltage",
         "name": "V",
         "anno": "Value of constant voltage"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3350,6 +7459,26 @@
         "type": "Modelica.Units.SI.Voltage",
         "name": "V",
         "anno": "Height of step"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3367,6 +7496,26 @@
         "type": "Modelica.Units.SI.Time",
         "name": "duration",
         "anno": "Duration of ramp"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3390,6 +7539,26 @@
         "name": "f",
         "anno": "Frequency of sine wave"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3411,6 +7580,26 @@
         "type": "Modelica.Units.SI.Frequency",
         "name": "f",
         "anno": "Frequency of cosine wave"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3444,6 +7633,62 @@
         "name": "offset",
         "anno": "Offset of the sine wave"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "V",
+        "anno": "Amplitude",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f",
+        "anno": "Frequency",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "V_internal",
+        "anno": "Amplitude",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f_internal",
+        "anno": "Frequency",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3476,6 +7721,62 @@
         "name": "offset",
         "anno": "Offset of the sine wave"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "V",
+        "anno": "Amplitude",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f",
+        "anno": "Frequency",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "V_internal",
+        "anno": "Amplitude",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f_internal",
+        "anno": "Frequency",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3502,6 +7803,26 @@
         "type": "Modelica.Units.SI.Damping",
         "name": "damping",
         "anno": "Damping coefficient of sine wave"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3530,6 +7851,26 @@
         "name": "fallTimeConst",
         "anno": "Fall time constant"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3552,6 +7893,26 @@
         "name": "period",
         "anno": "Time for one period"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3568,6 +7929,26 @@
         "type": "Modelica.Units.SI.Time",
         "name": "period",
         "anno": "Time for one period"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3606,19 +7987,69 @@
         "name": "nperiod",
         "anno": "Number of periods (< 0 means infinite number of periods)"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
     "id": "177",
     "name": "TableVoltage",
     "completeName": "Modelica.Electrical.Analog.Sources.TableVoltage",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "178",
     "name": "SignalCurrent",
     "completeName": "Modelica.Electrical.Analog.Sources.SignalCurrent",
-    "para": []
+    "para": [],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "i",
+        "anno": "Current flowing from pin p to pin n as input signal",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
+    ]
   },
   {
     "id": "179",
@@ -3629,6 +8060,26 @@
         "type": "Modelica.Units.SI.Current",
         "name": "I",
         "anno": "Value of constant current"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3641,6 +8092,26 @@
         "type": "Modelica.Units.SI.Current",
         "name": "I",
         "anno": "Height of step"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3658,6 +8129,26 @@
         "type": "Modelica.Units.SI.Time",
         "name": "duration",
         "anno": "Duration of ramp"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3681,6 +8172,26 @@
         "name": "f",
         "anno": "Frequency of sine wave"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3702,6 +8213,26 @@
         "type": "Modelica.Units.SI.Frequency",
         "name": "f",
         "anno": "Frequency of cosine wave"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3735,6 +8266,62 @@
         "name": "offset",
         "anno": "Offset of the sine wave"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "I",
+        "anno": "Amplitude",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f",
+        "anno": "Frequency",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "I_internal",
+        "anno": "Amplitude",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f_internal",
+        "anno": "Frequency",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3767,6 +8354,62 @@
         "name": "offset",
         "anno": "Offset of the sine wave"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "I",
+        "anno": "Amplitude",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f",
+        "anno": "Frequency",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "I_internal",
+        "anno": "Amplitude",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Blocks.Interfaces.RealInput",
+        "name": "f_internal",
+        "anno": "Frequency",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3793,6 +8436,26 @@
         "type": "Modelica.Units.SI.Damping",
         "name": "damping",
         "anno": "Damping coefficient of sine wave"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3821,6 +8484,26 @@
         "name": "fallTimeConst",
         "anno": "Fall time constant"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3843,6 +8526,26 @@
         "name": "period",
         "anno": "Time for one period"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
@@ -3859,6 +8562,26 @@
         "type": "Modelica.Units.SI.Time",
         "name": "period",
         "anno": "Time for one period"
+      }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
       }
     ]
   },
@@ -3897,13 +8620,34 @@
         "name": "nperiod",
         "anno": "Number of periods (< 0 means infinite number of periods)"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "p",
+        "anno": "Positive electrical pin",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "n",
+        "anno": "Negative electrical pin",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      }
     ]
   },
   {
     "id": "191",
     "name": "TableCurrent",
     "completeName": "Modelica.Electrical.Analog.Sources.TableCurrent",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "192",
@@ -3920,18 +8664,49 @@
         "name": "Vns",
         "anno": "Negative supply"
       }
+    ],
+    "conn": [
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+        "name": "pin_p",
+        "anno": "",
+        "pos": [
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "pin_n",
+        "anno": "",
+        "pos": [
+          1.0,
+          0.5
+        ]
+      },
+      {
+        "class": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+        "name": "ground",
+        "anno": "",
+        "pos": [
+          0.5,
+          0.5
+        ]
+      }
     ]
   },
   {
     "id": "194",
     "name": "VoltageSource",
     "completeName": "Modelica.Electrical.Analog.Icons.VoltageSource",
-    "para": []
+    "para": [],
+    "conn": []
   },
   {
     "id": "195",
     "name": "CurrentSource",
     "completeName": "Modelica.Electrical.Analog.Icons.CurrentSource",
-    "para": []
+    "para": [],
+    "conn": []
   }
 ]

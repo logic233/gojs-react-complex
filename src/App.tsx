@@ -7,14 +7,14 @@ import {produce} from 'immer';
 import * as React from 'react';
 
 import {DiagramWrapper} from './components/DiagramWrapper';
-import {
-    SelectionInspector,
-    DataInspector
-} from './components/SelectionInspector';
+import {SelectionInspector} from './components/SelectionInspector';
+import {ParaInspector} from './components/DataInspector'
 
 import {MyTreeView} from './components/treeView'
 import './App.css';
-import {paraVaule2Str} from "./tool/common";
+import {ConnectorInspector} from "./components/ConnectorInspector";
+import {LinkInspector} from "./components/LinkInspector";
+
 
 /**
  * Use a linkDataArray since we'll be using a GraphLinksModel,
@@ -42,7 +42,6 @@ class App extends React.Component<AppProps, AppState> {
     // Maps to store key -> arr index for quick lookups
     private mapNodeKeyIdx: Map<go.Key, number>;
     private mapLinkKeyIdx: Map<go.Key, number>;
-    private child = React.createRef<DataInspector>();
 
     constructor(props: AppProps) {
         super(props);
@@ -266,42 +265,77 @@ class App extends React.Component<AppProps, AppState> {
     }
 
 //根据completeName 在ModelicaModelItem找para的信息
-    private getParaInfo(modelicaName: string) {
-        let ParaInfo;
+    private getInfoFromItem(modelicaName: string, key: string) {
+        let Info;
         this.props.ModelicaModelItem.forEach(x => {
-            if (x["completeName"] === modelicaName) ParaInfo = x["para"];
+            if (x["completeName"] === modelicaName) Info = x[key];
         })
-        // console.log(ParaInfo)
-        return ParaInfo;
+        return Info;
     }
 
-    public handleParaValue(nodeKey: any, paraValues: Map<string, number>) {
+    public handleParaValue(nodeKey: any, paraKey: string, paraValue: string) {
         //ATTENTION! 从state中拿出来的元素及其子元素是只读的！
         let newNodeData = JSON.parse(JSON.stringify(this.state.nodeDataArray));
         for (const i in newNodeData) {
-            if(newNodeData[i]["key"]===nodeKey){
-                newNodeData[i]["parameterValues"]=paraVaule2Str(paraValues);
+            if (newNodeData[i]["key"] === nodeKey) {
+                newNodeData[i]["parameterValues"][paraKey] = Number(paraValue);
             }
         }
         this.setState({nodeDataArray: newNodeData});
-        console.log("check", newNodeData);
+        console.log("paraV has change", newNodeData);
+    }
+
+    public handleConnValue(linkKey: any, connType: string, connName: string) {
+        //ATTENTION! 从state中拿出来的元素及其子元素是只读的！
+        let newLinkData = JSON.parse(JSON.stringify(this.state.linkDataArray));
+        for (const i in newLinkData) {
+            if (newLinkData[i]["key"] === linkKey) {
+                newLinkData[i][connType] = connName;
+            }
+        }
+        this.setState({linkDataArray: newLinkData});
+        console.log("CONN has change", newLinkData);
+    }
+
+    private isSelectNode = () => {
+        return this.state.selectedData!.from === undefined;
     }
 
     public render() {
         const selectedData = this.state.selectedData;
+        let inspector, inspector_data, inspector_connector;
         console.log("selectedData", selectedData);
-        let inspector, inspector_data;
         if (selectedData !== null) {
+
             inspector = <SelectionInspector
                 selectedData={this.state.selectedData}
                 onInputChange={this.handleInputChange}
             />;
-            inspector_data = <DataInspector
-                selectedData={this.state.selectedData}
-                onInputChange={this.handleInputChange}
-                paraInfo={this.getParaInfo(this.state.selectedData!["modelicaName"])}
-                handleParaValue={(nodeKey: string, paraValues: Map<string, number>)=>this.handleParaValue(nodeKey,paraValues)}
-            />;
+            if (this.isSelectNode()) {
+                inspector_data = <ParaInspector
+                    selectedData={this.state.selectedData}
+                    paraInfo={this.getInfoFromItem(this.state.selectedData!["modelicaName"], "para")}
+                    handleParaValue={(nodeKey: any, paraKey: string, paraValue: string) => this.handleParaValue(nodeKey, paraKey, paraValue)}
+                />;
+
+                inspector_connector =
+                    <ConnectorInspector selectedData={this.state.selectedData}
+                                        connectorInfo={this.getInfoFromItem(this.state.selectedData!["modelicaName"], "conn")}
+                    />
+            } else {
+                //connChanger 用於更改綫的接口
+                // let fromName=this.state.nodeDataArray[this.state.selectedData!.from].modelicaName;
+                // let connFromList = this.getInfoFromItem(fromName,"conn")
+                // let toName=this.state.nodeDataArray[this.state.selectedData!.to].modelicaName;
+                // let connToList = this.getInfoFromItem(toName,"conn")
+                // inspector_data = <LinkInspector
+                //     selectedData={this.state.selectedData}
+                //     fromInfo={[fromName,connFromList]}
+                //     toInfo = {[toName,connToList]}
+                //     handleParaValue={(nodeKey: any, paraKey: string, paraValue: string) => this.handleParaValue(nodeKey, paraKey, paraValue)}
+                // />;
+            }
+
 
         }
         // let myTree = <MyTreeView nodes={nodes}/>;
@@ -358,8 +392,9 @@ class App extends React.Component<AppProps, AppState> {
                 }}>
                     save
                 </button>
-                {inspector}
                 {inspector_data}
+                {inspector_connector}
+                {inspector}
 
 
             </div>

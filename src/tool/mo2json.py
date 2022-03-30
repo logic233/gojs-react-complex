@@ -53,8 +53,8 @@ def GetConnectorsList(modelName):
 			if len(annoTuple)!=0 and annoTuple[0]=='Placement':
 				
 				annoTuple = annoTuple[1]
-				posX = (annoTuple[3]+annoTuple[5])/200
-				posY = (annoTuple[4]+annoTuple[6])/200
+				posX = (annoTuple[3]+annoTuple[5])/400+0.5
+				posY = (annoTuple[4]+annoTuple[6])/(-400)+0.5
 				# print(comClass,posX/100,posY/100)
 			else:
 				#getNthComponentAnnotation 方法不适用
@@ -95,7 +95,7 @@ def GetAllModel(completeName,thisname):
 				if len(childInfo["children"])!=0:
 					childList.append(childInfo)
 	else:
-		modelItem.append({"id":str(id),"name":thisname,"completeName":completeName,"para":GetParametersList(completeName)})
+		modelItem.append({"id":str(id),"name":thisname,"completeName":completeName,"para":GetParametersList(completeName),"conn":GetConnectorsList(completeName)})
 	return {"id":str(id),"type":type,"name":thisname,"children":childList}
 	
 	# if type == "model":
@@ -110,9 +110,9 @@ mo = "Modelica.Electrical.Analog.Basic.M_Transformer"
 data = GetAllModel("Modelica.Electrical.Analog","Modelica.Electrical.Analog")
 dataJson = json.dumps(data)
 print(id)
-f = open(os.path.split(os.path.abspath(__file__))[0]+'/packageInfo.json','w')
-f.write(dataJson)
-f.close()
+# f = open(os.path.split(os.path.abspath(__file__))[0]+'/packageInfo.json','w')
+# f.write(dataJson)
+# f.close()
 
 dataJson = json.dumps(modelItem)
 f = open(os.path.split(os.path.abspath(__file__))[0]+'/modelItem.json','w')

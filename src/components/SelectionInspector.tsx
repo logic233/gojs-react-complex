@@ -14,12 +14,7 @@ interface SelectionInspectorProps {
     onInputChange: (id: string, value: string, isBlur: boolean) => void;
 }
 
-interface DataInspectorProps {
-    selectedData: any;
-    onInputChange: (id: string, value: string, isBlur: boolean) => void;
-    paraInfo: any;
-    handleParaValue:(nodeKey: string, paraValues: Map<string, number>)=>void;
-}
+
 
 
 export class SelectionInspector extends React.PureComponent<SelectionInspectorProps, {}> {
@@ -28,7 +23,6 @@ export class SelectionInspector extends React.PureComponent<SelectionInspectorPr
      */
     private renderObjectDetails() {
         const selObj = this.props.selectedData;
-        console.log('selObj: ', selObj);
         const dets = [];
         for (const k in selObj) {
             if (k === 'para') {
@@ -62,78 +56,3 @@ export class SelectionInspector extends React.PureComponent<SelectionInspectorPr
     }
 }
 
-
-//显示模型参数并且提供更改
-export class DataInspector extends React.PureComponent<DataInspectorProps, { value: Map<string,number> }> {
-    /**
-     * Render the object data, passing down property keys and values.
-     */
-
-
-
-    constructor(props: DataInspectorProps) {
-        super(props);
-        let valueMap = paraVaule2Map(this.props.selectedData["parameterValues"]);
-
-
-        this.state = {value: valueMap};
-        this.handleChange = this.handleChange.bind(this);
-        // this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleChange(event: any) {
-        let newValue = this.state.value;
-        newValue.set(event.target.name,event.target.value);
-        this.setState({value: newValue});
-        // console.log(this.props.handleParaValue)
-        this.props.handleParaValue(this.props.selectedData.key,newValue);
-    }
-
-    public getValue = () => {
-        // console.log(this.state.value);
-        return this.state.value;
-    }
-
-    private renderObjectDetails() {
-        // const selObj = this.props.selectedData;
-        const para = this.props.paraInfo;
-        // console.log(this.state.value);
-        let dets = [];
-        if (para === undefined) {
-            return <p>this model has no paras</p>
-        } else {
-            const row =
-                <tr>
-                    <th>name</th>
-                    <th>value</th>
-                    <th>type</th>
-                    <th>description</th>
-                </tr>
-            dets.push(row)
-            para.forEach((p: any) => {
-                const row =
-                    <tr>
-                        <td> {p["name"]}</td>
-                        <td><input name={p["name"]} type="text"
-                                   value={this.state.value.get(p["name"])}
-                                   onChange={this.handleChange}/></td>
-                        <td> {p["type"]}</td>
-                        <td> {p["anno"]}</td>
-                    </tr>
-                dets.push(row)
-            })
-        }
-        return dets;
-    }
-
-    public render() {
-        return (
-            <div id='myDataInspectorDiv' className='datainspector'>
-                <h1>parameters</h1>
-                <table id='mytable'>
-                    {this.renderObjectDetails()}
-                </table>
-            </div>
-        );
-    }
-}
