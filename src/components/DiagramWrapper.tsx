@@ -115,13 +115,6 @@ export class DiagramWrapper extends React.Component<DiagramProps, {}> {
 
             })
             .bind("alignment", "pos", (array) => new go.Spot(array[0], array[1]))
-
-            // .add(
-            //     new go.Shape("Rectangle", {
-            //         desiredSize: new go.Size(20, 20),
-            //         visible:false
-            //     })
-            // )
             .add(new go.TextBlock({
                 font: '400 .875rem Roboto, sans-serif',
                 // alignment: new go.Spot(1, 1, 0, -20),
@@ -141,25 +134,6 @@ export class DiagramWrapper extends React.Component<DiagramProps, {}> {
 
 
 
-        let portLableTemplate = () =>
-            new go.Panel("Spot",)
-            .add(new go.TextBlock({
-                // margin: new go.Margin(100,100,100,100),
-                font: '400 .875rem Roboto, sans-serif',
-                alignment: go.Spot.Top,
-                alignmentFocus: go.Spot.BottomLeft,
-            }).bind('text', 'name'))
-            .add(
-                new go.Shape("Rectangle", {
-                    desiredSize: new go.Size(7, 7),
-                    fill: null,
-                })
-            )
-            .bind("alignment", "pos", (array) => new go.Spot(array[0], array[1]))
-
-
-        // .bind("portId", "name")
-        // define a simple Node template
         diagram.nodeTemplate =
             new go.Node('Spot', {
                 itemTemplate: portItemTemplate()

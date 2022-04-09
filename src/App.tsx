@@ -13,7 +13,6 @@ import {ParaInspector} from './components/DataInspector'
 import {MyTreeView} from './components/treeView'
 import './App.css';
 import {ConnectorInspector} from "./components/ConnectorInspector";
-import {LinkInspector} from "./components/LinkInspector";
 
 
 /**
@@ -38,7 +37,7 @@ interface AppProps {
 }
 
 
-class App extends React.Component<AppProps, AppState> {
+class sever extends React.Component<AppProps, AppState> {
     // Maps to store key -> arr index for quick lookups
     private mapNodeKeyIdx: Map<go.Key, number>;
     private mapLinkKeyIdx: Map<go.Key, number>;
@@ -322,20 +321,7 @@ class App extends React.Component<AppProps, AppState> {
                     <ConnectorInspector selectedData={this.state.selectedData}
                                         connectorInfo={this.getInfoFromItem(this.state.selectedData!["modelicaName"], "conn")}
                     />
-            } else {
-                //connChanger 用於更改綫的接口
-                // let fromName=this.state.nodeDataArray[this.state.selectedData!.from].modelicaName;
-                // let connFromList = this.getInfoFromItem(fromName,"conn")
-                // let toName=this.state.nodeDataArray[this.state.selectedData!.to].modelicaName;
-                // let connToList = this.getInfoFromItem(toName,"conn")
-                // inspector_data = <LinkInspector
-                //     selectedData={this.state.selectedData}
-                //     fromInfo={[fromName,connFromList]}
-                //     toInfo = {[toName,connToList]}
-                //     handleParaValue={(nodeKey: any, paraKey: string, paraValue: string) => this.handleParaValue(nodeKey, paraKey, paraValue)}
-                // />;
             }
-
 
         }
         // let myTree = <MyTreeView nodes={nodes}/>;
@@ -392,6 +378,41 @@ class App extends React.Component<AppProps, AppState> {
                 }}>
                     save
                 </button>
+
+                <button onClick={() => {
+                    let modelicaText = "model modelName\n"
+                    this.state.nodeDataArray.forEach(
+                        (item, index) => {
+//work with para firstly
+                            let paraStr = "",paraList = item['parameterValues'],paraKeyList = Object.keys(paraList);
+                            if(paraKeyList.length){
+                                paraStr+='('
+                                paraKeyList.forEach(
+                                    (key,index)=>{
+                                        paraStr+=key+' = '+paraList[key];
+                                        if(index!==paraKeyList.length-1)
+                                            paraStr+=','
+                                    }
+                                )
+                                paraStr+=')'
+                            }
+                            let line = item['modelicaName'] + " " + item['text'] + paraStr ;
+                            modelicaText += line + ";\n";
+                        }
+                    )
+                    modelicaText+='equation\n'
+                    this.state.linkDataArray.forEach(
+                        (item)=>{
+                            let fromName = this.state.nodeDataArray[item["from"]-1]['text'];
+                            let toName = this.state.nodeDataArray[item["to"]-1]['text'];
+                            modelicaText+='connect('+fromName+'.'+item['fromPort']+','+toName+'.'+item['toPort']+');\n';
+                        }
+                    )
+                    modelicaText+='end modelName;\n'
+                    alert(modelicaText);
+                }}>
+                    import as Modelica
+                </button>
                 {inspector_data}
                 {inspector_connector}
                 {inspector}
@@ -402,4 +423,4 @@ class App extends React.Component<AppProps, AppState> {
     }
 }
 
-export default App;
+export default sever;

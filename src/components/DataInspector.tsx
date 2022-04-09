@@ -32,7 +32,6 @@ export class ParaInspector extends React.PureComponent<ParaInspectorProps, { val
         let newValue = JSON.parse(JSON.stringify(this.state.value));
         newValue[event.target.name] = (event.target.value);
         this.setState({value: newValue});
-        // console.log(this.props.handleParaValue)
         this.props.handleParaValue(this.props.selectedData.key, event.target.name, event.target.value);
     }
 

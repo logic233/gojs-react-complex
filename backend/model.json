@@ -1,1 +1,111 @@
-{"node":[{"key":1,"text":"Inductor","color":"orange","loc":"-84.68202957150174 -130.03739716959225","modelicaName":"Modelica.Electrical.Analog.Basic.Inductor","parameterValues":{},"conn":[{"class":"Modelica.Electrical.Analog.Interfaces.PositivePin","name":"p","anno":"Positive electrical pin","pos":[0,0.5]},{"class":"Modelica.Electrical.Analog.Interfaces.NegativePin","name":"n","anno":"Negative electrical pin","pos":[1,0.5]}]},{"key":2,"text":"Resistor","color":"lightgreen","loc":"-342.62776261718125 21.74299180109706","modelicaName":"Modelica.Electrical.Analog.Basic.Resistor","conn":[{"class":"Modelica.Electrical.Analog.Interfaces.PositivePin","name":"p","anno":"Positive electrical pin","pos":[0,0.5]},{"class":"Modelica.Electrical.Analog.Interfaces.NegativePin","name":"n","anno":"Negative electrical pin","pos":[1,0.5]},{"class":"Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a","name":"heatPort","anno":"Conditional heat port","pos":[0.5,1]}]},{"key":3,"text":"Resistor","color":"lightgreen","loc":"-663.5827808780299 21.742991801097162","modelicaName":"Modelica.Electrical.Analog.Basic.Resistor","conn":[{"class":"Modelica.Electrical.Analog.Interfaces.PositivePin","name":"p","anno":"Positive electrical pin","pos":[0,0.5]},{"class":"Modelica.Electrical.Analog.Interfaces.NegativePin","name":"n","anno":"Negative electrical pin","pos":[1,0.5]},{"class":"Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a","name":"heatPort","anno":"Conditional heat port","pos":[0.5,1]}]}],"link":[{"from":2,"to":1,"fromPort":"n","toPort":"p","key":-1},{"from":3,"to":2,"fromPort":"n","toPort":"p","key":-2}]}
+{
+  "node": [
+    {
+      "key": 1,
+      "text": "Inductor",
+      "color": "orange",
+      "loc": "-110.34892221487371 60.9274401466404",
+      "modelicaName": "Modelica.Electrical.Analog.Basic.Inductor",
+      "parameterValues": {},
+      "conn": [
+        {
+          "name": "p",
+          "pos": [
+            0,
+            0.5
+          ]
+        },
+        {
+          "name": "n",
+          "pos": [
+            1,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2,
+      "text": "Resistor1",
+      "color": "lightgreen",
+      "loc": "-365.37347188531425 -48.094863393916754",
+      "modelicaName": "Modelica.Electrical.Analog.Basic.Resistor",
+      "parameterValues": {
+        "R": 12,
+        "alpha": 1
+      },
+      "conn": [
+        {
+          "name": "p",
+          "pos": [
+            0,
+            0.5
+          ]
+        },
+        {
+          "name": "n",
+          "pos": [
+            1,
+            0.5
+          ]
+        },
+        {
+          "name": "heatPort",
+          "pos": [
+            0.5,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3,
+      "text": "Resistor2",
+      "color": "lightgreen",
+      "loc": "-625.0385517397312 -92.09486339391675",
+      "modelicaName": "Modelica.Electrical.Analog.Basic.Resistor",
+      "parameterValues": {
+        "R": 222
+      },
+      "conn": [
+        {
+          "name": "p",
+          "pos": [
+            0,
+            0.5
+          ]
+        },
+        {
+          "name": "n",
+          "pos": [
+            1,
+            0.5
+          ]
+        },
+        {
+          "name": "heatPort",
+          "pos": [
+            0.5,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "link": [
+    {
+      "from": 2,
+      "to": 1,
+      "fromPort": "n",
+      "toPort": "p",
+      "key": -1
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "fromPort": "n",
+      "toPort": "p",
+      "key": -2
+    }
+  ]
+}
