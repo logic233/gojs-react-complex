@@ -1,74 +1,90 @@
-var http = require("http");
-const fs = require('fs');
-var querystring = require('querystring');
-const urlLib = require('url');
-var util = require('util');
-
-console.log('__dirname : ' + __dirname)
-
-
-const modelFilePath = __dirname
-const toolPath = __dirname+"/../src/tool"
-
-http.createServer(function (req, res) {
-    if (req.method === "GET") {
-        let obj = urlLib.parse(req.url, true);
-
+const express = require('express') //引入express 模块
+const app = express()              //创建实例
+const mysql = require('mysql')
+var bodyParser = require('body-parser');
+const urlLib = require("url");
+const fs = require("fs");
+const util = require("util");     //引入mysql 模块
+// 创建数据库连接 填入数据库信息
+const conn = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '123456',
+    database: 'webmodelica'
+});
+// 测试连接
+conn.connect()
+// 开启服务器
+app.listen(9999, () => {
+    console.log('服务器在9999端口开启。。。。。');
+})
+app.get('/projectList', (req, res) => {
+    let sqlStr = "SELECT id,name,annotation,create_time,update_time  from project"
+    //执行mysql 语句
+    conn.query(sqlStr, (err, results) => {
         res.setHeader("Access-Control-Allow-Origin", "*");
 
-        let filePath = "";
-        switch (obj.query.type) {
-            case "model":
-                filePath = modelFilePath+"\\model.json";
-                break;
-            case "tree":
-                // filePath = toolPath+"\\packageInfo.json";
-                filePath = "c:\\packageInfo.json";
-                break;
-            case "Item":
-                filePath = toolPath+"\\modelItem.json";
-                break;                
-        }
+        res.send(results);
+    })
+})
 
-        if (filePath.length !== 0) {
-            try {
-                const data = fs.readFileSync(filePath, 'utf8');
-                res.write(data);
-            } catch (err) {
-                console.log(`Error reading file from disk: ${err}`);
-                res.write("file not exist.")
-            }
-        } else {
-            res.write("Incorrect get Request.")
-        }
-        res.end();
-        //POST请求
-    } else {
-        // 定义了一个post变量，用于暂存请求体的信息
-        let postBody = '';
+app.get('/', (req, res) => {
+    //处理get请求
+    var sqlStr, sqlPara = [1];
 
-        // 通过req的data事件监听函数，每当接受到请求体的数据，就累加到post变量中
-        req.on('data', function (chunk) {
-            postBody += chunk;
-        });
-
-        // 在end事件触发后，通过querystring.parse将post解析为真正的POST请求格式，然后向客户端返回。
-        req.on('end', function () {
-            // post = querystring.parse(post);
-            console.log(postBody);
-            //写入
-            fs.writeFile(modelFilePath+"/model.json", String(postBody), function (err) {
-                if (err) {
-                    res.write('Server is error...')
-                }
-            })
-            console.log("has save..")
-
-            res.end(util.inspect(postBody));
-        });
+    let obj = urlLib.parse(req.url, true);
+    console.log(obj.query);
+    switch (obj.query.type) {
+        case "item":
+            sqlStr = "SELECT model_info  from package where id= ? ";
+            sqlPara = [2];
+            break;
+        case "tree":
+            sqlStr = "SELECT tree_info  from package where id= ? ";
+            sqlPara = [2];
+            break;
+        case "model":
+            sqlStr = "SELECT info  from project where id= ? ";
+            sqlPara = [obj.query.id];
+            break;
     }
+    //执行mysql 语句
+    conn.query(sqlStr, sqlPara, (err, results) => {
+        res.setHeader("Access-Control-Allow-Origin", "*");
+        results = JSON.parse(JSON.stringify(results[0]));
+        results = Object.values(results)[0];
+        res.send(results);
 
-}).listen(9999);
+    })
 
+})
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+app.post('/',urlencodedParser,(req, res) => {
+    //处理get请求
+    var sqlStr, sqlPara ;
+    console.log("POST!");
+    console.log("req :",req.body)
+    sqlStr = "UPDATE project SET info = ? WHERE id = ?"
 
-console.log("have fun!!");
+    sqlPara = [req.body["info"], req.body["id"]];
+    console.log(sqlPara);
+    //写入
+    //执行mysql 语句
+    conn.query(sqlStr, sqlPara, (err, results) => {
+        if (err) {
+            console.log('[INSERT ERROR] - ', err.message);
+            return;
+        }
+    })
+    res.end("has save");
+    // conn.end();
+
+})
+
+app.get('/packageList', (req, res) => {
+    let sqlStr = "SELECT id,name,annotation,create_time,update_time  from package"
+    //执行mysql 语句
+    conn.query(sqlStr, (err, results) => {
+        res.send(results);
+    })
+})

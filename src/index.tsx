@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import ProjectSever from './App';
 
 import * as fs from 'fs';
+import ProjectManager from "./ProjectManager";
 
 // const packageInfo = require('./tool/packageInfo.json')
 
@@ -19,11 +20,15 @@ function getDataJson(kind: string) {
 
 }
 
+let state = "List";
 
-ReactDOM.render(<App GoJSmodel={getDataJson("model")}
-                     treeInfo={getDataJson("tree")}
-                     ModelicaModelItem = {getDataJson("Item")}
+// ReactDOM.render(<ProjectSever GoJSmodel={getDataJson("model")}
+//                      treeInfo={getDataJson("tree")["tree_info"]}
+//                      ModelicaModelItem={getDataJson("item")["model_info"]}
+//     />,
+//     document.getElementById('root')
+// );
+ReactDOM.render(<ProjectManager
     />,
     document.getElementById('root')
-)
-;
+);

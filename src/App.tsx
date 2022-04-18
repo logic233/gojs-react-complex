@@ -13,6 +13,9 @@ import {ParaInspector} from './components/DataInspector'
 import {MyTreeView} from './components/treeView'
 import './App.css';
 import {ConnectorInspector} from "./components/ConnectorInspector";
+import Uploady from "@rpldy/uploady";
+
+// import UploadDropZone from "@rpldy/upload-drop-zone";
 
 
 /**
@@ -33,11 +36,12 @@ interface AppProps {
     GoJSmodel: any;
     treeInfo: any;
     ModelicaModelItem: Array<any>;
+    setProjectInfoHandler: (Info: any) => void;
 
 }
 
 
-class sever extends React.Component<AppProps, AppState> {
+class ProjectSever extends React.Component<AppProps, AppState> {
     // Maps to store key -> arr index for quick lookups
     private mapNodeKeyIdx: Map<go.Key, number>;
     private mapLinkKeyIdx: Map<go.Key, number>;
@@ -328,6 +332,9 @@ class sever extends React.Component<AppProps, AppState> {
         return (
 
             <div>
+                <Uploady destination={{url: "my-server.com/upload"}}>
+
+                </Uploady>
                 <p>
                     Try moving around nodes, editing text, relinking, undoing
                     (Ctrl-Z), etc. within the diagram
@@ -365,50 +372,52 @@ class sever extends React.Component<AppProps, AppState> {
                 }}>
                     show nodeDataArray
                 </button>
-
+                {/*save*/}
                 <button onClick={() => {
-                    let model = {};
-                    model["node"] = this.state.nodeDataArray;
-                    model["link"] = this.state.linkDataArray;
-
-                    let httpRequest = new XMLHttpRequest();
-                    httpRequest.open('POST', 'http://localhost:9999', true);
-                    httpRequest.send(JSON.stringify(model));
-
+                    let Info = {};
+                    Info["node"] = this.state.nodeDataArray;
+                    Info["link"] = this.state.linkDataArray;
+                    //
+                    // let httpRequest = new XMLHttpRequest();
+                    // httpRequest.open('POST', 'http://localhost:9999/', true);
+                    // httpRequest.send(JSON.stringify(model));
+                    this.props.setProjectInfoHandler(Info);
                 }}>
                     save
                 </button>
-
+                {/*change*/}
                 <button onClick={() => {
                     let modelicaText = "model modelName\n"
                     this.state.nodeDataArray.forEach(
                         (item, index) => {
 //work with para firstly
-                            let paraStr = "",paraList = item['parameterValues'],paraKeyList = Object.keys(paraList);
-                            if(paraKeyList.length){
-                                paraStr+='('
+                            let paraStr = "",
+                                paraList = item['parameterValues'],
+                                paraKeyList = Object.keys(paraList);
+                            if (paraKeyList.length) {
+                                paraStr += '('
                                 paraKeyList.forEach(
-                                    (key,index)=>{
-                                        paraStr+=key+' = '+paraList[key];
-                                        if(index!==paraKeyList.length-1)
-                                            paraStr+=','
+                                    (key, index) => {
+                                        paraStr += key + ' = ' + paraList[key];
+                                        if (index !== paraKeyList.length - 1)
+                                            paraStr += ','
                                     }
                                 )
-                                paraStr+=')'
+                                paraStr += ')'
                             }
-                            let line = item['modelicaName'] + " " + item['text'] + paraStr ;
+                            let line = item['modelicaName'] + " " + item['text'] + paraStr;
                             modelicaText += line + ";\n";
                         }
                     )
-                    modelicaText+='equation\n'
+                    modelicaText += 'equation\n'
                     this.state.linkDataArray.forEach(
-                        (item)=>{
-                            let fromName = this.state.nodeDataArray[item["from"]-1]['text'];
-                            let toName = this.state.nodeDataArray[item["to"]-1]['text'];
-                            modelicaText+='connect('+fromName+'.'+item['fromPort']+','+toName+'.'+item['toPort']+');\n';
+                        (item) => {
+                            let fromName = this.state.nodeDataArray[item["from"] - 1]['text'];
+                            let toName = this.state.nodeDataArray[item["to"] - 1]['text'];
+                            modelicaText += 'connect(' + fromName + '.' + item['fromPort'] + ',' + toName + '.' + item['toPort'] + ');\n';
                         }
                     )
-                    modelicaText+='end modelName;\n'
+                    modelicaText += 'end modelName;\n'
                     alert(modelicaText);
                 }}>
                     import as Modelica
@@ -423,4 +432,4 @@ class sever extends React.Component<AppProps, AppState> {
     }
 }
 
-export default sever;
+export default ProjectSever;

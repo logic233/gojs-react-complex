@@ -59,8 +59,7 @@ def GetConnectorsList(modelName):
 			else:
 				#getNthComponentAnnotation 方法不适用
 				print("warning:%s's %s can't get right position"%(modelName,comClass))
-
-			connectorsList.append({"class":comClass,"name":com[1],"anno":com[2],"pos":(posX,posY)})
+			connectorsList.append({"class":comClass,"name":com[1],"anno":com[2],"pos":{"x":posX,"y":posY}})
 
 
 	#connector could include in  Inheritance class
@@ -102,21 +101,27 @@ def GetAllModel(completeName,thisname):
 	# 	return {"id":str(id),"type":type,"name":thisname,"completeName":completeName,"children":childList,"parameters":GetParametersList(completeName)}
 	
 
-		
-
+def importPackageByName(name):
+    global modelItem
+    tree = GetAllModel(name,name)
+    data2 = [{"tree_info":tree},{"model_info":modelItem}]
+    return data2
+if __name__ == '__main__':
+    ans = importPackageByName("Modelica.Electrical.Analog.Basic.Resistor")
+    print(ans)
 #problem mo's coneenct can't get correct position
-mo = "Modelica.Electrical.Analog.Basic.M_Transformer"
-# print(omc.sendExpression("getComponentAnnotations(%s)"%mo))
-data = GetAllModel("Modelica.Electrical.Analog","Modelica.Electrical.Analog")
-dataJson = json.dumps(data)
-print(id)
+# mo = "Modelica.Electrical.Analog.Basic.M_Transformer"
+# # print(omc.sendExpression("getComponentAnnotations(%s)"%mo))
+# data = GetAllModel("Modelica.Electrical.Analog","Modelica.Electrical.Analog")
+# dataJson = json.dumps(data)
+# print(data)
 # f = open(os.path.split(os.path.abspath(__file__))[0]+'/packageInfo.json','w')
 # f.write(dataJson)
 # f.close()
 
-dataJson = json.dumps(modelItem)
-f = open(os.path.split(os.path.abspath(__file__))[0]+'/modelItem.json','w')
-f.write(dataJson)
-f.close()
+# dataJson = json.dumps(modelItem)
+# f = open(os.path.split(os.path.abspath(__file__))[0]+'/modelItem.json','w')
+# f.write(dataJson)
+# f.close()
 # m2 = "Modelica.Electrical.Analog.Lines.OLine"
 # GetParametersList(m2)
