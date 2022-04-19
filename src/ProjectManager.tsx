@@ -15,6 +15,8 @@ import TableRow from '@mui/material/TableRow';
 import './App.css';
 
 import ProjectSever from './App'
+import {Breadcrumbs} from "@mui/material";
+import IconBreadcrumbs from "./components/BreadCrumb";
 
 // import UploadDropZone from "@rpldy/upload-drop-zone";
 
@@ -73,7 +75,11 @@ class ProjectManager extends React.Component<AppProps, AppState> {
         let httpRequest = new XMLHttpRequest();
         httpRequest.open('POST', 'http://localhost:9999/', true);
         httpRequest.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        httpRequest.send("id="+this.state.editPojectId+"&info="+JSON.stringify(info));
+        httpRequest.send("id=" + this.state.editPojectId + "&info=" + JSON.stringify(info));
+        return;
+    }
+    private setIsShowListChange = (flag: boolean) => {
+        this.setState({isShowList: flag});
         return;
     }
 
@@ -98,41 +104,53 @@ class ProjectManager extends React.Component<AppProps, AppState> {
                 </TableRow>
             dets.push(row)
         })
-
         return dets;
     }
 
 
     public render() {
+
+        let Breadcrumbs = IconBreadcrumbs(this.setIsShowListChange);
         if (this.state.isShowList) {
-            // return (<button onClick={()=>this.setState({isShowList: false})}></button>)
-            return (<Paper sx={{width: '1000px'}}>
-                <br/><br/><br/><br/>
-                <h2>Project List</h2>
-                <TableContainer sx={{height: '200px'}}>
-                    <Table stickyHeader aria-label="sticky table" size="small">
-                        <TableHead>
-                            <TableRow>
-                                <TableCell
-                                    sx={{maxWidth: '10px'}}>name</TableCell>
-                                <TableCell
-                                    sx={{maxWidth: '20px'}}>anno</TableCell>
-                                <TableCell>cerate_time</TableCell>
-                                <TableCell>update_time</TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {this.renderObjectDetails()}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-            </Paper>)
+            return (
+                <div>
+                    {Breadcrumbs}
+                    <Paper sx={{width: '1000px'}}>
+                        <br/><br/><br/><br/>
+                        <h2>Project List</h2>
+                        <TableContainer sx={{height: '200px'}}>
+                            <Table stickyHeader aria-label="sticky table"
+                                   size="small">
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell
+                                            sx={{maxWidth: '10px'}}>name</TableCell>
+                                        <TableCell
+                                            sx={{maxWidth: '20px'}}>anno</TableCell>
+                                        <TableCell>cerate_time</TableCell>
+                                        <TableCell>update_time</TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {this.renderObjectDetails()}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Paper>
+                </div>
+
+            )
         } else {
-            return <ProjectSever GoJSmodel={this.getDataJson("model")}
-                                 treeInfo={this.getDataJson("tree")["tree_info"]}
-                                 ModelicaModelItem={this.getDataJson("item")["model_info"]}
-                                 setProjectInfoHandler={(Info: any) => this.setProjectInfo(Info)}
-            />
+            return (
+                <div>
+                    {Breadcrumbs}
+                    <ProjectSever GoJSmodel={this.getDataJson("model")}
+                                  treeInfo={this.getDataJson("tree")["tree_info"]}
+                                  ModelicaModelItem={this.getDataJson("item")["model_info"]}
+                                  setProjectInfoHandler={(Info: any) => this.setProjectInfo(Info)}
+                    />
+                </div>
+            )
         }
     }
 }
