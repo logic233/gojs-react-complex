@@ -18,7 +18,7 @@ interface Node {
     id: string;
     name: string;
     type : string;
-    children: Node[];
+    children: any;
 
 }
 interface MyTreeViewprops {
@@ -104,16 +104,11 @@ const CustomTreeItem = (props: TreeItemProps) => (
 
 export class MyTreeView extends React.PureComponent<MyTreeViewprops, {}>{
 
-
-
     //渲染数据
-    renderTree = (node: Node) => (
-        <div>
+    private renderTree = (node: Node) => (
             <CustomTreeItem key={node.id} nodeId={node.id} label={node.name}>
-                {Array.isArray(node.children) ? node.children.map((x) => this.renderTree(x)) : null}
+                {Array.isArray(node["children"]) ? node["children"].map((x) => this.renderTree(x)) : null}
             </CustomTreeItem>
-
-        </div>
     );
 
     // public findNodeById(id:string,node:Node){
