@@ -109,12 +109,17 @@ export class DiagramWrapper extends React.Component<DiagramProps, {}> {
                 cursor: "pointer",
                 fromSpot: go.Spot.Right,
                 toSpot: go.Spot.Left,
-                height:60,
-                width:60,
+                height: 60,
+                width: 60,
                 // background: "red",
 
             })
-            .bind("alignment", "pos", (array) => new go.Spot(array[0], array[1]))
+            .bind("alignment", "pos", (array) => {
+                    if (array["x"]===undefined)
+                        return new go.Spot(array[0], array[1])
+                    return new go.Spot(array["x"], array["y"])
+                }
+            )
             .add(new go.TextBlock({
                 font: '400 .875rem Roboto, sans-serif',
                 // alignment: new go.Spot(1, 1, 0, -20),
@@ -131,7 +136,6 @@ export class DiagramWrapper extends React.Component<DiagramProps, {}> {
                     toLinkable: true,
                 }).bind("portId", "name")
             )
-
 
 
         diagram.nodeTemplate =

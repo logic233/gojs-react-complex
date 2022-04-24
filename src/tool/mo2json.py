@@ -94,12 +94,13 @@ def GetAllModel(completeName,thisname):
 				if len(childInfo["children"])!=0:
 					childList.append(childInfo)
 	else:
-		modelItem.append({"id":str(id),"name":thisname,"completeName":completeName,"para":GetParametersList(completeName),"conn":GetConnectorsList(completeName)})
+	    id+=1
+	    modelItem.append({"id":str(id),"name":thisname,"completeName":completeName,"para":GetParametersList(completeName),"conn":GetConnectorsList(completeName)})
 	return {"id":str(id),"type":type,"name":thisname,"children":childList}
 	
 	# if type == "model":
 	# 	return {"id":str(id),"type":type,"name":thisname,"completeName":completeName,"children":childList,"parameters":GetParametersList(completeName)}
-	
+
 
 def importPackageByName(name):
     global modelItem

@@ -14,6 +14,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import './App.css';
 import Button from '@mui/material/Button';
+import { Layout, Menu, Breadcrumb } from 'antd';
 
 import ProjectSever from './App'
 import IconBreadcrumbs from "./components/BreadCrumb";
@@ -58,6 +59,7 @@ class ProjectManager extends React.Component<AppProps, AppState> {
         httpRequest.open('GET', url, false);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
         httpRequest.send();//第三步：发送请求  将请求参数写在URL中
         let dataJson = JSON.parse(httpRequest.responseText);
+        console.log(kind,dataJson);
         return dataJson;
     }
 
@@ -185,8 +187,8 @@ class ProjectManager extends React.Component<AppProps, AppState> {
                 <div>
                     {Breadcrumbs}
                     <ProjectSever GoJSmodel={this.getDataJson("project")}
-                                  treeInfo={this.getDataJson("tree")["tree_info"]}
-                                  ModelicaModelItem={this.getDataJson("model")["model_info"]}
+                                  treeInfo={[this.getDataJson("tree")]}
+                                  ModelicaModelItem={this.getDataJson("model")}
                                   setProjectInfoHandler={(Info: any) => this.setProjectInfo(Info)}
                     />
                 </div>

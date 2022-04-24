@@ -45,7 +45,7 @@ export class ParaInspector extends React.PureComponent<ParaInspectorProps, { val
                 <TableRow sx={{padding: 8}}>
                     <TableCell> {p["name"]}</TableCell>
                     <TableCell><input name={p["name"]} type="text"
-                               value={(this.state.value !== undefined) ? this.state.value[p["name"]] : " "}
+                               value={(this.state.value !== undefined && this.state.value[p["name"]]) ? this.state.value[p["name"]] : " "}
                                onChange={this.handleChange}/></TableCell>
                     <TableCell> {p["type"]}</TableCell>
                     <TableCell> {p["anno"]}</TableCell>

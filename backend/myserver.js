@@ -41,28 +41,56 @@ app.get('/', (req, res) => {
 
     let obj = urlLib.parse(req.url, true);
     console.log(obj.query);
-    switch (obj.query.type) {
-        case "model":
-            sqlStr = "SELECT model_info  from package where id= ? ";
-            sqlPara = [2];
-            break;
-        case "tree":
-            sqlStr = "SELECT tree_info  from package where id= ? ";
-            sqlPara = [2];
-            break;
-        case "project":
-            sqlStr = "SELECT info  from project where id= ? ";
-            sqlPara = [obj.query.id];
-            break;
+    if(obj.query.type === "project"){
+        sqlStr = "SELECT info  from project where id= ? ";
+        sqlPara = [obj.query.id];
+        conn.query(sqlStr, sqlPara, (err, results) => {
+            res.setHeader("Access-Control-Allow-Origin", "*");
+            results = JSON.parse(JSON.stringify(results[0]));
+            results = Object.values(results)[0];
+            res.send(results);
+        })
+        return;
     }
-    //执行mysql 语句
-    conn.query(sqlStr, sqlPara, (err, results) => {
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        results = JSON.parse(JSON.stringify(results[0]));
-        results = Object.values(results)[0];
-        res.send(results);
-    })
+    else
+    {
+        let selectObj = obj.query.type+"_info";
+        sqlStr = "SELECT "+selectObj+ " from package where id in (SELECT package_id  from PROJECT_RELY where project_id = ? ) ";
+        sqlPara = [obj.query.id];
+        console.log(sqlPara);
+        conn.query(sqlStr, sqlPara, (err, results) => {
+            res.setHeader("Access-Control-Allow-Origin", "*");
+            results = JSON.parse(JSON.stringify(results));
+
+
+
+            if(obj.query.type==="tree"){
+                let resultsArr =[]
+                results.forEach((item)=>{
+                    let json = JSON.parse(item[selectObj])
+                    resultsArr.push(Object.values(json)[0])
+
+                })
+                res.send(resultsArr);
+            }
+            else{
+                let resultsArr =[]
+                results.forEach((item)=>{
+                    let json = JSON.parse(item[selectObj])
+                    // resultsArr.push(Object.values(json)[0])
+                    resultsArr=resultsArr.concat(Object.values(json)[0])
+                })
+                res.send(resultsArr);
+            }
+
+        })
+    }
+
+
+
 })
+
+
 app.get('/projectRely', (req, res) => {
     //处理get请求
     var sqlStr, sqlPara = [1];

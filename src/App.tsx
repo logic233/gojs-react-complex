@@ -5,6 +5,7 @@
 import * as go from 'gojs';
 import {produce} from 'immer';
 import * as React from 'react';
+import 'antd/dist/antd.css';
 
 import {DiagramWrapper} from './components/DiagramWrapper';
 import {SelectionInspector} from './components/SelectionInspector';
@@ -14,6 +15,8 @@ import {MyTreeView} from './components/treeView'
 import './App.css';
 import {ConnectorInspector} from "./components/ConnectorInspector";
 import Uploady from "@rpldy/uploady";
+import {Layout, Menu, Breadcrumb} from 'antd';
+import {log} from "util";
 
 // import UploadDropZone from "@rpldy/upload-drop-zone";
 
@@ -69,6 +72,8 @@ class ProjectSever extends React.Component<AppProps, AppState> {
         this.handleRelinkChange = this.handleRelinkChange.bind(this);
 
     }
+
+
 
     /**
      * Update map of node keys to their index in the array.
@@ -275,6 +280,13 @@ class ProjectSever extends React.Component<AppProps, AppState> {
         })
         return Info;
     }
+    private getInfoFromNameSimple(name: string, key: string) {
+        let Info;
+        this.props.ModelicaModelItem.forEach(x => {
+            if (x["name"] === name) Info = x[key];
+        })
+        return Info;
+    }
 
     public handleParaValue(nodeKey: any, paraKey: string, paraValue: string) {
         //ATTENTION! 从state中拿出来的元素及其子元素是只读的！
@@ -303,11 +315,87 @@ class ProjectSever extends React.Component<AppProps, AppState> {
     private isSelectNode = () => {
         return this.state.selectedData!.from === undefined;
     }
+    private pic2text = () => {
+        let modelicaText = "model modelName\n"
+        this.state.nodeDataArray.forEach(
+            (item, index) => {
+//work with para firstly
+                let paraStr = "",
+                    paraList = item['parameterValues'],
+                    paraKeyList = Object.keys(paraList);
+                if (paraKeyList.length) {
+                    paraStr += '('
+                    paraKeyList.forEach(
+                        (key, index) => {
+                            paraStr += key + ' = ' + paraList[key];
+                            if (index !== paraKeyList.length - 1)
+                                paraStr += ','
+                        }
+                    )
+                    paraStr += ')'
+                }
+                let line = item['modelicaName'] + " " + item['text'] + paraStr;
+                modelicaText += line + ";\n";
+            }
+        )
+        modelicaText += 'equation\n'
+        this.state.linkDataArray.forEach(
+            (item) => {
+                let fromName = this.findNodeByKey(item["from"])['text'];
+                let toName = this.findNodeByKey(item["to"])['text'];
+                modelicaText += 'connect(' + fromName + '.' + item['fromPort'] + ',' + toName + '.' + item['toPort'] + ');\n';
+            }
+        )
+        modelicaText += 'end modelName;\n'
+        alert(modelicaText);
+    };
+
+    private findNodeByKey(key: any) {
+        let ans: any;
+        this.state.nodeDataArray.forEach(
+            (item) => {
+                if (item.key === key) {
+                    ans = item;
+                    return;
+                }
+            }
+        )
+        return ans;
+    }
+
+    private addNode= (modelicaName:string)=> {
+        let index = 0;
+        let loc ;
+
+        this.state.nodeDataArray.forEach((item) => {
+            index = Math.max(item["key"],index);
+            loc = item["loc"];
+        })
+        let nodeArr = JSON.parse(JSON.stringify(this.state.nodeDataArray));
+        let connList = this.getInfoFromNameSimple(modelicaName,"conn");
+        let connList_simple =new Array();
+        //@ts-ignore
+        connList.map((item:any)=>{
+            connList_simple.push({name:item["name"],pos:item["pos"]})
+        })
+        let nodeNew = {key:index+1,
+            loc:loc,
+            text:modelicaName+(index+1),
+            conn:connList_simple,
+            modelicaName:this.getInfoFromNameSimple(modelicaName,"completeName"),
+            parameterValues:{}
+        }
+        nodeArr.push(nodeNew);
+        console.log("###has add",nodeArr);
+        this.setState({nodeDataArray:nodeArr});
+    }
+
 
     public render() {
         const selectedData = this.state.selectedData;
         let inspector, inspector_data, inspector_connector;
         console.log("selectedData", selectedData);
+        console.log("allNode",this.state.nodeDataArray);
         if (selectedData !== null) {
 
             inspector = <SelectionInspector
@@ -329,105 +417,67 @@ class ProjectSever extends React.Component<AppProps, AppState> {
 
         }
         // let myTree = <MyTreeView nodes={nodes}/>;
+        const {Header, Content, Sider} = Layout;
+
         return (
+            <Layout>
+                <Layout>
+                    <Sider width={300} className="site-layout-background"
+                           theme="light">
+                        <MyTreeView nodes={this.props.treeInfo}
+                                    addNodeHandler={this.addNode}
+                        />
+                    </Sider>
+                    <Layout
+                        style={{
+                            padding: '0 24px 24px',
+                        }}
+                    >
 
-            <div>
-                <Uploady destination={{url: "my-server.com/upload"}}>
-
-                </Uploady>
-                <p>
-                    Try moving around nodes, editing text, relinking, undoing
-                    (Ctrl-Z), etc. within the diagram
-                    and you'll notice the changes are reflected in the inspector
-                    area. You'll also notice that changes
-                    made in the inspector are reflected in the diagram. If you
-                    use the React dev tools,
-                    you can inspect the React state and see it updated as
-                    changes happen.
-                </p>
-                <p>
-                    Check out the <a
-                    href='https://gojs.net/latest/intro/react.html'
-                    target='_blank' rel='noopener noreferrer'>Intro page on
-                    using GoJS with React</a> for more information.
-                </p>
-
-                <div className='lineDiv'>
-                    <DiagramWrapper
-                        nodeDataArray={this.state.nodeDataArray}
-                        linkDataArray={this.state.linkDataArray}
-                        modelData={this.state.modelData}
-                        skipsDiagramUpdate={this.state.skipsDiagramUpdate}
-                        onDiagramEvent={this.handleDiagramEvent}
-                        onModelChange={this.handleModelChange}
-                    />
-
-                    <MyTreeView nodes={this.props.treeInfo}/>
-                </div>
+                        <Content
+                            className="site-layout-background"
+                            style={{
+                                padding: 24,
+                                margin: 0,
+                                minHeight: 280,
+                            }}
+                        >
 
 
-                <button onClick={() => {
-                    console.log('this.state.nodeDataArray: ', this.state.nodeDataArray);
+                            <DiagramWrapper
+                                nodeDataArray={this.state.nodeDataArray}
+                                linkDataArray={this.state.linkDataArray}
+                                modelData={this.state.modelData}
+                                skipsDiagramUpdate={this.state.skipsDiagramUpdate}
+                                onDiagramEvent={this.handleDiagramEvent}
+                                onModelChange={this.handleModelChange}
+                            />
+                            <br/>
+                            <button onClick={()=>console.log("nodeDataArray:",this.state.nodeDataArray)}>
+                                show nodeDataArray
+                            </button>
+                            <button onClick={() => {
+                                let Info = {};
+                                Info["node"] = this.state.nodeDataArray;
+                                Info["link"] = this.state.linkDataArray;
+                                this.props.setProjectInfoHandler(Info);
+                            }}>
+                                save
+                            </button>
+                            <button onClick={this.pic2text}>
+                                import as Modelica
+                            </button>
 
-                }}>
-                    show nodeDataArray
-                </button>
-                {/*save*/}
-                <button onClick={() => {
-                    let Info = {};
-                    Info["node"] = this.state.nodeDataArray;
-                    Info["link"] = this.state.linkDataArray;
-                    //
-                    // let httpRequest = new XMLHttpRequest();
-                    // httpRequest.open('POST', 'http://localhost:9999/', true);
-                    // httpRequest.send(JSON.stringify(model));
-                    this.props.setProjectInfoHandler(Info);
-                }}>
-                    save
-                </button>
-                {/*change*/}
-                <button onClick={() => {
-                    let modelicaText = "model modelName\n"
-                    this.state.nodeDataArray.forEach(
-                        (item, index) => {
-//work with para firstly
-                            let paraStr = "",
-                                paraList = item['parameterValues'],
-                                paraKeyList = Object.keys(paraList);
-                            if (paraKeyList.length) {
-                                paraStr += '('
-                                paraKeyList.forEach(
-                                    (key, index) => {
-                                        paraStr += key + ' = ' + paraList[key];
-                                        if (index !== paraKeyList.length - 1)
-                                            paraStr += ','
-                                    }
-                                )
-                                paraStr += ')'
-                            }
-                            let line = item['modelicaName'] + " " + item['text'] + paraStr;
-                            modelicaText += line + ";\n";
-                        }
-                    )
-                    modelicaText += 'equation\n'
-                    this.state.linkDataArray.forEach(
-                        (item) => {
-                            let fromName = this.state.nodeDataArray[item["from"] - 1]['text'];
-                            let toName = this.state.nodeDataArray[item["to"] - 1]['text'];
-                            modelicaText += 'connect(' + fromName + '.' + item['fromPort'] + ',' + toName + '.' + item['toPort'] + ');\n';
-                        }
-                    )
-                    modelicaText += 'end modelName;\n'
-                    alert(modelicaText);
-                }}>
-                    import as Modelica
-                </button>
-                {inspector_data}
-                {inspector_connector}
-                {inspector}
+                            {inspector_data}
+                            {inspector_connector}
+                            {inspector}
 
 
-            </div>
+                        </Content>
+                    </Layout>
+                </Layout>
+            </Layout>
+
         );
     }
 }

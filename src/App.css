@@ -1,16 +1,26 @@
-label {
-    font: 300 1rem Roboto, helvetica, sans-serif;
-    color: #212121; /* Grey 900 */
-    display: block;
-    padding: 2px;
+/*label {*/
+/*    font: 300 1rem Roboto, helvetica, sans-serif;*/
+/*    color: #212121; !* Grey 900 *!*/
+/*    display: block;*/
+/*    padding: 2px;*/
+/*}*/
+
+/*p {*/
+/*    font: 300 1rem Roboto, helvetica, sans-serif;*/
+/*    color: #212121; !* Grey 900 *!*/
+/*}*/
+
+/*.lineDiv > *{*/
+/*    display: inline-block;*/
+
+/*}*/
+
+
+.site-layout-background {
+    background: #fff;
 }
 
-p {
-    font: 300 1rem Roboto, helvetica, sans-serif;
-    color: #212121; /* Grey 900 */
-}
-
-.lineDiv > *{
-    display: inline-block;
-
+.ant-row-rtl .logo {
+    float: right;
+    margin: 16px 16px 16px 24px;
 }

@@ -6,7 +6,7 @@ db = pymysql.connect(host='localhost',
                      user='root',
                      password='123456',
                      database='webmodelica')
-name = 'Modelica.Electrical.Analog.Basic'
+name = 'Modelica.Electrical.Analog.Sources'
 ans = importPackageByName(name)
 print("[IMPORT] HAS GET!")
 #使用 cursor() 方法创建一个游标对象 cursor
